@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>{$Think.lang.jiaoyi}</title>
+<link rel="stylesheet" href="__WCSS__/style.css">
+<link rel="stylesheet" href="__WCSS__/digital.css">
+<link rel="stylesheet" href="__WCSS__/zhifu.css">
+<link rel="stylesheet" href="__WCSS__/meCen.css">
+
+<script src="__WJS__/jquery1.11.1.min.js"></script>
+<script type="text/javascript" src="__COM__/js/index.js" ></script>
+<script type="text/javascript" src="__COM__/layer/layer.js"></script>
+<style>
+ /* #highcharts-ndegtvt-0{height: 180px !important}*/
+</style>
+<body class="bg96">
+	
+		<div class="header">
+			<div class="header_l"><a href="javascript:history.go(-1);"><img src="__WIMG__/jiant.png" alt=""></a></div>
+			<div class="header_c"><h2>市场</h2></div>
+			<div class="header_r"><a href="####" onclick="showSearch()">搜索</a></div>
+		</div>
+
+<script type="text/javascript" src="__COM__/layer/highcharts.js"></script>
+<script type="text/javascript" src="__COM__/layer/export-data.js"></script>
+
+<style type="text/css">
+  .highcharts-yaxis-labels,.highcharts-yaxis{
+
+    display: none;
+  }
+</style>
+
+<script type="text/javascript">
+  
+$(document).ready(function(){ 
+　　  $('.highcharts-legend').remove('g');
+$('highcharts-background').css('height','20vmin');
+}); 
+
+
+</script>
+	<div class="zySearch" style="display:block">
+		<input id="searchInput" name="uinfo" class="search-input" value="{$uinfo}" type="text" placeholder="搜索手机号码">
+		<button class="search-btn btn">搜索</button>
+	</div>
+
+	<div class="usermarket">
+		<ul>
+			<volist name="list" id="vo">
+			<li>
+				<p class="marketlist">
+					<img src="__WIMG__/toux-icon.png" />
+					<div class="market_left">
+						<span class="markhead">{$vo['username']}</span><br />	
+						<span class="market_left01">
+							<span>单价 M{$vo['dprice']}</span><br />
+							<span>数量 <?php echo ($vo['tprice']-$vo['fee_num'])/$vo['dprice']; ?>积分{$vo['']}</span>
+						</span>
+					</div>
+					<div class="market_right">
+						<span>优秀</span><br />
+						<a href="{:U('Turntable/recharge',array('id'=>$vo['id'],'type'=>$type))}">赠送</a>
+					</div>
+				</p>
+			</li>
+			</volist>
+	</div>
+	  </div>
+	  <div class="investment_con">
+	    <div class="investment_con_list">
+	       
+	       <ul class="buy_gaomai">
+
+       	
+	       	 <foreach name="deals" item="v" key="k" >
+	       	 <li>
+	       	 	<div class="buy_li_gol">
+	       	 		<img src="{$v['d_img_head']|default='__WIMG__/toux-icon.png'}">
+	       	 		 <div class="li_gop">
+	       	 		 	<p>{$v['u_name']}</p>
+	       	 		 	<p><span>限额：{$v['d_num']}</span></p>
+	       	 		 </div>
+
+
+	       	 	</div>
+	       	 	<div class="buy_li_gor">
+	       	 		<p>￥{$v['d_dprice']}</p>
+	       	 		<a href="javascript:void(0);" class="ljzf_but " onclick="gbzhi({$v['d_num']},{$v['d_dprice']},'{$v['u_name']}',{$v['d_id']})">购买</a>
+	       	 	</div>
+
+	       	 </li>
+
+	       	 </foreach>
+
+	       </ul>
+
+	    </div>
+	    
+	   
+	  </div>
+	</div>
+
+
+
+
+	 </div>	 
+ 
+
+
+</body>
+ 
+ 
+  <!--浮动层-->
+		    <div class="ftc_wzsf" >
+		        <div class="srzfmm_box">
+		            <div class="qsrzfmm_bt clear_wl">
+		                <img src="__WIMG__/xx_03.jpg" class="tx close fl">
+		               <input type="hidden" id="dealid">
+		                <span class="fl goumaiduix">向[情动之初]购买<br/>Wpeay</span></div>
+		            <div class="zfmmxx_shop">
+		                <div class="xiange_titel">
+		                	<p class="xe_pl">限 额：<span class="limit">3.1551</span></p>
+		                	<p class="xe_pr">{$coindets['coin_name']}</p>
+		                </div>
+                        <center><form> 
+		                  <div class="xiange_titel xiange_titela">
+		                	<p class="xe_pl" >价格：</p>
+		                	<input type="number" size=40 name="Data"  id="dprice" onkeyup="enfocus()" readonly="readonly" value="0" class="jiaoyjis" >
+		                	
+		                </div>
+		                 <div class="xiange_titel">
+		                	<p class="xe_pl">{$coindets['coin_name']}数：</p>
+		                	<input type="number" size=40 name="Data2"   oninput="checkNum(this)"  id="num" onkeyup="enfocus()" class="jiaoyjis livalue" value="" onkeyup="value=value.replace(/[^\d]/g,'')" placeholder="请输入数量">
+		                	<a href="#"class="xe_pl_a">全额</a>
+		                </div>
+
+		                  <div class="xiange_titel">
+		                	<p class="xe_pl">余 额：</p>
+		                	<input type="number" size=40 name="Copy"   onkeyup="enfocus()"  readonly="readonly" id="copy" class="jiaoyjis"> 
+		                	
+		                </div>
+		            </form></center> 
+		            </div>
+		            <ul class="mm_box">
+		                <li></li><li></li><li></li><li></li><li></li><li></li>
+		            </ul>
+		        </div>
+		        <div class="numb_box">
+		            <div class="xiaq_tb">
+		                <img src="__WIMG__/jftc_14.jpg" height="10"></div>
+		            <ul class="nub_ggg">
+		                <li><a href="javascript:void(0);" class="zf_num">1</a></li>
+		                <li><a href="javascript:void(0);" class="zj_x zf_num">2</a></li>
+		                <li><a href="javascript:void(0);" class="zf_num">3</a></li>
+		                <li><a href="javascript:void(0);" class="zf_num">4</a></li>
+		                <li><a href="javascript:void(0);" class="zj_x zf_num">5</a></li>
+		                <li><a href="javascript:void(0);" class="zf_num">6</a></li>
+		                <li><a href="javascript:void(0);" class="zf_num">7</a></li>
+		                <li><a href="javascript:void(0);" class="zj_x zf_num">8</a></li>
+		                <li><a href="javascript:void(0);" class="zf_num">9</a></li>
+		                <li><a href="javascript:void(0);" class="zf_empty">清空</a></li>
+		                <li><a href="javascript:void(0);" class="zj_x zf_num">0</a></li>
+		                <li><a href="javascript:void(0);" class="zf_del">删除</a></li>
+		            </ul>
+		        </div>
+		        <div class="hbbj"></div>
+		    </div>
+
+
+		 <script>
+           $('.xe_pl_a').click(function(){
+           		var limitvalue = $('.limit').text();
+           		$('.livalue').val(limitvalue);
+           		enfocus();
+           })
+		 </script>
+
+
+	     <script LANGUAGE="JavaScript">
+
+	     	<!-- hide from old browsers 
+			function enfocus() 
+			{ 
+			    var t1 = document.forms[0].Data.value; 
+			    var t2 = document.forms[0].Data2.value; 
+			    var t3 = document.forms[0].Copy.value ; 
+
+
+
+			if(t1!="" && t2!=""){ 
+				var floatValue = parseFloat(t1) * parseFloat(t2);
+		
+
+			document.getElementById("copy").value = floatValue.toFixed(4) ;  
+			} 
+			else {document.getElementById("copy").value = "";} 
+			} 
+			<!-- done hiding --> 
+		 </script> 
+
+
+         
+         <script type="text/javascript">
+
+           $(document).ready(function(){
+			  $("#dig_xiala").click(function(){
+			  $("#dig_xiala_xs").toggle(); //toggle() 方法切换元素的可见状态。 如果被选元素可见,则隐藏这些元素,如果被选元素隐藏,则显示这些元素。
+			  });
+			 
+			});
+
+         </script>
+
+<script type="text/javascript">
+
+	function showSearch(){
+		style = $('.zySearch').css('display');
+		if(style=='none'){
+			$('.zySearch').css('display','block');
+		}else{
+			$('.zySearch').css('display','none');
+		}
+	}
+	//限制number  输入格式
+	function checkNum(obj){
+
+		obj.value = obj.value.replace(/^(\-)*(\d+)\.(\d\d\d\d).*$/,'$1$2.$3');//只能输入三个小数.(\d\d\d) 修改个数  加\d
+	}
+
+
+	function gbzhi(s1,s2,s3,s4) 
+	{ 
+
+			$(".limit").text(s1);
+			$(".goumaiduix").html("向["+s3+"]购买<br>{$coindets['coin_name']}");
+			$("#dprice").val(s2);	
+			$("#dealid").val(s4);	
+
+
+            $(".ftc_wzsf").show();
+  
+			
+	}
+
+
+	function cont1(){
+$("#container2").hide();
+$("#container3").hide();
+$("#container1").show();
+$("#s2").removeClass("yon");
+$("#s1").addClass("yon");
+$("#s3").removeClass("yon");
+			}
+
+	function cont2(){
+$("#container1").hide();
+$("#container3").hide();
+$("#container2").show();
+$("#s1").removeClass("yon");
+$("#s2").addClass("yon");
+$("#s3").removeClass("yon");
+			}
+
+
+	function cont3(){
+$("#container1").hide();
+$("#container2").hide();
+$("#container3").show();
+$("#s2").removeClass("yon");
+$("#s3").addClass("yon");
+$("#s1").removeClass("yon");
+			}
+
+		 $(function(){
+        //出现浮动层
+        // $(".ljzf_but").click(function(){
+        //     $(".ftc_wzsf").show();
+        // });
+$("#container2").hide();
+$("#container3").hide();
+
+		
+
+
+		
+
+
+        //关闭浮动
+        $(".close").click(function(){
+            $(".ftc_wzsf").hide();
+            $(".mm_box li").removeClass("mmdd");
+            $(".mm_box li").attr("data","");
+            i = 0;
+        });
+
+
+
+            //数字显示隐藏
+        $(".xiaq_tb").click(function(){
+            $(".numb_box").slideUp(500);
+        });
+        $(".mm_box").click(function(){
+            $(".numb_box").slideDown(500);
+        });
+            //----
+        var i = 0;
+         post_flag = false;
+        $(".nub_ggg li .zf_num").click(function(){
+                
+          
+            if(i<6){
+                $(".mm_box li").eq(i).addClass("mmdd");
+                $(".mm_box li").eq(i).attr("data",$(this).text());
+
+               
+                i++
+                if (i==6) {
+                	
+                	
+                  
+                    var pwd = "";
+                        $(".mm_box li").each(function(){
+                        pwd += $(this).attr("data");
+                    });
+                   // alert("支付成功"+data);
+
+					if(post_flag) return; 
+           			 post_flag = true;
+					
+                    var dprice=($('#dprice').val());//支付单价
+                    var tprice=($('#copy').val());//支付总价
+                    var num = parseFloat($('#num').val());//数量
+                    var dealid = parseInt($('#dealid').val());//订单ID
+                    var ss1=parseFloat($(".limit").text());			
+
+					
+                        $.ajax({
+                            url:'/Turntable/yue_goumai',
+                            asyn:false,
+                            type:'post',
+                            data:{'dprice':dprice,'num':num,'tprice':tprice,'cid':cid,'pwd':pwd,'ss1':ss1,'dealid':dealid},
+                            datatype:'json',
+                            success:function (mes) {
+                            	post_flag = false;
+                            
+                                if(mes.status == 1){
+
+                                	$(".ftc_wzsf").hide();
+                                    msg_alert(mes.message,mes.url);
+                                    
+                                }else{
+                                    msg_alert(mes.message);
+                                    
+                                }
+                            },
+                            error: function(){
+            post_flag =false; //AJAX失败也需要将标志标记为可提交状态
+        }
+
+                          
+
+
+                        });
+                };
+            } 
+        });
+            
+        $(".nub_ggg li .zf_del").click(function(){
+            if(i>0){
+                i--
+                $(".mm_box li").eq(i).removeClass("mmdd");
+                $(".mm_box li").eq(i).attr("data","");
+            }
+        });
+
+        $(".nub_ggg li .zf_empty").click(function(){
+            $(".mm_box li").removeClass("mmdd");
+            $(".mm_box li").attr("data","");
+            i = 0;
+        });
+         
+    });
+	   </script>
+
+
+
+
+
+</html>
+

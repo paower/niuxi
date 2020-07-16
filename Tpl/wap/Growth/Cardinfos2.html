@@ -1,0 +1,309 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>收款账户</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+   <link href="__WCSS__/stylexin.css" rel="stylesheet" /> 
+	
+<style>
+    .bus-list{padding-top:12px;}
+    .bus-list li{padding:12px;background-color:#2e0571;border-bottom:1px solid #3b1080;}
+    .bus-list li input{background-color:#2e0571;color:#eee;}
+    .bus-list li select{background-color:#2e0571;color:#eee;}
+    .bus-list li .set-file{position: absolute;left:0;right: 0;top:0;bottom: 0;opacity:0;}
+    .foot-btn {padding:12px;}
+    .foot-btn .btn{display: block;text-align: center;padding:12px;border-radius: 5px;background-color:#4c0db3;font-size:16px;}
+	.getcode{position:absolute;top:-3px;right:0;background-color:#4c0db3;color:#fff;padding:5px 15px;border-radius:5px;}
+</style>
+
+    <!-- js -->
+   <!--  <script src="__WJS__/vue.min.js"></script>
+    <script src="__WJS__/jquery.min.js"></script>
+    <script src="__WJS__/core.js"></script> -->
+</head>
+<body>
+    <div id="app">
+		
+<div class="fish-head">
+    <a href="javascript:window.history.back();" class="head-back"><span>返回</span></a>
+    <h3 class="head-tit">
+        <span v-if="type==0">添加支付宝</span>
+        <span v-else-if="type==1">添加微信</span>
+        <span v-else-if="type==2">添加银行卡</span>
+    </h3>
+</div>
+<div class="fish-main">
+	<form class="daz-form" id='myupload' action="" method='post' enctype='multipart/form-data'>
+        <ul class="bus-list" v-if="type==2">
+            <li class="clearfix">
+                <div class="col-3">银行名称</div>
+                <div class="inp--field col s9">
+                    <select class="initialized" v-model="bank_name">
+                        <option v-if="bank.length>0" v-for="vo in bank" :value="vo">{{vo}}</option>
+                    </select>
+                </div>
+            </li>
+            <li class="clearfix">
+                <div class="col-3">银行卡姓名</div>
+                <div class="col-9"><input type="text" placeholder="请输入银行卡姓名" v-model="bank_account_num"></div>
+            </li>
+            <li class="clearfix">
+                <div class="col-3">银行卡账号</div>
+                <div class="col-9"><input type="text" placeholder="请输入银行卡账号" v-model="bank_bank_name"></div>
+            </li>
+            <li class="clearfix">
+                <div class="col-3">开户支行</div>
+                <div class="col-9"><input type="text" placeholder="请输入开户支行" v-model="bank_sub_branch"></div>
+            </li>
+			<li class="clearfix">
+                <div class="col-3">交易密码</div>
+                <div class="col-9"><input type="text" placeholder="交易密码" v-model="pay_pasw"></div>
+            </li>
+			
+        </ul>
+		
+        <ul class="bus-list">
+            <li class="clearfix">
+                <div class="col-3">姓名</div>
+                <div class="col-9"><input type="text" name="alipay_name" placeholder="请输入姓名" autocomplete="off" id="crkxm"></div>
+            </li>
+            <li class="clearfix">
+                <div class="col-3">账号</div>
+                <div class="col-9"><input type="text" name="alipay_number" placeholder="请输入账号" autocomplete="off" id="yhk"></div>
+            </li>
+			
+			<li class="clearfix">
+                <div class="col-3">交易密码</div>
+                <div class="col-9"><input type="text" placeholder="交易密码" v-model="pay_pasw"></div>
+            </li>
+			
+            <li class="clearfix">
+                <div class="col-3">收款二维码</div>
+                <div class="col-9" style="height:120px;border:1px dashed #333;text-align:center;">
+                    <img v-if="picture/52f01128dc6440388f71ff1b01a1602a.gif" :src="imgs" alt="" style="position:absolute;height:100%;width:100%;display:block;z-index:12;left:0;">
+                    <span style="color:#666;margin-top:50px;display:inline-block;">点击是上传二维码</span>
+                    <!-- <input type="file" accept="image/jpeg,image/jpg,image/png" id="upload" class="set-file" @change="upload()"> -->
+					<input type="file" id="photo" name="uploadfile" class="shangcanj">
+                </div>
+            </li>
+        </ul>
+		</foreach>
+    </form>
+    <div class="foot-btn">
+		<a href="#" class="btn" id="confirm" @click="send()">提交</a>
+    </div>
+</div>
+
+    </div>
+    <!-- js -->
+	
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            type: core.getParame('types'),
+            id: core.getParame('id'),
+            bank: [],
+            bank_name: '',
+            bank_account_num: '',
+            bank_bank_name: '',
+            bank_sub_branch: '',
+            name: '',
+            account_num: '',
+			
+			pay_pasw:'',
+			sms_code:'',
+			info:'',
+			
+            imgs: '',
+        },
+        computed: {
+
+        },
+        methods: {
+            getcode: function(){
+                var that = $(event.currentTarget);
+                if(that.attr('disabled')) return;
+
+                core.load("/index/publics/send.html", {
+                    mobile: this.info.mobile,
+                    types: 2,
+                }, function(res){
+                    console.log(res);
+                    if (res.code=='0') {
+                        that.html('60s').attr('disabled', true);
+                        var timer = setInterval(function(){
+                            var num = parseInt(that.text());
+                            if (num <= 1) {
+                                that.html('重新获取').removeAttr('disabled');
+                                clearInterval(timer);
+                            } else {
+                                that.html(--num+'s');
+                            }
+                        }, 1000);
+                    }
+                    core.toast(res.msg);
+                });
+            },
+			upload: function(){
+                var self = this;
+                var file = $('#upload')[0];
+                if (file.value == '' || file.value == null) {
+                    return core.toast("请上传图片");
+                }
+                if (!/\.(gif|jpg|jpeg|png|GIF|JPG|PNG)$/.test(file.value)) {
+                    file.value = "";
+                    return core.toast("图片类型必须是[.gif,jpeg,jpg,png]中的一种");
+                }
+                if (file.files[0].size > 2*1024*1024) {
+                    file.value = "";
+                    return core.toast("图片大小不能超过2M");
+                }
+                var formData = new FormData();
+                formData.append('file', file.files[0]);
+                formData.append('token', localStorage.uid);
+                var id = '';
+
+                $.ajax({
+                    url: "/index/upload/uploadimg.html",
+                    type: 'POST',
+                    data: formData,
+                    contentType: false, // 注意这里应设为false
+                    processData: false,
+                    beforeSend: function(){id=core.loading();},
+                    complete: function(){core.rmLoading(id);},
+                    success: function(res){
+                        console.log(res);
+                        if(res.code=='0'){
+                            file.value = '';
+                            self.imgs = res.info.url;
+                        }
+                        core.toast(res.msg);
+                    },
+                    error: function(XHR, textStatus, errorThrown) {
+                        core.toast('网络错误！');
+                    }
+                });
+            },
+            banklist: function(){
+                var self = this;
+
+                core.load("/index/setup/get_banklist.html", {}, function(res){
+                    console.log(res);
+                    if(res.code==0){
+                        self.bank=res.info;
+                        if(!self.id) self.bank_name=res.info[0];
+                    }else{
+                        core.toast(res.msg);
+                    }
+                })
+            },
+            send: function(){
+                var self = this;
+                var url = '';
+                var data = '';
+                if(self.type==2){
+                    if(!self.bank_name) return core.toast('请选择银行');
+                    if(!self.bank_account_num) return core.toast('请输入银行卡姓名');
+                    if(!self.bank_bank_name) return core.toast('请输入银行卡账号');
+                    if(!self.bank_sub_branch) return core.toast('请输入开户支行');
+					if(!self.pay_pasw) return core.toast('请输入支付密码');
+					//if(!self.sms_code) return core.toast('请输入短信验证码');
+					
+                    if(self.id){
+                        url="/index/setup/addreceivablesbankup.html";
+                    }else{
+                        url="/index/setup/addreceivablesbank.html";
+                    }
+                    data={
+                        name: self.bank_account_num,//名字
+                        account_num: self.bank_bank_name,//账号
+                        bank_name: self.bank_name,//银行卡名称
+                        sub_branch: self.bank_sub_branch,//支行
+						pay_pasw: self.pay_pasw,//支付密码
+						//sms_code: self.sms_code,//验证码
+                    };
+                }else{
+                    if(!self.name) return core.toast('请输入姓名');
+                    if(!self.account_num) return core.toast('请输入账号');
+                    if(!self.imgs) return core.toast('请上传收款二维码');
+					if(!self.pay_pasw) return core.toast('请输入支付密码');
+					//if(!self.sms_code) return core.toast('请输入短信验证码');
+                    if(self.id){
+                        url="/index/setup/addreceivablesup.html";
+                    }else{
+                        url="/index/setup/addreceivables.html";
+                    }
+                    data={
+                        types: self.type,
+                        name: self.name,
+                        account_num: self.account_num,
+                        imgs: self.imgs,
+						pay_pasw: self.pay_pasw,//支付密码
+						//sms_code: self.sms_code,//验证码
+                    };
+                }
+
+                if(self.id){
+                    data.id=self.id;
+                    data.types=self.type;
+                }
+
+                core.load(url, data, function(res){
+                    console.log(res);
+                    if(res.code==0){
+                        setTimeout(function(){
+                            window.history.go(-1);
+                        }, 300);
+                    }
+                    core.toast(res.msg);
+                })
+            },
+            detail: function(){
+                var self = this;
+                core.load("/index/setup/receivablesmsg.html", {
+                    id: self.id,
+                }, function(res){
+                    console.log(res);
+                    if(res.code==0){
+                        if(self.type==2){
+                            self.bank_name=res.info.bank_name;
+                            self.bank_account_num=res.info.names;
+                            self.bank_bank_name=res.info.account_num;
+                            self.bank_sub_branch=res.info.sub_branch;
+                        }else{
+                            self.name=res.info.names;
+                            self.account_num=res.info.account_num;
+                            self.imgs=res.info.imgs;
+                        }
+                    }else{
+                        core.toast(res.msg);
+                    }
+                })
+            },
+			member: function(){
+                var self = this;
+                core.load("/index/setup/index.html", {}, function(res){
+                    console.log(res);
+                    if(res.code==0){
+                        self.info=res.info;
+                    }else{
+                        core.toast(res.msg);
+                    }
+                })
+            },
+        },
+        mounted: function() {
+            (this.type==2) && this.banklist();
+            (this.id) && this.detail();
+			this.member();
+        }
+    });
+</script>
+
+</body>
+</html>

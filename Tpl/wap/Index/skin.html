@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>皮肤</title>
+<link rel="stylesheet" href="__WCSS__/style.css">
+<link rel="stylesheet" href="__WCSS__/meCen.css">
+<script src="__WJS__/jquery1.11.1.min.js"></script>
+<script src="__WJS__/iscroll.js"></script>
+<script type="text/javascript" src="__COM__/layer/layer.js"></script>
+<script type="text/javascript" src="__COM__/js/index.js"></script>
+<body class="bg96">
+<div class="header">
+    <div class="header_l"><a href="javascript:history.go(-1)"><img src="__WIMG__/jiant.png" alt=""></a></div>
+    <div class="header_c"><h2>皮肤</h2></div>
+    <div class="header_r"></div>
+</div>
+
+<div class=" ">
+    <div class="yugejil1 allskin">
+		<p class="tab" data-id="tab1">皮肤列表</p>
+        <p class="tab" data-id="tab2">我的皮肤</p>
+	</div>
+    <div class="bookmain" data-id="tab1">
+        <div class="scroller01">
+            <ul>
+				<volist name="list" id="vo">
+				<li>
+					<p class="bookimg">
+						<div class="setmeal_left"><img src="__WIMG__/index/tians.png" /></div>
+						<div class="setmeal_left01 skin">
+							<p></p>
+							<p>{$vo['title']}</p>
+							<p>所需积分{$vo['sell_num']}</p>
+							<p>积分加成{$vo['lingshi_plus']}%</p>
+						</div>
+						<div class="setmeal_right01">
+							<a href="#" data-id="{$vo['id']}" class="skin_exchange">兑换</a>
+						</div>
+					</p>
+				</li>
+				</volist>
+			</ul>
+			<input type="hidden" name="id">
+            <!--</notempty>--> 
+        </div>
+	</div>
+	<div class="bookmain" data-id="tab2" style="display:none;">
+		<div class="scroller01">
+			<ul>
+				<volist name="user_skin" id="vo">
+				<li>
+					<p class="bookimg">
+						<img src="__WIMG__/index/tians.png" />
+						<div class="setmeal_left01 skin">
+								<p></p>			
+								<p>{$vo['title']}</p>
+								<p>所需积分{$vo['sell_num']}</p>
+								<p>积分加成{$vo['lingshi_plus']}%</sppan>
+								</p>
+						</div>
+						<div class="setmeal_right01">
+							<!-- <a href="#">兑换123</a> -->
+						</div>
+					</p>
+				</li>
+				</volist>
+				
+			</ul> 
+			<!--</notempty>--> 
+		</div>
+	</div>
+</div>
+<!--浮动层-->
+<div class="ftc_wzsf" >
+	<div class="srzfmm_box" style="top:20%;">
+		<div class="qsrzfmm_bt clear_wl">
+			<img src="__WIMG__/xx_03.jpg" class="tx close fl">
+		   
+			<span class="fl goumaiduix">{$Think.lang.input_pwd}</span></div>
+		<div class="zfmmxx_shop">
+			
+		</div>
+		<ul class="mm_box">
+			<li></li><li></li><li></li><li></li><li></li><li></li>
+		</ul>
+	</div>
+	<div class="numb_box">
+		<div class="xiaq_tb">
+			<img src="__WIMG__/jftc_14.jpg" height="10"></div>
+		<ul class="nub_ggg">
+			<li><a href="javascript:void(0);" class="zf_num">1</a></li>
+			<li><a href="javascript:void(0);" class="zj_x zf_num">2</a></li>
+			<li><a href="javascript:void(0);" class="zf_num">3</a></li>
+			<li><a href="javascript:void(0);" class="zf_num">4</a></li>
+			<li><a href="javascript:void(0);" class="zj_x zf_num">5</a></li>
+			<li><a href="javascript:void(0);" class="zf_num">6</a></li>
+			<li><a href="javascript:void(0);" class="zf_num">7</a></li>
+			<li><a href="javascript:void(0);" class="zj_x zf_num">8</a></li>
+			<li><a href="javascript:void(0);" class="zf_num">9</a></li>
+			<li><a href="javascript:void(0);" class="zf_empty">{$Think.lang.emptya}</a></li>
+			<li><a href="javascript:void(0);" class="zj_x zf_num">0</a></li>
+			<li><a href="javascript:void(0);" class="zf_del">{$Think.lang.deleteo}</a></li>
+		</ul>
+	</div>
+	<div class="hbbj"></div>
+</div>
+<script>
+
+	// $('.skin_exchange').click(function(res){
+	// 	id = $(this).attr('data-id');
+	// 	$.post("{:U('Index/skin_exchange')}",{'id':id},function(res){
+	// 		if(res.code == 1){
+	// 			msg_alert(res.msg,res.url);
+	// 		}else if(res.code==0){
+	// 			if(res.url){
+	// 				msg_alert(res.msg,res.url);
+	// 			}else{
+	// 				msg_alert(res.msg);
+	// 			}
+	// 		}
+	// 	},'json');
+	// });
+
+
+	$('.tab').click(function(res){
+		tabs = $(this).attr('data-id');
+		bookmain = $(".bookmain");
+		for(var i=0;i<bookmain.length;i++){
+			book_tab = $(bookmain[i]).attr('data-id');
+			if(tabs == book_tab){
+				bookmain[i].style.display = 'block';
+			}else{
+				bookmain[i].style.display = 'none';
+			}
+		}
+	})
+</script>
+<script type="text/javascript">
+
+
+	$(function(){
+	//出现浮动层
+	$(".skin_exchange").click(function(){
+		id = $(this).attr('data-id');
+		
+		$("input[name='id']").val(id);
+	   $(".ftc_wzsf").show();
+	});
+	//关闭浮动
+	$(".close").click(function(){
+	   $(".ftc_wzsf").hide();
+	   $(".mm_box li").removeClass("mmdd");
+	   $(".mm_box li").attr("data","");
+	   i = 0;
+	});
+	   //数字显示隐藏
+	$(".xiaq_tb").click(function(){
+	   $(".numb_box").slideUp(500);
+	});
+	$(".mm_box").click(function(){
+	   $(".numb_box").slideDown(500);
+	});
+	   //----
+	var i = 0;
+	$(".nub_ggg li .zf_num").click(function(){
+		   
+	   if(i<6){
+		   $(".mm_box li").eq(i).addClass("mmdd");
+		   $(".mm_box li").eq(i).attr("data",$(this).text());
+		   i++
+		   if (i==6) {
+			 setTimeout(function(){
+			   var pwd = "";
+				   $(".mm_box li").each(function(){
+				   pwd += $(this).attr("data");
+			   });
+			  
+			   var id = $("input[name='id']").val();
+			   $.ajax({
+				   url:'{:U("Index/skin_exchange")}',
+				   type:'post',
+				   data:{'id':id,'pwd':pwd},
+				   dataType:'JSON',
+				   success:function (mes) {
+					if(mes.code == 1){
+						$(".ftc_wzsf").hide();
+						msg_alert(mes.msg,mes.url);
+					}else if(mes.code==0){
+						if(mes.url){
+							$(".ftc_wzsf").hide();
+							msg_alert(mes.msg,mes.url);
+						}else{
+							$(".ftc_wzsf").hide();
+							$(".mm_box li").removeClass("mmdd");
+							$(".mm_box li").attr("data","");
+							i = 0;
+							msg_alert(mes.msg);
+						}
+					}
+					   
+				   }
+			   })
+	
+	
+			 },100);
+		   };
+	   } 
+	});
+	   
+	$(".nub_ggg li .zf_del").click(function(){
+	   if(i>0){
+		   i--
+		   $(".mm_box li").eq(i).removeClass("mmdd");
+		   $(".mm_box li").eq(i).attr("data","");
+	   }
+	});
+	
+	$(".nub_ggg li .zf_empty").click(function(){
+	   $(".mm_box li").removeClass("mmdd");
+	   $(".mm_box li").attr("data","");
+	   i = 0;
+	});
+	
+	});
+</script>
+</body>
+</html>

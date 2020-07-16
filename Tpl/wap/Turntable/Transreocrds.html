@@ -1,0 +1,266 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>我的交易</title>
+<link rel="stylesheet" href="__WCSS__/style.css">
+<link rel="stylesheet" href="__WCSS__/meCen.css">
+<link rel="stylesheet" href="__WCSS__/digital.css">
+<link rel="stylesheet" href="__LAYERUI__/css/layui.css">
+<script src="__WJS__/jquery1.11.1.min.js"></script>
+<script type="text/javascript" src="__COM__/js/index.js" ></script>
+<script type="text/javascript" src="__COM__/layer/layer.js"></script>
+<script src="__LAYERUI__/layui.js"></script>
+<body class="bg96">
+    <div class="header">
+        <div class="header_l">
+        <a href="{:U('user/personal')}"><img src="__WIMG__/jiant.png" alt=""></a>
+        </div>
+           <div class="header_c"><h2>我的交易</h2></div>
+            
+    </div>
+
+       <div class="big_width100">
+				<div class="yugejil">
+                    <p class="tab tab1" style="border-bottom:2px #d09e59 solid;color:#d09e59; background:#fbf8ef;" data-id="tab1">买入</p>
+                    <p class="tab tab2" data-id="tab2">卖出</p>
+                    <p class="tab tab3" data-id="tab3">交易中</p>
+                    <p class="tab tab4" data-id="tab4">已完成</p>
+                </div>
+				<div class="scroller" data-id="tab1">
+					<ul>
+						<li>类型</li>
+						<li>手续费</li>
+						<li>积分数量</li>
+						<li>总价</li>
+						<li>时间</li>
+						<li>状态</li>
+                    </ul>
+                    <volist name="list" id="vo">
+                        <ul>
+                            <li><if condition="$vo['type'] eq 1">出售<else/>购买</if></li>
+                            <li><if condition="$vo['fee_num']">
+                                    {$vo['fee_num']}
+                                <else/>
+                                0
+                                </if></li>
+                            <li><?php $dprice = ($vo['tprice']-$vo['fee_num'])/$vo['dprice'];
+                            echo sprintf("%.4f",$dprice); ?></li>
+                            <li>{$vo['tprice']-$vo['fee_num']|sprintf="%.4f",###}</li>
+                            <li>{$vo['create_time']|date="Y/m/d",###}</li>
+                            <li>购买中</li>
+                        </ul>
+                    </volist>
+                    
+                </div>
+                <div class="scroller" data-id="tab2" style="display:none">
+					<ul>
+						<li>类型</li>
+						<li>手续费</li>
+						<li>积分数量</li>
+						<li>总价</li>
+                        <li>时间</li>
+						<li>状态</li>                        
+                    </ul>
+                    <volist name="list2" id="vo">
+                        <ul>
+                            <li><if condition="$vo['type'] eq 1">出售<else/>购买</if></li>
+                            <li>{$vo['fee_num']}</li>
+                            <li><?php $dprice = ($vo['tprice']-$vo['fee_num'])/$vo['dprice'];
+                            echo sprintf("%.4f",$dprice); ?></li>
+                            <li>{$vo['tprice']-$vo['fee_num']|sprintf="%.4f",###}</li>
+                            <li>{$vo['create_time']|date="Y/m/d",###}</li>
+                            <li>出售中</li>
+                        </ul>
+                    </volist>
+                    
+                </div>
+                <div class="scroller" data-id="tab3" style="display:none">
+					<ul>
+						<li>类型</li>
+						<li>对方</li>
+						<li>积分数量</li>
+						<li>总价</li>
+						<li>剩余时间</li>
+						<li>状态</li>
+                    </ul>
+                    <volist name="list3" id="vo">
+					<ul>
+						<li><if condition="$vo['type'] eq 1">购买<else/>出售</if></li>
+						<li><if condition="$vo['type'] eq 1">{$vo['pay_id']}<else/>{$vo['sell_id']}</if></li>
+						<li><?php $dprice = ($vo['tprice']-$vo['fee_num'])/$vo['dprice'];
+                            echo sprintf("%.4f",$dprice); ?></li>
+						<li>{$vo['tprice']-$vo['fee_num']}</li>
+                        <li><span id="order_time_{$vo['id']}" data-id="{$vo['id']}" data-endtime="{$vo['expiration_time']|date='Y-m-d H:i:s',###}" data-starttime="<?php echo date('Y-m-d H:i:s',time()); ?>" class="remain-time"></span>
+                            
+                        </li>
+						<li>
+                            <if condition="$vo['status'] eq 1 AND $vo['pay_id'] eq $uid">
+                                <a class="jiaoyistate" href="{:U('Turntable/recharge',array('id'=>$vo['id'],'type'=>$vo['type']))}">确认打款</a>
+                            <elseif condition="$vo['status'] eq 1 AND $vo['sell_id'] eq $uid"/>
+                                <a class="jiaoyistate" href="{:U('Turntable/recharge',array('id'=>$vo['id'],'type'=>$vo['type']))}">等待确认打款</a>
+                            <elseif condition="$vo['status'] eq 2 AND $vo['pay_id'] eq $uid"/>
+                                <a class="jiaoyistate" href="{:U('Turntable/recharge',array('id'=>$vo['id'],'type'=>$vo['type']))}">等待确认收款</a>
+                            <elseif condition="$vo['status'] eq 2 AND $vo['sell_id'] eq $uid"/>
+                                <a class="jiaoyistate" href="{:U('Turntable/recharge',array('id'=>$vo['id'],'type'=>$vo['type']))}">确认收款</a>
+                            </if>
+                        </li>
+                    </ul>
+                    </volist>
+                </div>
+                <div class="scroller" data-id="tab4" style="display:none">
+					<ul>
+						<li>类型</li>
+						<li>对方</li>
+						<li>积分数量</li>
+						<li>总价</li>
+						<li>时间</li>
+						<li>状态</li>
+                    </ul>
+                    <volist name="list4" id="vo">
+					<ul>
+						<li><if condition="$vo['type'] eq 1">出售<else/>购买</if></li>
+						<li> <if condition="$vo['sell_id'] eq $uid">{$vo['pay_id']}<elseif condition="$vo['pay_id'] eq $uid"/>{$vo['sell_id']}</if> </li>
+						<li><?php $dprice = ($vo['tprice']-$vo['fee_num'])/$vo['dprice'];
+                            echo sprintf("%.4f",$dprice); ?></li>
+						<li>{$vo['tprice']-$vo['fee_num']}</li>
+						<li>{$vo['end_time']|date="Y/m/d",###}</li>
+						<li>成功</li>
+                    </ul>
+                    </volist>
+				</div>
+		</div>   
+
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#hide").click(function(){
+            $("#p1").toggle(); //toggle() 方法切换元素的可见状态。 如果被选元素可见,则隐藏这些元素,如果被选元素隐藏,则显示这些元素。
+        });
+    });
+
+    $('.reveal-modal-bg').click(function () {
+        $("#p1").toggle();
+    })
+
+    $('.coin').click(function () {
+        $("#p1").toggle();
+    })
+
+
+    $('.tab').click(function(){
+		<!-- console.log($(this)); -->
+        tabs = $(this).attr('data-id');
+        scroller = $(".scroller");
+		tab_list = $(".tab");
+		
+        for(var i=0;i < scroller.length;i++){
+            tab = $(scroller[i]).attr('data-id');
+            if(tabs == tab){
+                $(tab_list[i]).css('background','#fbf8ef');
+				$(tab_list[i]).css('color','#d09e59');
+				$(tab_list[i]).css('border-bottom','#d09e59 2px solid');
+				$(scroller[i]).css('display','block');
+            }else{
+				$(tab_list[i]).css('background','#fbf8ef');
+				$(tab_list[i]).css('color','#000');
+				$(tab_list[i]).css('border-bottom','none');
+                $(scroller[i]).css('display','none');
+            }
+        }
+    })
+    </script>
+<script type="text/javascript">
+    var jsq = {
+        startdata: [],
+        enddata: [],
+        addStart: function (key, value) {
+            if (typeof (jsq.startdata[key]) == 'undefined') {
+                jsq.startdata[key] = value;
+            }
+        },
+        addEnd: function (key, value) {
+            if (typeof (jsq.enddata[key]) == 'undefined') {
+                jsq.enddata[key] = value;
+            }
+        },
+        addAll: function () {
+            $(".remain-time").each(function (i) {
+                var key = $(this).attr("data-id");
+                var startValue = $(this).attr("data-starttime");
+                var endValue = $(this).attr("data-endtime");
+                //添加计时元素
+                if (typeof (jsq.startdata[key]) == 'undefined') {
+                    jsq.addStart(key, startValue);
+                    jsq.addEnd(key, endValue);
+                }
+            });
+            //执行检测
+            jsq.subAll();
+        },
+        subAll: function () {
+            for (var index in jsq.startdata) {
+                var nowTime = new Date();
+                var startTime = new Date(jsq.startdata[index].toString().replace(/-/g, '/'));
+                var endTime = new Date(jsq.enddata[index].toString().replace(/-/g, '/'));
+
+                var S_timestamp = startTime.getTime() - nowTime.getTime();
+                var E_timestamp = endTime.getTime() - nowTime.getTime();
+
+                //console.log(startTime);
+                if (E_timestamp <= 1000) //小1秒
+                {
+                    $('#order_time_' + index).text('已结束');
+                    $('#order_time_' + index).css("color", "red");
+                    //$("#order_time_" + key).parent().parent().parent().parent().remove(); //删除
+                }
+                else if (E_timestamp > 0 && S_timestamp >= 1000) //大1秒 
+                {                    
+                    //提取时间元素
+                    var _day = Math.floor(S_timestamp / 1000 / 60 / 60 / 24);
+                    var _hour = Math.floor(S_timestamp / 1000 / 60 / 60 % 24);
+                    var _min = Math.floor(S_timestamp / 1000 / 60 % 60);
+                    var _sec = Math.floor(S_timestamp / 1000 % 60);
+
+                    if (_hour < 10) {
+                        _hour = "0" + _hour;
+                    }
+                    if (_min < 10) {
+                        _min = "0" + _min;
+                    }
+                    if (_sec < 10) {
+                        _sec = "0" + _sec;
+                    }
+                    $('#order_time_' + index).text(_hour + ":" + _min + ":" + _sec);
+                }
+                else {
+                    //提取时间元素
+                    var _day = Math.floor(E_timestamp / 1000 / 60 / 60 / 24);
+                    var _hour = Math.floor(E_timestamp / 1000 / 60 / 60 % 24);
+                    var _min = Math.floor(E_timestamp / 1000 / 60 % 60);
+                    var _sec = Math.floor(E_timestamp / 1000 % 60);
+
+                    if (_hour < 10) {
+                        _hour = "0" + _hour;
+                    }
+                    if (_min < 10) {
+                        _min = "0" + _min;
+                    }
+                    if (_sec < 10) {
+                        _sec = "0" + _sec;
+                    }
+                    $('#order_time_' + index).text(_hour + ":" + _min + ":" + _sec);
+                }
+            }
+        }
+    };
+
+    $(function () {
+        //倒计时
+        setInterval('jsq.addAll()', 1000);
+    });
+</script>
+
+</body>
+
+</html>
+

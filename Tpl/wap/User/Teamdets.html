@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>我的团队</title>
+<link rel="stylesheet" href="__WCSS__/style.css">
+<link rel="stylesheet" href="__WCSS__/meCen.css">
+<body class="bg96">
+
+<div class="header">
+    <div class="header_l">
+        <a href="javascript:history.go(-1)"><img src="__WIMG__/jiant.png" alt=""></a>
+    </div>
+    <div class="header_c"><h2>我的团队</h2></div>
+    <div class="header_r"></div>
+</div>
+
+<div class="big_width100 por" style="margin-top:0px;">
+
+    <form action="{:U('User/Teamdets')}" method="post" style="margin-top:7px">
+        <div class="zySearch">
+            <input id="searchInput" name="uinfo" class="search-input" value="{$uinfo}" type="text" placeholder="搜索UID/手机号码">
+            <button class="search-btn btn">搜索</button>
+        </div>
+        <!--<div class="zySearch">
+			<div style=" font-size: 14px;">直推消耗总积分:{$jifen|default='0'}个</div>
+        </div>-->
+    </form>
+
+    <foreach name="muinfo" item="v">
+        <div class="share_ul">
+			<div class="share_ul_l">
+				<img src="__IMGHEAD__/{$v['img_head']}" alt="">
+				<div class="share_p">
+					<p>{$v['username']}<span><if condition="$v['is_real_name'] eq 1">(已实名)<else/>(未实名)</if></span></p>
+					<p>UID:{$v['userid']}
+						<if condition="$v['vip_grade'] eq 0 ">
+						<span>暂无
+							<elseif condition="$v['vip_grade'] eq 1 OR $v['vip_grade'] eq 0" /> <span class=" dengjxiasa">普通会员
+							<elseif condition="$v['vip_grade'] eq 2" /><span class=" dengjxiasa">初级会员
+							<elseif condition="$v['vip_grade'] eq 3" /><span class=" dengjxiasa">中级会员
+							<elseif condition="$v['vip_grade'] eq 4" /><span class=" dengjxiasa">高级会员
+							
+							</if>
+						</span>
+					</p>
+					<p>手机:{$v['mobile']}</p>
+				</div>
+			</div>
+				<div class="shijin">
+					<p><span></span></p>
+					<span>{$v['reg_date']|date="Y-m-d H:i:s",###}</span>
+				</div>
+				
+        </div>
+        
+    </foreach>
+    </div>
+</div>
+</body>
+</html>

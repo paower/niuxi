@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>{$Think.lang.jiaoyi}</title>
+<link rel="stylesheet" href="__WCSS__/style.css">
+<link rel="stylesheet" href="__WCSS__/digital.css">
+<link rel="stylesheet" href="__WCSS__/zhifu.css">
+<link rel="stylesheet" href="__WCSS__/meCen.css">
+
+<script src="__WJS__/jquery1.11.1.min.js"></script>
+<script type="text/javascript" src="__COM__/js/index.js" ></script>
+<script type="text/javascript" src="__COM__/layer/layer.js"></script>
+<script type="text/javascript" src="__COM__/layer/export-data.js"></script>
+<!-- K线图 -->
+<script type="text/javascript" src="__KLINE__/jquery.min.kline.js"></script>
+<!-- <script type="text/javascript" src="__KLINE__/yxk.js"></script> -->
+
+<body class="bg96">
+	<div class="header">
+		<div class="header_l"><a href="{:U('User/personal')}"><img src="__WIMG__/jiant.png" alt=""></a></div>
+		<div class="header_c"><h2>市场</h2></div>
+		<div class="header_r">
+			<if condition="$type eq 1">
+				<a href="{:U('Turntable/Salebuys')}">发布订单</a>
+			<elseif condition="$type eq 2"/>
+				<a href="{:U('Turntable/Sell')}">发布订单</a>
+			</if>
+		</div>
+	</div>
+	
+	<!-- K线图 -->
+	<section class="sec wdzt">
+		<script type="text/javascript" src="__KLINE__/highcharts.src.js" ></script>
+		<div id="container" style="width: 100%; height: 200px; margin: 0 auto;"></div>
+	</section>
+	
+	<div class="investment_f">
+		<div class="zySearch">
+			<form action="{:U('Turntable/SearchTran')}" method="GET">
+				<input id="searchInput" name="uinfo" class="search-input" value="" type="text" placeholder="搜索手机号码">
+				<button class="search-btn btn">搜索</button>
+			</form>
+		</div>
+	  <div class="investment_f">
+		  <div class="investment_title">
+				<div style="border-right: 1px solid #f1f1f1;"> 
+				<a href="{:U('Turntable/Transaction',array('type'=>1))}">求购列表</a>
+				</div>
+				<div>
+				  <a href="{:U('Turntable/Transaction',array('type'=>2))}">卖出列表</a>
+				</div>
+		  </div>
+		</div>
+	</div>
+	<div class="usermarket">
+		<ul>
+			<volist name="list" id="vo">
+			<li>
+				<p class="marketlist">
+					<if condition="$vo['img_head'] eq 'toux-icon.png'">
+						<img src="__WIMG__/toux-icon.png" />
+					<else/>
+						<img src="/Public/home/wap/heads/{$vo['img_head']}" />
+					</if>
+					<div class="market_left">
+						<span class="markhead">
+							{$vo['username']}
+							<?php
+                           // echo substr_replace($vo['username'],'*',1,-1);
+                            ?>
+							</span><br />	
+						<span class="market_left01">
+							<span>单价 M{$vo['dprice']}</span><br />
+							<span>数量 <?php echo sprintf("%.4f",$vo['num']); ?>积分</span>
+						</span>
+					</div>
+					<div class="market_right">
+						<span>优秀</span><br />
+						<a href="{:U('Turntable/first',array('id'=>$vo['id']))}">
+							<if condition="$type eq 1">出售<else/>买入</if></a>
+
+						<if condition="$type eq 2 AND $vo['sell_id'] eq $uid">
+							<a href="javascript:void(0);" class="quxiao" data-type="{$vo['type']}" data-id="{$vo['id']}" >
+								取消
+							</a>
+						<elseif condition="$type eq 1 AND $vo['pay_id'] eq $uid"/>
+							<a href="javascript:void(0);" class="quxiao"  data-type="{$vo['type']}" data-id="{$vo['id']}">
+								取消
+							</a>
+						</if>
+					</div>
+				</p>
+			</li>
+			</volist>
+	</div>
+	
+</body>
+ 
+ 
+  <!--浮动层-->
+		    <div class="ftc_wzsf" >
+		        
+		        <div class="numb_box">
+		            <div class="xiaq_tb">
+		                <img src="__WIMG__/jftc_14.jpg" height="10"></div>
+		            <ul class="nub_ggg">
+		                <li><a href="javascript:void(0);" class="zf_num">1</a></li>
+		                <li><a href="javascript:void(0);" class="zj_x zf_num">2</a></li>
+		                <li><a href="javascript:void(0);" class="zf_num">3</a></li>
+		                <li><a href="javascript:void(0);" class="zf_num">4</a></li>
+		                <li><a href="javascript:void(0);" class="zj_x zf_num">5</a></li>
+		                <li><a href="javascript:void(0);" class="zf_num">6</a></li>
+		                <li><a href="javascript:void(0);" class="zf_num">7</a></li>
+		                <li><a href="javascript:void(0);" class="zj_x zf_num">8</a></li>
+		                <li><a href="javascript:void(0);" class="zf_num">9</a></li>
+		                <li><a href="javascript:void(0);" class="zf_empty">清空</a></li>
+		                <li><a href="javascript:void(0);" class="zj_x zf_num">0</a></li>
+		                <li><a href="javascript:void(0);" class="zf_del">删除</a></li>
+		            </ul>
+		        </div>
+		        <div class="hbbj"></div>
+		    </div>
+
+		 <script>
+			$('.quxiao').click(function(){
+					var type = $(this).attr('data-type');
+					var id = $(this).attr('data-id');
+					var token_code = $("input[name='token_code']").val()
+					$.post('/Turntable/quxiao',{'id':id,'type':type,'token_code':token_code},function(res){
+						if(res){
+							msg_alert(res.msg,res.url);
+						}else{
+							msg_alert(res.msg);
+						}
+					},'json');
+			})
+
+
+			// K线图
+			$(function(){
+				$('#retu').click(function(){
+				window.history.back(-1);
+				})
+			})
+			$(function(){
+				$(".gg_ul li").eq(0).clone().appendTo('.gg_ul')
+				var li_len = $(".gg_ul").children("li").length;
+				var ul_w = li_len * 100 + '%';
+				var li_w = 100 / li_len + '%'; 
+				var i = 0;
+				$(".gg_ul").css('width',ul_w);
+				$(".gg_ul").children("li").css('width',li_w);
+				setInterval(
+					function(){
+						i++;
+						if(i >= (li_len)){
+							$(".gg_ul").css('margin-left',0);
+							i=0
+							return;
+						}
+						$(".gg_ul").animate({'margin-left':-i*100+'%'},600);
+					
+					},2000
+				)
+			})
+
+
+
+			function jiajian(num1,num2){
+				$('#jian').click(function(){
+					
+					var mony_vlu = parseInt($('#mony').val());
+					if(mony_vlu > num2) {
+						$('#mony').val(mony_vlu-num1);
+						
+						
+					}
+				})
+				$('#jia').click(function(){
+					var mony_vlu = parseInt($('#mony').val());
+					$('#mony').val((mony_vlu+num1))
+				})
+				$('#mony').blur(function(){
+					if($(this).val() < num2){
+						$(this).val(num2)
+					}
+				})
+			}
+				
+			$(function () {
+				categories= [];
+				sell_num = [];
+				purch_num = [];
+				<volist name="kline" id="vo">
+					categories.push("{$key}");
+					sell_num.push({$vo['sell_num']});
+					purch_num.push({$vo['purch_num']});
+				</volist>
+				$('#container').highcharts({
+					chart: {
+						backgroundColor:'#202020'
+					},
+					style: {
+						color: '#fff'
+					},
+			//      tooltip: {
+			////          crosshairs: true,
+			////          shared: true
+			//      },
+					title: {
+						text: 'k币走势图',
+						x: -60, //center
+						y: 20,
+						style:{
+							color: '#fff',
+							fontSize:'14',
+							height: '16px'
+						},
+			//          floating:'true'
+					},
+					xAxis: {
+						categories: categories,
+						tickmarkPlacement: 'on'
+					},
+					yAxis: {
+						title: {
+							text: '单位 (元)'
+						},
+						plotLines: [{
+							value: 0,
+							width: 1,
+							color: '#808080'
+						}]
+					},
+					credits: {
+					enabled:false
+					},
+					exporting: {
+						enabled:false
+					},
+					tooltip: {
+						valueSuffix: ' 元',
+						crosshairs: true,
+						shared: true
+					},
+					series: [{
+						name: '买入',
+						color : "#BC332F",
+						data: sell_num
+					},{
+						name: '卖出',
+						color : "#248C85",
+						data: purch_num
+					}],
+					legend:{
+			//      	floating: true,
+						verticalAlign: 'top',
+						x: 40,
+						itemDistance: 10,
+						itemStyle: {color:'#fff'}
+					}
+				});
+			});
+		 </script>
+</html>
+

@@ -1,0 +1,124 @@
+<extend name="Public/layout" />
+<block name="style">
+	<link rel="stylesheet" type="text/css" href="__LYUI__/css/lyui.extend.min.css">
+	<link rel="stylesheet" type="text/css" href="__ADMIN_CSS__/style.css">
+</block>
+
+<block name="main">
+	<div id="main" class="col-xs-12 col-sm-9 main" style="overflow-y: scroll;">
+		<!-- 面包屑导航 -->
+		<ul class="breadcrumb">
+			<li><i class="fa fa-map-marker"></i></li>
+			<foreach name="_menu_tab['name']" item="tab_v">
+				<li class="text-muted">{$tab_v}</li>
+			</foreach>
+			<li class="text-muted">{:isset($info)?'修改':新增}</li>
+		</ul>
+
+		<!-- 主体内容区域 -->
+		<div class="tab-content ct-tab-content">
+			<div class="panel-body">
+				<div class="builder formbuilder-box">
+					<div class="form-group"></div>
+					<div class="builder-container">
+						<div class="row">
+							<div class="col-xs-12">
+								<form action="__SELF__" method="POST" class="form-horizontal form form-builder" enctype="multipart/form-data">
+									<div class="form-type-list">
+
+										<div class="form-group item_title ">
+											<label class="left control-label">星座名称：</label>
+											<div class="right">
+												<input type="text" class="form-control input" name="title" value="" placeholder="星座名称">
+											</div>
+										</div>
+										<div class="form-group item_title">
+										    <label class="left control-label" name="scroll_image">图片：</label>
+										    <div class="col-sm-9">
+										            <span style="color: brown;font-size: 12px">请上传750*360尺寸图片</span>
+										        <input type="file" name="scroll_image"/>  
+										        <notempty name="$scroll.scroll_image">
+										                <img width="273px" height="120px" src="{$scroll.scroll_image|get_cover_url}">       
+										        </notempty>
+										    </div>
+										</div>
+										<div class="form-group item_title ">
+											<label class="left control-label">价值区域：</label>
+											<div class="right">
+												<input type="text" class="form-control input" name="value_region" value="" placeholder="请用'-'号隔开">
+											</div>
+										</div>
+										<div class="form-group item_title ">
+											<label class="left control-label">预约时间：</label>
+											<div class="right">
+												<input type="text" class="form-control input" name="yuyue_time_region" value="" placeholder="请用'-'号隔开">
+											</div>
+										</div>
+										<div class="form-group item_title ">
+											<label class="left control-label">收藏时间：</label>
+											<div class="right">
+												<input type="text" class="form-control input" name="time_region" value="" placeholder="请用'-'号隔开">
+											</div>
+										</div>
+
+										<div class="form-group item_title ">
+											<label class="left control-label">预约消耗积分：</label>
+											<div class="right">
+												<input type="number" class="form-control input text" name="book_consume" value="" placeholder="预约消耗积分">
+											</div>
+										</div>
+
+										<div class="form-group item_title ">
+											<label class="left control-label">抢购消耗积分：</label>
+											<div class="right">
+												<input type="number" class="form-control input text" name="rush_consume" value="" placeholder="收藏消耗积分">
+											</div>
+										</div>
+
+										<div class="form-group item_title ">
+											<label class="left control-label">收益时间（天）：</label>
+											<div class="right">
+												<input type="number" class="form-control input" name="profit_day" value="" placeholder="收益时间(天)">
+											</div>
+										</div>
+
+										<div class="form-group item_title ">
+											<label class="left control-label">收益百分比（%）：</label>
+											<div class="right">
+												<input type="number" class="form-control input text" name="profit_value" value="" placeholder="收益百分比（%）">
+											</div>
+										</div>
+
+										<div class="form-group item_title ">
+											<label class="left control-label">收藏消耗积分：</label>
+											<div class="right">
+												<input type="number" class="form-control input text" name="feed_consume" value="" placeholder="收藏消耗积分">
+											</div>
+										</div>
+										<div class="form-group item_title ">
+											<label class="left control-label">最多使用数量：</label>
+											<div class="right">
+												<input type="text" class="form-control input text" name="max_size" value="" placeholder="最多使用数量">
+											</div>
+										</div>
+
+
+										<div class="form-group"></div>
+										<div class="form-group bottom_button_list">
+											<button class="btn btn-primary" type="submit">确定</button>
+											<a class="btn btn-danger return" onclick="javascript:history.back(-1);return false;">取消</a>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</block>
+
+<block name="script">
+	<script type="text/javascript" src="__LYUI__/js/lyui.extend.min.js"></script>
+</block>

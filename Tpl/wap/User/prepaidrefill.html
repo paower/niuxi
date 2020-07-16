@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>话费充值</title>
+<link rel="stylesheet" href="__WCSS__/style.css">
+<link rel="stylesheet" href="__WCSS__/meCen.css">
+<script src="__WJS__/jquery1.11.1.min.js"></script>
+<script type="text/javascript" src="__COM__/layer/layer.js"></script>
+<script type="text/javascript" src="__COM__/js/index.js" ></script>
+<body class="bg96 ">
+<style>
+    .on{
+        background-color:#ec9723; 
+    }    
+</style>
+<div class="header">
+    <div class="header_l">
+        <a href="javascript:history.go(-1)"><img src="__WIMG__/jiant.png" alt=""></a>
+    </div>
+    <div class="header_c"><h2>话费充值</h2></div>
+	<div class="header_r"><a href="{:U('User/phone_record')}">充值记录</a></div>
+</div>
+
+<div class="big_width100">
+    <div class="prepaidrefill">
+        
+		<div class="nic_xiu">
+			<input type="text" name="mobile_number" class="telphone" value="{$mobile}" placeholder="请输入手机号" >
+		</div>
+		<h4>充话费</h4>
+        <ul class="recharge">
+            <li class="telephone on" style="color:#ffffff;">
+                <span style="color:#ffffff">10元</span><br />售价<a href="javascript:void(0);" class="price_num" style="color:#ffffff;"><?php echo sprintf('%.4f',10/$sell_new_price);?></a>积分
+            </li>
+            <li class="telephone" ><span>30元</span><br />售价<a href="javascript:void(0);" class="price_num" style="color:#118ee9;"><?php echo sprintf('%.4f',30/$sell_new_price);?></a>积分</li>
+            <li class="telephone" ><span>50元</span><br />售价<a href="javascript:void(0);" class="price_num" style="color:#118ee9;"><?php echo sprintf('%.4f',50/$sell_new_price);?></a>积分</li>
+            <li class="telephone" ><span>100元</span><br />售价<a href="javascript:void(0);" class="price_num" style="color:#118ee9;"><?php echo sprintf('%.4f',100/$sell_new_price);?></a>积分</li>
+            <li class="telephone" ><span>200元</span><br />售价<a href="javascript:void(0);" class="price_num" style="color:#118ee9;"><?php echo sprintf('%.4f',200/$sell_new_price);?></a>积分</li>
+        </ul>
+    </div>
+	<div class="recharge_tj">
+			<a href="#" class="submit">提交</a>
+		</div>
+</div>
+</body>
+<script>
+    $('.telephone').click(function(){
+        telephone = $('.telephone');
+        for(var i = 0;i<telephone.length;i++){
+            telephone[i].classList.remove('on');
+            $(telephone[i]).css('color','#118ee9');
+            $(telephone[i]).children('span').css('color','red');
+            $(telephone[i]).children('a').css('color','#118ee9');
+    
+        }
+        $(this).css('color','#ffffff');
+        $(this).children('span').css('color','#ffffff');
+        $(this).children('a').css('color','#ffffff');
+        $(this).get(0).classList.add('on');
+    })
+
+    $('.submit').click(function(res){
+        price_num = $('.on').find('.price_num').text();
+        mobile_number = $('input[name="mobile_number"]').val();
+        if(mobile_number==''){
+            msg_alert('请输入手机号');
+            return;
+        }
+        $.post('{:U("User/phone_recharge")}',{'price_num':price_num,'mobile_number':mobile_number},function(res){
+            if(res.status == 1){
+                msg_alert(res.message,res.url);
+            }else{
+                msg_alert(res.message);
+            }
+        },'json');
+    });
+</script>
+</html>

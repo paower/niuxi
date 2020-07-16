@@ -1,0 +1,98 @@
+<extend name="Public/layout"/>
+<block name="style" >
+    <link rel="stylesheet" type="text/css" href="__LYUI__/css/lyui.extend.min.css">
+    <link rel="stylesheet" type="text/css" href="__ADMIN_CSS__/style.css">
+</block>
+
+<block name="main">
+   <div id="main" class="col-xs-12 col-sm-9 main" style="overflow-y: scroll;">
+        <!-- 面包屑导航 -->
+        <ul class="breadcrumb">
+            <li><i class="fa fa-map-marker"></i></li>
+            <foreach name="_menu_tab['name']" item="tab_v" >
+            <li class="text-muted">{$tab_v}</li>
+            </foreach>
+            <li class="text-muted">{:isset($info)?'修改':新增}</li>
+        </ul>
+
+        <!-- 主体内容区域 -->
+        <div class="tab-content ct-tab-content">
+            <div class="panel-body">
+                <div class="builder formbuilder-box">
+                    <div class="form-group"></div>
+                    <div class="builder-container" >
+                            <div class="row" >
+                                <div class="col-xs-12">
+                                    <form action="__SELF__" method="post" class="form-horizontal form form-builder" enctype="multipart/form-data">
+                                        <div class="form-type-list">
+
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">星级名称：</label>
+                                                <div style="width:200px" class="input-group">
+                                                   <input type="text" class="form-control" name="title" value="" placeholder="星级名称" >
+                                                </div>
+                                            </div>
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">有效直推人数：</label>
+                                                <div style="width:200px" class="input-group">
+                                                    <input type="text" class="form-control" name="push_num" value="" placeholder="有效直推人数" >
+                                                </div>
+                                            </div>
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">团队活跃度：</label>
+                                                <div style="width:200px" class="input-group">
+                                                    <input type="text" class="form-control" name="team_active" value="" placeholder="团队活跃度" >
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">本人活跃度：</label>
+                                                <div style="width:200px" class="input-group">
+                                                    <input type="text" name="user_active" class="form-control" placeholder="本人活跃度" value="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">共享全球手续费：</label>
+                                                <div style="width:200px" class="input-group">
+                                                    <input type="text" name="get_fee" class="form-control" placeholder="共享全球手续费" value="">
+                                                    <span class="input-group-addon">%</span>
+                                                </div>
+                                            </div>
+                                           <!--  <div class="form-group item_title ">
+                                                <label class="left control-label">邮箱：</label>
+                                                <div class="right">
+                                                    <input type="text" class="form-control input text" name="email" value="{$info.email}" placeholder="邮箱">
+                                                </div>
+                                            </div> -->
+                                        <div class="form-group item_title ">
+                                            <label class="left control-label">奖励星座：</label>
+                                            <div style="width:200px" class="input-group">
+                                                <select  class="form-control" name="scroll_id">
+                                                    <option value="0">无奖励</option>
+                                                    <volist name="scroll" id="vo">
+                                                        <option value="{$vo['id']}">{$vo['title']}</option>
+                                                    </volist>
+                                                </select>
+                                            </div>
+                                        </div>
+
+             
+                                        <div class="form-group"></div>
+                                        <div class="form-group bottom_button_list">
+                                            <button class="btn btn-primary submit ajax-post" type="submit" target-form="form-builder">确定</button>
+                                            <a class="btn btn-danger return" onclick="javascript:history.back(-1);return false;">取消</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>                   
+</div>
+</block>
+
+<block name="script">
+    <script type="text/javascript" src="__LYUI__/js/lyui.extend.min.js"></script>
+</block>

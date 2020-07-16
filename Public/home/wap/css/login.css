@@ -1,0 +1,47 @@
+/* login */
+.bgf5{background:url(../images/appxz-bg.png) no-repeat center;}
+.header_back {position: absolute;top: 18px;left: 10px;}
+.header_back img{width: 1.3rem;}
+.login-container{width: 100%;}
+.language{width: 100%;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: end;-ms-flex-pack: end;justify-content: flex-end;padding: .5rem .3rem}
+.yuyan{font-size: .32rem;color: #fff;display: flex;align-items: center;}
+.yuyan select{font-size: .28rem;background: none;border: none;color: #fff;outline: none;} 
+.yuyan option{color: #000;}
+.logo{ width:100%; text-align: center;position: relative;top: -0.95rem}
+.logo img{ width: 12.9rem; margin: 77px 0 30px 0; }
+.formbox{ width: 85%; margin: 0 auto; margin-top: 1rem; text-align: center; border-radius:8px; -webkit-border-radius:8px; -moz-border-radius:8px; -ms-border-radius:8px; -o-border-radius:8px; }
+.formlogin{width:85%;margin: 0 auto;color: #fff;font-size: .83rem;position: relative;top: -0.55rem;}
+.input_box{width: 100%;margin-top: .5rem;  border-bottom: 1px solid #fff; color:#fff;}
+.input_box i{
+	font-size: 20px;
+    width: 5%;
+    padding-top: 11px;
+    float: left;
+}
+.input_box input{ width: 85%; padding: .3rem 0;font-size:0.83rem; background: none; text-align: left; margin-top: 1rem; color: #fff;}
+.inde-btn button{ margin:2rem 0;width: 100%; padding: .5rem 0;background: none;color: #fff; border: 1px solid #fff; border-radius:.1rem; -webkit-border-radius:.1rem; -moz-border-radius:.1rem; -ms-border-radius:.1rem; -o-border-radius:.1rem; }
+.extra_btn{display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;}
+.extra_btn a{color: #fff;}
+#loginForm input{
+	color:#fff;
+
+}
+
+/* register */
+.register-title{color: #fff;font-size: 1.2rem;text-align: center;padding: 1rem 0;letter-spacing: .1rem;text-indent: .1rem;}
+.formrgister{width: 80%;margin:0 auto;padding-top: .2rem;font-size: .88rem;}
+.register-container .formbox{margin-top: 33px;}
+.formrgister .input_box{margin-top: .3rem;}
+.formrgister .input_box p{color: #fff}
+.formrgister .inde-btn button{margin: 1.5rem 0;}
+.register-container .extra_btn{-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;margin: .5rem 0 1rem 0;}
+.input_box .input-code{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;-webkit-box-align: center;-ms-flex-align: center;align-items: center;margin-top: .2rem;}
+.input_box .input-code input{width: 60%;margin: 0;}
+.input_box .input-code img{ width: 35%;height: 1.8rem; border-radius:.1rem; -webkit-border-radius:.1rem; -moz-border-radius:.1rem; -ms-border-radius:.1rem; -o-border-radius:.1rem; }
+.input_box .phone-code{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.input_box .phone-code input{width:50%;height:2rem;border-radius:0;}
+.input_box .phone-code a{width: 50%;height:1.8rem; display: block;color:#fff;margin-top: .2rem;padding: .3rem 0;background: #ee2525;font-size:.88rem;border-radius:.3rem;}
+/* getpsw */
+.formgetpsw .input_box p{color: #fff}
+.formgetpsw .input_box {margin-top: .5rem;}
+.getpwd-title{padding-top:1rem}

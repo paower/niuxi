@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>用户等级</title>
+<link rel="stylesheet" href="__WCSS__/style.css">
+<link rel="stylesheet" href="__WCSS__/meCen.css">
+<body class="bg96">
+
+<div class="header">
+    <div class="header_l">
+        <a href="javascript:history.go(-1)"><img src="__WIMG__/jiant.png" alt=""></a>
+    </div>
+    <div class="header_c"><h2>用户等级</h2></div>
+    <div class="header_r"></div>
+</div>
+ <div class="service_charge" style=" width:100%;text-align:center;">
+        <p>当前交易手续费<span>{$tran_fee}%</span></p>
+ </div>
+<div class="teaminfor01">
+        <div class="scroller01">
+            <ul>
+				<volist name="list" id="vo">
+				<li>
+					<p class="teaminformain">
+						<img src="{$vo['img']}" />
+						<div class="teaminfor_left">
+								<b>{$vo['title']}</b><br />
+								<if condition="$vo['is_real_name'] eq 0">
+								<span>未实名认证</span>
+								<elseif condition="$vo['push_num'] eq 0"/>
+								<span>已认证</span>
+								<elseif condition="$vo['push_num'] egt 0"/>
+								<span>直推实名认证人数≥{$vo['push_num']}</span>
+								</if>
+							</span>
+						</div>
+						<div class="teaminfor_right">
+							<if condition="$vo['is_real_name'] eq 0">
+							<span>限制交易</span>
+							<else/>
+							<span>交易手续费{$vo['tran_fee']}%</span>
+							</if>
+						</div>
+					</p>
+				</li>
+				</volist>
+				<!-- <li>
+					<p class="teaminformain">
+						<img src="__WIMG__/denbgji_01.png" />
+						<div class="teaminfor_left">
+								<b>用户等级Lv1</b><br />
+								<span>已认证</span>
+							</span>
+						</div>
+						<div class="teaminfor_right">
+							<span>交易手续费50%</span>
+						</div>
+					</p>
+				</li>
+				<li>
+					<p class="teaminformain">
+						<img src="__WIMG__/denbgji_02.png" />
+						<div class="teaminfor_left">
+								<b>用户等级Lv2</b><br />
+								<span>直推实名认证人数≥2</span>
+							</span>
+						</div>
+						<div class="teaminfor_right">
+							<span>交易手续费35%</span>
+						</div>
+					</p>
+				</li>
+				<li>
+					<p class="teaminformain">
+						<img src="__WIMG__/denbgji_03.png" />
+						<div class="teaminfor_left">
+								<b>用户等级Lv3</b><br />
+								<span>直推实名认证人数≥5</span>
+							</span>
+						</div>
+						<div class="teaminfor_right">
+							<span>交易手续费25%</span>
+						</div>
+					</p>
+				</li>
+				<li>
+					<p class="teaminformain">
+						<img src="__WIMG__/denbgji_04.png" />
+						<div class="teaminfor_left">
+								<b>用户等级Lv4</b><br />
+								<span>直推实名认证人数≥50</span>
+							</span>
+						</div>
+						<div class="teaminfor_right">
+							<span>交易手续费22%</span>
+						</div>
+					</p>
+				</li>
+				<li>
+					<p class="teaminformain">
+						<img src="__WIMG__/denbgji_05.png" />
+						<div class="teaminfor_left">
+								<b>用户等级Lv5</b><br />
+								<span>直推实名认证人数≥100</span>
+							</span>
+						</div>
+						<div class="teaminfor_right">
+							<span>交易手续费20%</span>
+						</div>
+					</p>
+				</li>
+				<li>
+					<p class="teaminformain">
+						<img src="__WIMG__/denbgji_06.png" />
+						<div class="teaminfor_left">
+								<b>用户等级Lv6</b><br />
+								<span>直推实名认证人数≥1000</span>
+							</span>
+						</div>
+						<div class="teaminfor_right">
+							<span>交易手续费18%</span>
+						</div>
+					</p>
+				</li>
+				<li>
+					<p class="teaminformain">
+						<img src="__WIMG__/denbgji_07.png" />
+						<div class="teaminfor_left">
+								<b>用户等级Lv7</b><br />
+								<span>直推实名认证人数≥5000</span>
+							</span>
+						</div>
+						<div class="teaminfor_right">
+							<span>交易手续费16%</span>
+						</div>
+					</p>
+				</li> -->
+		</ul>
+	</div>
+</div>
+</body>
+</html>
