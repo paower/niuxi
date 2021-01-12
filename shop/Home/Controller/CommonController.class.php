@@ -16,6 +16,17 @@ class CommonController extends Controller {
 
         $uid = session('userid');
 
+        //检测激活
+        $list = M('user')->where("activate = 0")->select();
+        $needjifen = M('config')->where("name='needjifen'")->getField('value');
+        foreach ($list as $k => $v) {
+            $jifen = $v['total_lingshi'];
+            $id = $v['userid'];
+            if($jifen >= $needjifen){
+                M('user')->where("userid = $id")->setField('activate',1);
+            }
+        }
+
        //时间到期增加收益
 		$lingqu = M('record')->where(array('in_uid'=>$uid,'is_lin'=>0,'record_status'=>4))->select();
 		
@@ -36,6 +47,8 @@ class CommonController extends Controller {
                 $piddata['get_type'] = 22;
                 $piddata['now_nums'] = $shouyinums+$yue;
                 $addpid = M('tranmoney')->add($piddata);
+
+                M('user')->where("userid = $uid")->setInc('all_sy',$shouyinums);
 				
 				
 				//收益自动挂单

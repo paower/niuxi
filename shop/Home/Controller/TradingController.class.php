@@ -12,6 +12,13 @@ class TradingController extends CommonController {
     }
 
    public function SellCentr(){
+        //是否开启转让
+        $is_close = M('config')->where("name='close_zr'")->getField('value');
+        if($is_close == 0){
+            $txt = M('config')->where("name='close_zr'")->getField('tip');
+            echo "<meta http-equiv='Content-Type'' content='text/html; charset=utf-8'>";
+            echo "<script>alert('".$txt."');location.href='".U('user/Personal')."';</script>";
+        }
         //是否有设置默认银行卡
         $uid = session('userid');
         $cid = trim(I('cid'));
@@ -97,7 +104,7 @@ class TradingController extends CommonController {
             //生成订单
             $data['out_uid'] = $uid;
             $data['record_form'] = 5;
-            $data['record_price'] = $zichang;
+            $data['record_price'] = $zichang *0.4;
             $data['record_type'] = $record_type;
             $data['generate_time'] = time();
             $data['record_status'] = 1;
@@ -123,7 +130,17 @@ class TradingController extends CommonController {
                 if($sellnums == 1){
 					M('user')->where(array('userid'=>$uid))->setDec('total_active',$zichang);
 				}else if($sellnums == 2){
-					M('user')->where(array('userid'=>$uid))->setDec('total_tuiguang',$zichang);
+					$payout = M('user')->where(array('userid'=>$uid))->setDec('total_tuiguang',$zichang);
+
+                    $payout = $zichang *0.4;
+                    M('user')->where(array('userid'=>$uid))->setInc('geo',$payout);
+                    $info['uid'] = $uid;
+                    $info['type'] = 2;
+                    $info['num'] = $payout;
+                    $info['genre'] = 1;
+                    $info['time'] = time();
+                    $info['now_num'] = M('user')->where("userid = $uid")->getField('geo');
+                    $shopid = M('geo_details')->add($info);
 				}
                 ajaxReturn('订单创建成功',1);
             }

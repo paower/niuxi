@@ -1858,10 +1858,15 @@ class TurntableController extends CommonController {
                 ajaxReturn('该订单状态错误');
             }
 
+            M('user')->where(array('userid'=>$deal['in_uid']))->setField('is_vip',2);
+
             //推荐奖
-            $tuijian = tuiguang($deal['in_uid'],$deal['record_price'],$deal['profit_value']);
+            $tuijian = tuiguang($deal['in_uid'],$deal['record_price']);
             //团队收益
-            $steamsy = steamsy($deal['in_uid'],$deal['record_price'],$deal['profit_value']);
+            $steamsy = steamsy($deal['in_uid'],$deal['record_price']);
+            //商城币
+            $geo = geo($deal['in_uid'],$deal['record_price'],1);
+
 
             $save['complete_time'] = time();
             $save['record_status'] = 4;

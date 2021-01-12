@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8" />
-		<title>星座空间</title>
+		<title>纽西之谜</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 		<meta name="format-detection" content="telephone=no">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -414,7 +414,7 @@
 	<body>
 		<div id="app">
 			<div class="fish-head">
-				<h3 class="head-tit"><span>星座空间</span></h3>
+				<h3 class="head-tit"><span>纽西之谜</span></h3>
 			</div>
 			<div class="fish-main">
 				<div class="fish-notice clearfix">
@@ -459,7 +459,7 @@
 
 								</div>
 								<div class="info-item">
-									收藏时间：
+									抢购时间：
 									<span>{$vo['start_time']}-{$vo['end_time']}</span>
 								</div>
 								<div class="info-item">
@@ -473,7 +473,10 @@
 										收藏消耗积分：
 										<span>{$vo['feed_consume']}</span>
 									</div>
-
+									<div class="info-item">
+										倒计时：
+                    					<span class="countdown" date-time="{$vo.daojishi}">0时00分00秒</span>
+									</div>
 								</div>
 							</div>
 							<div class="col-2 act_box">
@@ -483,6 +486,8 @@
 									<a href="javascript:;" onclick="adopt({$vo.id})" class="list-btn gray">收<br /><br />藏</a> 
 								<elseif condition="$vo.state == 3" /> 
 									<a href="javascript:;" class="list-btn gray">等<br />待<br />中</a>
+								<elseif condition="$vo.state == 4" /> 
+									<a href="javascript:;" class="list-btn gray">预<br />约<br />中</a>
 								</if>
 							</div>
 						</li>
@@ -515,11 +520,11 @@
 			<div class="fish-foot clearfix">
 				<a href="{:U('Index/index')}" class="col-4 act">
 					<i class="layui-icon layui-icon-star" style="font-size: 23px;display: block; color: #f727ef;"></i>
-					<span>星座空间</span>
+					<span>纽西之谜</span>
 				</a>
 				<a href="{:U('Index/pond')}" class="col-4">
 					<i class="layui-icon layui-icon-chart" style="font-size: 23px;display: block; color: #f727ef;"></i>
-					<span>我的星座</span>
+					<span>已购产品</span>
 				</a>
 				<a href="{:U('User/Personal')}" class="col-4">
 					<i class="layui-icon layui-icon-username" style="font-size: 23px;display: block; color: #f727ef;"></i>
@@ -530,11 +535,59 @@
 		<!-- js -->
 		<script type="text/javascript" src="__WJS__/jquery.glide.min.js"></script>
 		<script>
+			$(function(){
+				$('.countdown').each(function () {	//countdown是显示时间元素
+					let setTimer = null;
+					let Time = $(this).attr('date-time'); //获取每个倒计时的总秒数
+					if(Time<0 || Time>120){
+						$(this).parent().hide();
+					}
+					let obj = $(this);
+					// console.log(Time);
+					setTimer = setInterval(function () {
+						Time--;
+						if(Time>=0){
+							timer(Time, setTimer, obj);
+						}
+					}, 1000);
+				})
+			})
+			function timer(Time, setTimer,obj) {
+				if (Time > 0) {
+					let int = null;
+					let $time = obj;
+					Time--;
+					// console.log(Time);
+					let days = parseInt((Time / 3600) / 24); //计算剩余的天数 
+					let hours = parseInt((Time / 3600) % 24); //计算剩余的小时 
+					let minutes = parseInt((Time / 60) % 60); // 分
+					let seconds = parseInt((Time % 60)); // 秒
 
+					function checkTime(i) { //将0-9的数字前面加上0\.  1变为01
+						if (i < 10) {
+							return '0' + i;
+						} else {
+							return i;
+						}
+					}
+
+					days = checkTime(days);
+					hours = checkTime(hours);
+					minutes = checkTime(minutes);
+					seconds = checkTime(seconds);
+
+					$time.html(`${days}:${hours}:${minutes}:${seconds}`);
+				} else {
+					clearInterval(setTimer);
+					let $time = $('.countdown').html(`预约结束`);
+					setTimeout(function(){window.location.reload();},1000);
+					
+				}
+			}
 			//收藏
 			function adopt(id){
 				$('.status_ion').css('display','inline');
-				$('.wait').css('display','inline');
+				// <!-- $('.wait').css('display','inline'); -->
 				$.ajax({
 					type:'post',
 					url:"{:U('Index/adpot')}",
@@ -542,53 +595,53 @@
 					success:function(msg){
 						//console.log(msg);
 						if(msg.Boolean){
-							setTimeout(function(){
-								$('.wait').css('display','none');
-							},5000);
+							// <!-- setTimeout(function(){ -->
+							// 	<!-- $('.wait').css('display','none'); -->
+							// <!-- },5000); -->
 							setTimeout(function(){
 								$('.success').css('display','inline');
-							},5001)
+							},)
 						}else{
 							
-							setTimeout(function(){
-								$('.wait').css('display','none');
-							},5000);
+							// <!-- setTimeout(function(){ -->
+							// 	<!-- $('.wait').css('display','none'); -->
+							// <!-- },5000); -->
 							setTimeout(function(){
 								if(msg.code==99){
 									core.toast(msg.text);
 								}
 								$('.fail').css('display','inline');
-							},5001)
+							},)
 						}
 					}
 				});
 				
 			}
 			function yyue(id){
-				$('.status_ion').css('display','inline');
-				$('.wait').css('display','inline');
+				// $('.status_ion').css('display','inline');
+				// $('.wait').css('display','inline');
 				$.ajax({
 					type:'post',
 					url:"{:U('Index/yyue')}",
 					data:{id:id},
 					success:function(msg){
 						if(msg.Boolean){
-							setTimeout(function(){
-								$('.wait').css('display','none');
-								$('.status_ion').css('display','none');
-							},5000);
+							// <!-- setTimeout(function(){ -->
+							// 	<!-- $('.wait').css('display','none'); -->
+							// 	<!-- $('.status_ion').css('display','none'); -->
+							// <!-- },5000); -->
 							setTimeout(function(){
 								core.toast(msg.text);
-							},5001);
+							},);
 							
 						}else{
-							setTimeout(function(){
-								$('.wait').css('display','none');
-								$('.status_ion').css('display','none');
-							},5000);
+							// <!-- setTimeout(function(){ -->
+							// 	<!-- $('.wait').css('display','none'); -->
+							// 	<!-- $('.status_ion').css('display','none'); -->
+							// <!-- },5000); -->
 							setTimeout(function(){
 								core.toast(msg.text);
-							},5001);
+							},);
 						}
 					}
 				});

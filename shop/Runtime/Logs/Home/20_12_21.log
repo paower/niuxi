@@ -1,0 +1,2434 @@
+[ 2020-12-21T15:05:42+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2020-12-21T15:06:06+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [1049] Unknown database '12xin2'
+
+[ 2020-12-21T15:06:08+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [1049] Unknown database '12xin2'
+
+[ 2020-12-21T15:06:08+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: SQLSTATE[HY000] [1049] Unknown database '12xin2'
+
+[ 2020-12-21T15:06:12+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0050s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+
+[ 2020-12-21T15:06:12+08:00 ] 127.0.0.1 /Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0040s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-12-21T15:06:42+08:00 ] 127.0.0.1 /Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0040s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2020-12-21T15:06:46+08:00 ] 127.0.0.1 /logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-12-21T15:07:19+08:00 ] 127.0.0.1 /adminxin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载控制器:Adminxin
+
+[ 2020-12-21T15:07:49+08:00 ] 127.0.0.1 /Uploads/2020-07-22/1595396086149867.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-12-21T15:07:49+08:00 ] 127.0.0.1 /Uploads/2020-07-22/1595396086159823.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-12-21T15:45:10+08:00 ] 127.0.0.1 /Uploads/2020-07-22/1595396086149867.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-12-21T15:45:10+08:00 ] 127.0.0.1 /Uploads/2020-07-22/1595396086159823.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-12-21T15:45:17+08:00 ] 127.0.0.1 /Uploads/2020-07-22/1595396086149867.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-12-21T15:45:17+08:00 ] 127.0.0.1 /Uploads/2020-07-22/1595396086159823.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-12-21T15:55:49+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0060s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0060s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_record` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `ysk_record` WHERE `in_uid` = 8803 AND `is_lin` = 0 AND `record_status` = 4  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0050s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_max' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_min' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8803' OR `out_uid` = '8803' ) AND `record_status` = 6 AND `pipeitime` <= 1608530146  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8803' OR `out_uid` = '8803' ) AND `record_status` = 7 AND `getmoney_time` <= 1608530146  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_yuyue` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `ysk_yuyue` WHERE `time` <= 1608480000 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE `record_status` = 2 AND `is_chaoshi_lin` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_user_scroll` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`uid`,`scroll_id` FROM `ysk_user_scroll` WHERE `overtime` <= 1608537346  [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 76 [ RunTime:0.1210s ]
+SQL: SHOW COLUMNS FROM `ysk_scroll` [ RunTime:0.0130s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 77 [ RunTime:0.0350s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 78 [ RunTime:0.0340s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 79 [ RunTime:0.0310s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 80 [ RunTime:0.0340s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 81 [ RunTime:0.0350s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 82 [ RunTime:0.0310s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 83 [ RunTime:0.0350s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 84 [ RunTime:0.0320s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 85 [ RunTime:0.0320s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 86 [ RunTime:0.0320s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 87 [ RunTime:0.0310s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 88 [ RunTime:0.0300s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 89 [ RunTime:0.0350s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 90 [ RunTime:0.0310s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 91 [ RunTime:0.0320s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 92 [ RunTime:0.0330s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 93 [ RunTime:0.0320s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 94 [ RunTime:0.0320s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 95 [ RunTime:0.0310s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 96 [ RunTime:0.0310s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 97 [ RunTime:0.0320s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 98 [ RunTime:0.0320s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 99 [ RunTime:0.0340s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 100 [ RunTime:0.0320s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 101 [ RunTime:0.0300s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 102 [ RunTime:0.0330s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 103 [ RunTime:0.0310s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 104 [ RunTime:0.0350s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 105 [ RunTime:0.0320s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 106 [ RunTime:0.0330s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 107 [ RunTime:0.0320s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 108 [ RunTime:0.0340s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 109 [ RunTime:0.0310s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 110 [ RunTime:0.0330s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 111 [ RunTime:0.0320s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 112 [ RunTime:0.0340s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 113 [ RunTime:0.0340s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 114 [ RunTime:0.0340s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 115 [ RunTime:0.0340s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 116 [ RunTime:0.0320s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 117 [ RunTime:0.0330s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 118 [ RunTime:0.0340s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 119 [ RunTime:0.0330s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 120 [ RunTime:0.0360s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 121 [ RunTime:0.0340s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 122 [ RunTime:0.0350s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 123 [ RunTime:0.1650s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 124 [ RunTime:0.0640s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 125 [ RunTime:0.0660s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 126 [ RunTime:0.1350s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 127 [ RunTime:0.0680s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_level` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `ysk_user_level` ORDER BY id asc  [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_deal` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 1 AND `expiration_time` <= 1608537349  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 2 AND `expiration_time` <= 1608537349  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_deal` WHERE ( `sell_id` = '8803' OR `pay_id` = '8803' ) AND `status` = 1 ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_deal` WHERE ( `sell_id` = '8803' OR `pay_id` = '8803' ) AND `status` = 2 ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_banner` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `ysk_banner` ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_news` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `ysk_news` WHERE `type` = 1 ORDER BY id desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_scroll` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '300' AND `record_price` <= '800'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '801' AND `record_price` <= '2000'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '1201' AND `record_price` <= '2000'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '2001' AND `record_price` <= '2500'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '2501' AND `record_price` <= '3500'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: uinfo F:\web\12xin\shop\Home\Controller\IndexController.class.php 第 117 行.
+NOTIC: [8] Undefined variable: moneyinfo F:\web\12xin\shop\Home\Controller\IndexController.class.php 第 118 行.
+NOTIC: [8] Undefined variable: can_get F:\web\12xin\shop\Home\Controller\IndexController.class.php 第 119 行.
+NOTIC: [8] Undefined variable: is_setnums F:\web\12xin\shop\Home\Controller\IndexController.class.php 第 120 行.
+NOTIC: [8] Undefined variable: pic_array F:\web\12xin\shop\Home\Controller\IndexController.class.php 第 121 行.
+NOTIC: [8] Undefined variable: fUser F:\web\12xin\shop\Home\Controller\IndexController.class.php 第 122 行.
+SQL: SELECT * FROM `ysk_banner` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT `img_head`,`userid`,`releas_time`,`is_reward`,`today_releas`,`quanxian`,`vip_grade`,`total_lingshi`,`total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_store` [ RunTime:0.0050s ]
+SQL: SELECT `cangku_num`,`fengmi_num` FROM `ysk_store` WHERE `uid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_user_scroll` [ RunTime:0.0040s ]
+SQL: SELECT s.single_num FROM ysk_user_scroll us INNER JOIN ysk_scroll s ON us.scroll_id=s.id  WHERE us.uid = '8803' AND us.status = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_clock` [ RunTime:0.0050s ]
+SQL: SELECT `lasttime`,`get_num` FROM `ysk_user_clock` WHERE `uid` = 8803 ORDER BY id desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user_scroll` WHERE `uid` = 8803 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'false_user' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'add_user' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_config` WHERE `name` = 'min_balance' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: can_get F:\web\12xin\shop\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: is_setnums F:\web\12xin\shop\Home\Controller\IndexController.class.php 第 270 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2020-12-21T15:56:04+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0060s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0100s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_record` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `ysk_record` WHERE `in_uid` = 8803 AND `is_lin` = 0 AND `record_status` = 4  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0080s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_max' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_min' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8803' OR `out_uid` = '8803' ) AND `record_status` = 6 AND `pipeitime` <= 1608530162  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8803' OR `out_uid` = '8803' ) AND `record_status` = 7 AND `getmoney_time` <= 1608530162  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_yuyue` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `ysk_yuyue` WHERE `time` <= 1608480000 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE `record_status` = 2 AND `is_chaoshi_lin` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_user_scroll` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`uid`,`scroll_id` FROM `ysk_user_scroll` WHERE `overtime` <= 1608537362  [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 76 [ RunTime:0.0350s ]
+SQL: SHOW COLUMNS FROM `ysk_scroll` [ RunTime:0.0060s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 77 [ RunTime:0.0330s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 78 [ RunTime:0.0360s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 79 [ RunTime:0.0310s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 80 [ RunTime:0.0330s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 81 [ RunTime:0.0340s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 82 [ RunTime:0.0300s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 83 [ RunTime:0.1060s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 84 [ RunTime:0.0510s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 85 [ RunTime:0.0650s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 86 [ RunTime:0.0610s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 87 [ RunTime:0.0660s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 88 [ RunTime:0.0320s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 89 [ RunTime:0.0350s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 90 [ RunTime:0.0320s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 91 [ RunTime:0.0300s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 92 [ RunTime:0.0290s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 93 [ RunTime:0.0290s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 94 [ RunTime:0.0310s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 95 [ RunTime:0.0320s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 96 [ RunTime:0.0360s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 97 [ RunTime:0.0310s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 98 [ RunTime:0.0290s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 99 [ RunTime:0.0300s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 100 [ RunTime:0.0290s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 101 [ RunTime:0.0290s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 102 [ RunTime:0.0310s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 103 [ RunTime:0.0360s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 104 [ RunTime:0.0340s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 105 [ RunTime:0.0340s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 106 [ RunTime:0.0340s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 107 [ RunTime:0.0300s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 108 [ RunTime:0.0410s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 109 [ RunTime:0.0350s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 110 [ RunTime:0.0390s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 111 [ RunTime:0.0390s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 112 [ RunTime:0.0360s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 113 [ RunTime:0.0390s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 114 [ RunTime:0.0340s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 115 [ RunTime:0.0360s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 116 [ RunTime:0.0350s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 117 [ RunTime:0.0340s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 118 [ RunTime:0.0380s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 119 [ RunTime:0.0360s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 120 [ RunTime:0.0400s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 121 [ RunTime:0.0330s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 122 [ RunTime:0.0310s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 123 [ RunTime:0.0320s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 124 [ RunTime:0.0320s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 125 [ RunTime:0.0310s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 126 [ RunTime:0.0340s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 127 [ RunTime:0.0340s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_user_level` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ysk_user_level` ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_deal` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 1 AND `expiration_time` <= 1608537364  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 2 AND `expiration_time` <= 1608537364  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_deal` WHERE ( `sell_id` = '8803' OR `pay_id` = '8803' ) AND `status` = 1 ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_deal` WHERE ( `sell_id` = '8803' OR `pay_id` = '8803' ) AND `status` = 2 ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_banner` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `ysk_banner` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_news` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `ysk_news` WHERE `type` = 1 ORDER BY id desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_scroll` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '300' AND `record_price` <= '800'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '801' AND `record_price` <= '2000'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '1201' AND `record_price` <= '2000'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '2001' AND `record_price` <= '2500'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '2501' AND `record_price` <= '3500'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: uinfo F:\web\12xin\shop\Home\Controller\IndexController.class.php 第 117 行.
+NOTIC: [8] Undefined variable: moneyinfo F:\web\12xin\shop\Home\Controller\IndexController.class.php 第 118 行.
+NOTIC: [8] Undefined variable: can_get F:\web\12xin\shop\Home\Controller\IndexController.class.php 第 119 行.
+NOTIC: [8] Undefined variable: is_setnums F:\web\12xin\shop\Home\Controller\IndexController.class.php 第 120 行.
+NOTIC: [8] Undefined variable: pic_array F:\web\12xin\shop\Home\Controller\IndexController.class.php 第 121 行.
+NOTIC: [8] Undefined variable: fUser F:\web\12xin\shop\Home\Controller\IndexController.class.php 第 122 行.
+SQL: SELECT * FROM `ysk_banner` ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT `img_head`,`userid`,`releas_time`,`is_reward`,`today_releas`,`quanxian`,`vip_grade`,`total_lingshi`,`total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_store` [ RunTime:0.0070s ]
+SQL: SELECT `cangku_num`,`fengmi_num` FROM `ysk_store` WHERE `uid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_scroll` [ RunTime:0.0050s ]
+SQL: SELECT s.single_num FROM ysk_user_scroll us INNER JOIN ysk_scroll s ON us.scroll_id=s.id  WHERE us.uid = '8803' AND us.status = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_clock` [ RunTime:0.0040s ]
+SQL: SELECT `lasttime`,`get_num` FROM `ysk_user_clock` WHERE `uid` = 8803 ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user_scroll` WHERE `uid` = 8803 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'false_user' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'add_user' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_config` WHERE `name` = 'min_balance' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: can_get F:\web\12xin\shop\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: is_setnums F:\web\12xin\shop\Home\Controller\IndexController.class.php 第 270 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2020-12-21T15:56:05+08:00 ] 127.0.0.1 /Index/pond.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0040s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0060s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_record` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `ysk_record` WHERE `in_uid` = 8803 AND `is_lin` = 0 AND `record_status` = 4  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0040s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_max' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_min' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8803' OR `out_uid` = '8803' ) AND `record_status` = 6 AND `pipeitime` <= 1608530165  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8803' OR `out_uid` = '8803' ) AND `record_status` = 7 AND `getmoney_time` <= 1608530165  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_yuyue` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `ysk_yuyue` WHERE `time` <= 1608480000 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE `record_status` = 2 AND `is_chaoshi_lin` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_user_scroll` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`uid`,`scroll_id` FROM `ysk_user_scroll` WHERE `overtime` <= 1608537365  [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 76 [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `ysk_scroll` [ RunTime:0.0050s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 77 [ RunTime:0.0020s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 78 [ RunTime:0.0020s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 79 [ RunTime:0.0010s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 80 [ RunTime:0.0010s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 81 [ RunTime:0.0010s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 82 [ RunTime:0.0010s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 83 [ RunTime:0.0020s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 84 [ RunTime:0.0020s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 85 [ RunTime:0.0010s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 86 [ RunTime:0.0010s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 87 [ RunTime:0.0010s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 88 [ RunTime:0.0020s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 89 [ RunTime:0.0020s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 90 [ RunTime:0.0020s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 91 [ RunTime:0.0010s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 92 [ RunTime:0.0010s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 93 [ RunTime:0.0010s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 94 [ RunTime:0.0030s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 95 [ RunTime:0.0030s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 96 [ RunTime:0.0030s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 97 [ RunTime:0.0030s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 98 [ RunTime:0.0030s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 99 [ RunTime:0.0030s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 100 [ RunTime:0.0030s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 101 [ RunTime:0.0040s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 102 [ RunTime:0.0030s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 103 [ RunTime:0.0030s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 104 [ RunTime:0.0040s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 105 [ RunTime:0.0030s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 106 [ RunTime:0.0040s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 107 [ RunTime:0.0040s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 108 [ RunTime:0.0040s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 109 [ RunTime:0.0040s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 110 [ RunTime:0.0030s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 111 [ RunTime:0.0030s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 112 [ RunTime:0.0030s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 113 [ RunTime:0.0030s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 114 [ RunTime:0.0030s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 115 [ RunTime:0.0030s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 116 [ RunTime:0.0030s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 117 [ RunTime:0.0030s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 118 [ RunTime:0.0030s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 119 [ RunTime:0.0030s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 120 [ RunTime:0.0030s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 121 [ RunTime:0.0030s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 122 [ RunTime:0.0030s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 123 [ RunTime:0.0030s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 124 [ RunTime:0.0030s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 125 [ RunTime:0.0030s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 126 [ RunTime:0.0020s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 127 [ RunTime:0.0020s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_level` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `ysk_user_level` ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_deal` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 1 AND `expiration_time` <= 1608537365  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 2 AND `expiration_time` <= 1608537365  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE `in_uid` = 8803 AND `record_status` = 4  [ RunTime:0.0000s ]
+SQL: SELECT SUM(record_price) AS tp_sum FROM `ysk_record` WHERE `in_uid` = 8803 AND `record_status` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_lingshi` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2020-12-21T15:56:33+08:00 ] 127.0.0.1 /User/Personal.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0060s ]
+SQL: SELECT `username`,`is_dailishang`,`userid`,`img_head`,`use_grade`,`vip_grade`,`total_lingshi`,`total_active`,`mobile`,`total_tuiguang` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT SUM(total_active) AS tp_sum FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` >= 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-12-21T15:56:33+08:00 ] 127.0.0.1 /Public/home/wap/jsa/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+ERR: 无法加载控制器:Public
+
+[ 2020-12-21T15:57:31+08:00 ] 127.0.0.1 /User/Personal.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0060s ]
+SQL: SELECT `username`,`is_dailishang`,`userid`,`img_head`,`use_grade`,`vip_grade`,`total_lingshi`,`total_active`,`mobile`,`total_tuiguang` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT SUM(total_active) AS tp_sum FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` >= 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2020-12-21T15:57:31+08:00 ] 127.0.0.1 /Public/home/wap/jsa/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+ERR: 无法加载控制器:Public
+
+[ 2020-12-21T15:58:05+08:00 ] 127.0.0.1 /User/Personal.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0050s ]
+SQL: SELECT `username`,`is_dailishang`,`userid`,`img_head`,`use_grade`,`vip_grade`,`total_lingshi`,`total_active`,`mobile`,`total_tuiguang` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(total_active) AS tp_sum FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` >= 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2020-12-21T15:58:05+08:00 ] 127.0.0.1 /Public/home/wap/jsa/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载控制器:Public
+
+[ 2020-12-21T15:58:21+08:00 ] 127.0.0.1 /User/Personal.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0070s ]
+SQL: SELECT `username`,`is_dailishang`,`userid`,`img_head`,`use_grade`,`vip_grade`,`total_lingshi`,`total_active`,`mobile`,`total_tuiguang` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT SUM(total_active) AS tp_sum FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` >= 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m F:\web\12xin\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2020-12-21T15:58:21+08:00 ] 127.0.0.1 /Public/home/wap/jsa/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+ERR: 无法加载控制器:Public
+
+[ 2020-12-21T16:34:09+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+ERR: SQLSTATE[HY000] [1049] Unknown database '12xin'
+
+[ 2020-12-21T16:34:09+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-12-21T16:34:57+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0059s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0068s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+
+[ 2020-12-21T16:34:57+08:00 ] 127.0.0.1 /Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0059s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-12-21T16:35:08+08:00 ] 127.0.0.1 /Public/libs/lyui/dist/js/lyui.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+ERR: 无法加载控制器:Public
+
+[ 2020-12-21T16:35:09+08:00 ] 127.0.0.1 /Public/libs/lyui/dist/css/lyui.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+ERR: 无法加载控制器:Public
+
+[ 2020-12-21T16:35:09+08:00 ] 127.0.0.1 /logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-12-21T16:36:43+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0059s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0068s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_record` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `ysk_record` WHERE `in_uid` = 8803 AND `is_lin` = 0 AND `record_status` = 4  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0049s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_max' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_min' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8803' OR `out_uid` = '8803' ) AND `record_status` = 6 AND `pipeitime` <= 1608532601  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8803' OR `out_uid` = '8803' ) AND `record_status` = 7 AND `getmoney_time` <= 1608532601  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_yuyue` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `ysk_yuyue` WHERE `time` <= 1608480000 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE `record_status` = 2 AND `is_chaoshi_lin` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_scroll` [ RunTime:0.0049s ]
+SQL: SELECT `id`,`uid`,`scroll_id` FROM `ysk_user_scroll` WHERE `overtime` <= 1608539801  [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 76 [ RunTime:0.0293s ]
+SQL: SHOW COLUMNS FROM `ysk_scroll` [ RunTime:0.0068s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 77 [ RunTime:0.0205s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 78 [ RunTime:0.1709s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 79 [ RunTime:0.1074s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 80 [ RunTime:0.0439s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 81 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 82 [ RunTime:0.0205s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 83 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 84 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 85 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 86 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 87 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 88 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 89 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 90 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 91 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 92 [ RunTime:0.0205s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 93 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 94 [ RunTime:0.0205s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 95 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 96 [ RunTime:0.0205s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 97 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 98 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 99 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 100 [ RunTime:0.0205s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 101 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 102 [ RunTime:0.0205s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 103 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 104 [ RunTime:0.0205s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 105 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 106 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 107 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 108 [ RunTime:0.0205s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 109 [ RunTime:0.0205s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 110 [ RunTime:0.0566s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 111 [ RunTime:0.0820s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 112 [ RunTime:0.0625s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 113 [ RunTime:0.1348s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 114 [ RunTime:0.0332s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 115 [ RunTime:0.0918s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 116 [ RunTime:0.1074s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 117 [ RunTime:0.0361s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 118 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 119 [ RunTime:0.0205s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 120 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 121 [ RunTime:0.0205s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 122 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 123 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 124 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 125 [ RunTime:0.0205s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 126 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 127 [ RunTime:0.0205s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_level` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `ysk_user_level` ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_deal` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 1 AND `expiration_time` <= 1608539803  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 2 AND `expiration_time` <= 1608539803  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_deal` WHERE ( `sell_id` = '8803' OR `pay_id` = '8803' ) AND `status` = 1 ORDER BY id asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_deal` WHERE ( `sell_id` = '8803' OR `pay_id` = '8803' ) AND `status` = 2 ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_banner` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_banner` ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_news` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_news` WHERE `type` = 1 ORDER BY id desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_scroll` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '300' AND `record_price` <= '800'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '801' AND `record_price` <= '2000'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '1201' AND `record_price` <= '2000'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '2001' AND `record_price` <= '2500'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '2501' AND `record_price` <= '3500'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: uinfo E:\xin12\shop\Home\Controller\IndexController.class.php 第 117 行.
+NOTIC: [8] Undefined variable: moneyinfo E:\xin12\shop\Home\Controller\IndexController.class.php 第 118 行.
+NOTIC: [8] Undefined variable: can_get E:\xin12\shop\Home\Controller\IndexController.class.php 第 119 行.
+NOTIC: [8] Undefined variable: is_setnums E:\xin12\shop\Home\Controller\IndexController.class.php 第 120 行.
+NOTIC: [8] Undefined variable: pic_array E:\xin12\shop\Home\Controller\IndexController.class.php 第 121 行.
+NOTIC: [8] Undefined variable: fUser E:\xin12\shop\Home\Controller\IndexController.class.php 第 122 行.
+SQL: SELECT * FROM `ysk_banner` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT `img_head`,`userid`,`releas_time`,`is_reward`,`today_releas`,`quanxian`,`vip_grade`,`total_lingshi`,`total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_store` [ RunTime:0.0049s ]
+SQL: SELECT `cangku_num`,`fengmi_num` FROM `ysk_store` WHERE `uid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_scroll` [ RunTime:0.0049s ]
+SQL: SELECT s.single_num FROM ysk_user_scroll us INNER JOIN ysk_scroll s ON us.scroll_id=s.id  WHERE us.uid = '8803' AND us.status = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_clock` [ RunTime:0.0049s ]
+SQL: SELECT `lasttime`,`get_num` FROM `ysk_user_clock` WHERE `uid` = 8803 ORDER BY id desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user_scroll` WHERE `uid` = 8803 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'false_user' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'add_user' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_config` WHERE `name` = 'min_balance' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: can_get E:\xin12\shop\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: is_setnums E:\xin12\shop\Home\Controller\IndexController.class.php 第 270 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-12-21T16:36:46+08:00 ] 127.0.0.1 /User/Personal.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0068s ]
+SQL: SELECT `username`,`is_dailishang`,`userid`,`img_head`,`use_grade`,`vip_grade`,`total_lingshi`,`total_active`,`mobile`,`total_tuiguang` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT SUM(total_active) AS tp_sum FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` >= 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2020-12-21T16:36:47+08:00 ] 127.0.0.1 /Public/home/wap/jsa/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+ERR: 无法加载控制器:Public
+
+[ 2020-12-21T16:37:04+08:00 ] 127.0.0.1 /User/setting.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0117s ]
+SQL: SELECT `mobile` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `username` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2020-12-21T16:37:06+08:00 ] 127.0.0.1 /Public/home/wap/jsa/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+ERR: 无法加载控制器:Public
+
+[ 2020-12-21T16:37:09+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0059s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0059s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_record` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_record` WHERE `in_uid` = 8803 AND `is_lin` = 0 AND `record_status` = 4  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0049s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_max' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_min' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8803' OR `out_uid` = '8803' ) AND `record_status` = 6 AND `pipeitime` <= 1608532627  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8803' OR `out_uid` = '8803' ) AND `record_status` = 7 AND `getmoney_time` <= 1608532627  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_yuyue` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `ysk_yuyue` WHERE `time` <= 1608480000 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE `record_status` = 2 AND `is_chaoshi_lin` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_user_scroll` [ RunTime:0.0049s ]
+SQL: SELECT `id`,`uid`,`scroll_id` FROM `ysk_user_scroll` WHERE `overtime` <= 1608539827  [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 76 [ RunTime:0.0576s ]
+SQL: SHOW COLUMNS FROM `ysk_scroll` [ RunTime:0.0049s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 77 [ RunTime:0.0234s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 78 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 79 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 80 [ RunTime:0.0225s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 81 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 82 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 83 [ RunTime:0.0205s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 84 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 85 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 86 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 87 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 88 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 89 [ RunTime:0.0205s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 90 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 91 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 92 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 93 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 94 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 95 [ RunTime:0.0205s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 96 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 97 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 98 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 99 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 100 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 101 [ RunTime:0.0205s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 102 [ RunTime:0.0225s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 103 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 104 [ RunTime:0.0693s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 105 [ RunTime:0.0498s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 106 [ RunTime:0.2295s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 107 [ RunTime:0.0996s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 108 [ RunTime:0.0557s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 109 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 110 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 111 [ RunTime:0.0205s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 112 [ RunTime:0.0361s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 113 [ RunTime:0.0342s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 114 [ RunTime:0.0264s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 115 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 116 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 117 [ RunTime:0.0205s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 118 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 119 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 120 [ RunTime:0.0225s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 121 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 122 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 123 [ RunTime:0.0205s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 124 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 125 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 126 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 127 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_level` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `ysk_user_level` ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_deal` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 1 AND `expiration_time` <= 1608539829  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 2 AND `expiration_time` <= 1608539829  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_deal` WHERE ( `sell_id` = '8803' OR `pay_id` = '8803' ) AND `status` = 1 ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_deal` WHERE ( `sell_id` = '8803' OR `pay_id` = '8803' ) AND `status` = 2 ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_banner` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_banner` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_news` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `ysk_news` WHERE `type` = 1 ORDER BY id desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_scroll` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '300' AND `record_price` <= '800'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '801' AND `record_price` <= '2000'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '1201' AND `record_price` <= '2000'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '2001' AND `record_price` <= '2500'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '2501' AND `record_price` <= '3500'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: uinfo E:\xin12\shop\Home\Controller\IndexController.class.php 第 117 行.
+NOTIC: [8] Undefined variable: moneyinfo E:\xin12\shop\Home\Controller\IndexController.class.php 第 118 行.
+NOTIC: [8] Undefined variable: can_get E:\xin12\shop\Home\Controller\IndexController.class.php 第 119 行.
+NOTIC: [8] Undefined variable: is_setnums E:\xin12\shop\Home\Controller\IndexController.class.php 第 120 行.
+NOTIC: [8] Undefined variable: pic_array E:\xin12\shop\Home\Controller\IndexController.class.php 第 121 行.
+NOTIC: [8] Undefined variable: fUser E:\xin12\shop\Home\Controller\IndexController.class.php 第 122 行.
+SQL: SELECT * FROM `ysk_banner` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT `img_head`,`userid`,`releas_time`,`is_reward`,`today_releas`,`quanxian`,`vip_grade`,`total_lingshi`,`total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_store` [ RunTime:0.0039s ]
+SQL: SELECT `cangku_num`,`fengmi_num` FROM `ysk_store` WHERE `uid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_scroll` [ RunTime:0.0049s ]
+SQL: SELECT s.single_num FROM ysk_user_scroll us INNER JOIN ysk_scroll s ON us.scroll_id=s.id  WHERE us.uid = '8803' AND us.status = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_clock` [ RunTime:0.0049s ]
+SQL: SELECT `lasttime`,`get_num` FROM `ysk_user_clock` WHERE `uid` = 8803 ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user_scroll` WHERE `uid` = 8803 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'false_user' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'add_user' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_config` WHERE `name` = 'min_balance' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: can_get E:\xin12\shop\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: is_setnums E:\xin12\shop\Home\Controller\IndexController.class.php 第 270 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2020-12-21T16:37:12+08:00 ] 127.0.0.1 /Index/pond.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.002929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0059s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0059s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_record` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_record` WHERE `in_uid` = 8803 AND `is_lin` = 0 AND `record_status` = 4  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0049s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_max' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_min' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8803' OR `out_uid` = '8803' ) AND `record_status` = 6 AND `pipeitime` <= 1608532630  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8803' OR `out_uid` = '8803' ) AND `record_status` = 7 AND `getmoney_time` <= 1608532630  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_yuyue` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_yuyue` WHERE `time` <= 1608480000 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE `record_status` = 2 AND `is_chaoshi_lin` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_scroll` [ RunTime:0.0049s ]
+SQL: SELECT `id`,`uid`,`scroll_id` FROM `ysk_user_scroll` WHERE `overtime` <= 1608539830  [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 76 [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `ysk_scroll` [ RunTime:0.0049s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 77 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 78 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 79 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 80 [ RunTime:0.1113s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 81 [ RunTime:0.0752s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 82 [ RunTime:0.0693s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 83 [ RunTime:0.0625s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 84 [ RunTime:0.0674s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 85 [ RunTime:0.0176s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 86 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 87 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 88 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 89 [ RunTime:0.1201s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 90 [ RunTime:0.1494s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 91 [ RunTime:0.0244s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 92 [ RunTime:0.0439s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 93 [ RunTime:0.1777s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 94 [ RunTime:0.0820s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 95 [ RunTime:0.0518s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 96 [ RunTime:0.0361s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 97 [ RunTime:0.0205s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 98 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 99 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 100 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 101 [ RunTime:0.0205s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 102 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 103 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 104 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 105 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 106 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 107 [ RunTime:0.0205s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 108 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 109 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 110 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 111 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 112 [ RunTime:0.0234s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 113 [ RunTime:0.0615s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 114 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 115 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 116 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 117 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 118 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 119 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 120 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 121 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 122 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 123 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 124 [ RunTime:0.1904s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 125 [ RunTime:0.1758s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 126 [ RunTime:0.0410s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 127 [ RunTime:0.0225s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_level` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `ysk_user_level` ORDER BY id asc  [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_deal` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 1 AND `expiration_time` <= 1608539832  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 2 AND `expiration_time` <= 1608539832  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE `in_uid` = 8803 AND `record_status` = 4  [ RunTime:0.0010s ]
+SQL: SELECT SUM(record_price) AS tp_sum FROM `ysk_record` WHERE `in_uid` = 8803 AND `record_status` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_lingshi` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2020-12-21T16:37:15+08:00 ] 127.0.0.1 /User/Personal.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0068s ]
+SQL: SELECT `username`,`is_dailishang`,`userid`,`img_head`,`use_grade`,`vip_grade`,`total_lingshi`,`total_active`,`mobile`,`total_tuiguang` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(total_active) AS tp_sum FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` >= 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2020-12-21T16:37:15+08:00 ] 127.0.0.1 /Public/home/wap/jsa/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+ERR: 无法加载控制器:Public
+
+[ 2020-12-21T16:39:42+08:00 ] 127.0.0.1 /User/setting.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0059s ]
+SQL: SELECT `mobile` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `username` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2020-12-21T16:39:44+08:00 ] 127.0.0.1 /Public/home/wap/jsa/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+ERR: 无法加载控制器:Public
+
+[ 2020-12-21T16:41:22+08:00 ] 127.0.0.1 /User/Teamdets.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0068s ]
+SQL: SELECT SUM(total_active) AS tp_sum FROM `ysk_user` WHERE ( `pid` = '8803' OR `gid` = '8803' OR `ggid` = '8803' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `username`,`vip_grade`,`userid`,`mobile`,`total_active`,`reg_date`,`img_head`,`is_real_name` FROM `ysk_user` WHERE ( `pid` = '8803' OR `gid` = '8803' OR `ggid` = '8803' ) ORDER BY userid desc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: data E:\xin12\shop\Home\Controller\UserController.class.php 第 524 行.
+SQL: SELECT `userid`,`pid` FROM `ysk_user` WHERE `status` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: total_team_active E:\xin12\shop\Home\Controller\UserController.class.php 第 529 行.
+SQL: SHOW COLUMNS FROM `ysk_tranmoney` [ RunTime:0.0059s ]
+SQL: SELECT SUM(get_nums) AS tp_sum FROM `ysk_tranmoney` WHERE `pay_id` = 8804 AND `get_type` IN ('13','14') LIMIT 1   [ RunTime:0.0195s ]
+NOTIC: [8] Undefined variable: jifen E:\xin12\shop\Home\Controller\UserController.class.php 第 536 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined variable: uinfo E:\xin12\shop\Runtime\Cache\Home\3e693a8485ba89e93e42f888d71c179b.php 第 21 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005859s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005859s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-12-21T16:52:17+08:00 ] 127.0.0.1 /Public/home/wap/jsa/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+ERR: 无法加载控制器:Public
+
+[ 2020-12-21T16:54:18+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0068s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0059s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_record` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_record` WHERE `in_uid` = 8803 AND `is_lin` = 0 AND `record_status` = 4  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0049s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_max' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_min' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8803' OR `out_uid` = '8803' ) AND `record_status` = 6 AND `pipeitime` <= 1608533657  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8803' OR `out_uid` = '8803' ) AND `record_status` = 7 AND `getmoney_time` <= 1608533657  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_yuyue` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_yuyue` WHERE `time` <= 1608480000 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE `record_status` = 2 AND `is_chaoshi_lin` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_scroll` [ RunTime:0.0049s ]
+SQL: SELECT `id`,`uid`,`scroll_id` FROM `ysk_user_scroll` WHERE `overtime` <= 1608540857  [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 76 [ RunTime:0.0850s ]
+SQL: SHOW COLUMNS FROM `ysk_scroll` [ RunTime:0.0059s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 77 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 78 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 79 [ RunTime:0.0303s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 80 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 81 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 82 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 83 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 84 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 85 [ RunTime:0.0293s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 86 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 87 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 88 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 89 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 90 [ RunTime:0.0293s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 91 [ RunTime:0.0205s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 92 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 93 [ RunTime:0.0537s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 94 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 95 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 96 [ RunTime:0.0293s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 97 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 98 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 99 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 100 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 101 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 102 [ RunTime:0.0205s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 103 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 104 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 105 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 106 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 107 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 108 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 109 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 110 [ RunTime:0.0176s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 111 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 112 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 113 [ RunTime:0.0293s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 114 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 115 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 116 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 117 [ RunTime:0.0225s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 118 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 119 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 120 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 121 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 122 [ RunTime:0.0957s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 123 [ RunTime:0.0996s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 124 [ RunTime:0.0361s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 125 [ RunTime:0.0283s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 126 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 127 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_user_level` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `ysk_user_level` ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_deal` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 1 AND `expiration_time` <= 1608540858  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 2 AND `expiration_time` <= 1608540858  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_deal` WHERE ( `sell_id` = '8803' OR `pay_id` = '8803' ) AND `status` = 1 ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_deal` WHERE ( `sell_id` = '8803' OR `pay_id` = '8803' ) AND `status` = 2 ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_banner` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_banner` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_news` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_news` WHERE `type` = 1 ORDER BY id desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_scroll` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '300' AND `record_price` <= '800'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '801' AND `record_price` <= '2000'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '1201' AND `record_price` <= '2000'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '2001' AND `record_price` <= '2500'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '2501' AND `record_price` <= '3500'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: uinfo E:\xin12\shop\Home\Controller\IndexController.class.php 第 117 行.
+NOTIC: [8] Undefined variable: moneyinfo E:\xin12\shop\Home\Controller\IndexController.class.php 第 118 行.
+NOTIC: [8] Undefined variable: can_get E:\xin12\shop\Home\Controller\IndexController.class.php 第 119 行.
+NOTIC: [8] Undefined variable: is_setnums E:\xin12\shop\Home\Controller\IndexController.class.php 第 120 行.
+NOTIC: [8] Undefined variable: pic_array E:\xin12\shop\Home\Controller\IndexController.class.php 第 121 行.
+NOTIC: [8] Undefined variable: fUser E:\xin12\shop\Home\Controller\IndexController.class.php 第 122 行.
+SQL: SELECT * FROM `ysk_banner` ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT `img_head`,`userid`,`releas_time`,`is_reward`,`today_releas`,`quanxian`,`vip_grade`,`total_lingshi`,`total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_store` [ RunTime:0.0049s ]
+SQL: SELECT `cangku_num`,`fengmi_num` FROM `ysk_store` WHERE `uid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_user_scroll` [ RunTime:0.0039s ]
+SQL: SELECT s.single_num FROM ysk_user_scroll us INNER JOIN ysk_scroll s ON us.scroll_id=s.id  WHERE us.uid = '8803' AND us.status = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_clock` [ RunTime:0.0049s ]
+SQL: SELECT `lasttime`,`get_num` FROM `ysk_user_clock` WHERE `uid` = 8803 ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user_scroll` WHERE `uid` = 8803 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'false_user' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'add_user' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_config` WHERE `name` = 'min_balance' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: can_get E:\xin12\shop\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: is_setnums E:\xin12\shop\Home\Controller\IndexController.class.php 第 270 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010742s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010742s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-12-21T16:54:29+08:00 ] 127.0.0.1 /Index/pond.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0049s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0059s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_record` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_record` WHERE `in_uid` = 8803 AND `is_lin` = 0 AND `record_status` = 4  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0049s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_max' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_min' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8803' OR `out_uid` = '8803' ) AND `record_status` = 6 AND `pipeitime` <= 1608533668  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8803' OR `out_uid` = '8803' ) AND `record_status` = 7 AND `getmoney_time` <= 1608533668  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_yuyue` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `ysk_yuyue` WHERE `time` <= 1608480000 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE `record_status` = 2 AND `is_chaoshi_lin` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_scroll` [ RunTime:0.0049s ]
+SQL: SELECT `id`,`uid`,`scroll_id` FROM `ysk_user_scroll` WHERE `overtime` <= 1608540868  [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 76 [ RunTime:0.0273s ]
+SQL: SHOW COLUMNS FROM `ysk_scroll` [ RunTime:0.0068s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 77 [ RunTime:0.0225s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 78 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 79 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 80 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 81 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 82 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 83 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 84 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 85 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 86 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 87 [ RunTime:0.0205s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 88 [ RunTime:0.0205s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 89 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 90 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 91 [ RunTime:0.0205s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 92 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 93 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 94 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 95 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 96 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 97 [ RunTime:0.0225s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 98 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 99 [ RunTime:0.0225s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 100 [ RunTime:0.1094s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 101 [ RunTime:0.0576s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 102 [ RunTime:0.0654s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 103 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 104 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 105 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 106 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 107 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 108 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 109 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 110 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 111 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 112 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 113 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 114 [ RunTime:0.0947s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 115 [ RunTime:0.1162s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 116 [ RunTime:0.0645s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 117 [ RunTime:0.0879s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 118 [ RunTime:0.0361s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 119 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 120 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 121 [ RunTime:0.0439s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 122 [ RunTime:0.0303s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 123 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 124 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 125 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 126 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 127 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_level` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_user_level` ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_deal` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 1 AND `expiration_time` <= 1608540869  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 2 AND `expiration_time` <= 1608540869  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE `in_uid` = 8803 AND `record_status` = 4  [ RunTime:0.0010s ]
+SQL: SELECT SUM(record_price) AS tp_sum FROM `ysk_record` WHERE `in_uid` = 8803 AND `record_status` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_lingshi` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005859s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-12-21T16:54:31+08:00 ] 127.0.0.1 /User/Personal.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0078s ]
+SQL: SELECT `username`,`is_dailishang`,`userid`,`img_head`,`use_grade`,`vip_grade`,`total_lingshi`,`total_active`,`mobile`,`total_tuiguang` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT SUM(total_active) AS tp_sum FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` >= 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011718s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011718s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2020-12-21T16:54:32+08:00 ] 127.0.0.1 /Public/home/wap/jsa/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+ERR: 无法加载控制器:Public
+
+[ 2020-12-21T17:41:40+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0078s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0059s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_record` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_record` WHERE `in_uid` = 8803 AND `is_lin` = 0 AND `record_status` = 4  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0049s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_max' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_min' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8803' OR `out_uid` = '8803' ) AND `record_status` = 6 AND `pipeitime` <= 1608536498  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8803' OR `out_uid` = '8803' ) AND `record_status` = 7 AND `getmoney_time` <= 1608536498  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_yuyue` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `ysk_yuyue` WHERE `time` <= 1608480000 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE `record_status` = 2 AND `is_chaoshi_lin` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_scroll` [ RunTime:0.0059s ]
+SQL: SELECT `id`,`uid`,`scroll_id` FROM `ysk_user_scroll` WHERE `overtime` <= 1608543698  [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 76 [ RunTime:0.0557s ]
+SQL: SHOW COLUMNS FROM `ysk_scroll` [ RunTime:0.0068s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 77 [ RunTime:0.0225s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 78 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 79 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 80 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 81 [ RunTime:0.0293s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 82 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 83 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 84 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 85 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 86 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 87 [ RunTime:0.0303s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 88 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 89 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 90 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 91 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 92 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 93 [ RunTime:0.0293s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 94 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 95 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 96 [ RunTime:0.0449s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 97 [ RunTime:0.0225s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 98 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 99 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 100 [ RunTime:0.0225s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 101 [ RunTime:0.0273s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 102 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 103 [ RunTime:0.0195s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 104 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 105 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 106 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 107 [ RunTime:0.0273s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 108 [ RunTime:0.0205s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 109 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 110 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 111 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 112 [ RunTime:0.0225s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 113 [ RunTime:0.0273s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 114 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 115 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 116 [ RunTime:0.0225s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 117 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 118 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 119 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 120 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 121 [ RunTime:0.0957s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 122 [ RunTime:0.1074s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 123 [ RunTime:0.0361s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 124 [ RunTime:0.0273s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 125 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 126 [ RunTime:0.0186s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_user_scroll` SET `status`='0' WHERE `id` = 127 [ RunTime:0.0215s ]
+SQL: SELECT `active` FROM `ysk_scroll` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_user_level` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_user_level` ORDER BY id asc  [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_deal` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 1 AND `expiration_time` <= 1608543700  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 2 AND `expiration_time` <= 1608543700  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_deal` WHERE ( `sell_id` = '8803' OR `pay_id` = '8803' ) AND `status` = 1 ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_deal` WHERE ( `sell_id` = '8803' OR `pay_id` = '8803' ) AND `status` = 2 ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_banner` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_banner` ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_news` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_news` WHERE `type` = 1 ORDER BY id desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_scroll` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '300' AND `record_price` <= '800'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '801' AND `record_price` <= '2000'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '1201' AND `record_price` <= '2000'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '2001' AND `record_price` <= '2500'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '2501' AND `record_price` <= '3500'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: uinfo E:\xin12\shop\Home\Controller\IndexController.class.php 第 117 行.
+NOTIC: [8] Undefined variable: moneyinfo E:\xin12\shop\Home\Controller\IndexController.class.php 第 118 行.
+NOTIC: [8] Undefined variable: can_get E:\xin12\shop\Home\Controller\IndexController.class.php 第 119 行.
+NOTIC: [8] Undefined variable: is_setnums E:\xin12\shop\Home\Controller\IndexController.class.php 第 120 行.
+NOTIC: [8] Undefined variable: pic_array E:\xin12\shop\Home\Controller\IndexController.class.php 第 121 行.
+NOTIC: [8] Undefined variable: fUser E:\xin12\shop\Home\Controller\IndexController.class.php 第 122 行.
+SQL: SELECT * FROM `ysk_banner` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT `img_head`,`userid`,`releas_time`,`is_reward`,`today_releas`,`quanxian`,`vip_grade`,`total_lingshi`,`total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_store` [ RunTime:0.0049s ]
+SQL: SELECT `cangku_num`,`fengmi_num` FROM `ysk_store` WHERE `uid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_scroll` [ RunTime:0.0049s ]
+SQL: SELECT s.single_num FROM ysk_user_scroll us INNER JOIN ysk_scroll s ON us.scroll_id=s.id  WHERE us.uid = '8803' AND us.status = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_clock` [ RunTime:0.0049s ]
+SQL: SELECT `lasttime`,`get_num` FROM `ysk_user_clock` WHERE `uid` = 8803 ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user_scroll` WHERE `uid` = 8803 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'false_user' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'add_user' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_config` WHERE `name` = 'min_balance' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: can_get E:\xin12\shop\Home\Controller\IndexController.class.php 第 269 行.
+NOTIC: [8] Undefined variable: is_setnums E:\xin12\shop\Home\Controller\IndexController.class.php 第 270 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010743s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010743s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+

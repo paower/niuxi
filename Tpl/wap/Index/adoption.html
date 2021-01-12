@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>收藏记录</title>
+    <title>抢购记录</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="keywords" content="">
@@ -10,8 +10,8 @@
     <link href="__WCSS__/stylexin.css" rel="stylesheet" /> 
 	
 <style>
-    .ado-list li{background:#2e0571;margin-top:12px;color:#ccc}
-    .ado-list li .list-top{padding:12px;border-bottom:1px solid #3b1080;}
+    .ado-list li{margin-top:12px;color:#ccc;border-bottom:1px solid #a2a2a2;}
+    .ado-list li .list-top{padding:12px;}
     .ado-list li .list-box{padding:12px;}
     .ado-list li .list-box h3{font-size:16px;color:#fff;margin-bottom:5px;}
     .ado-list li .list-box .list-item span{margin-left:5px;}
@@ -39,13 +39,13 @@
 		
 <div class="fish-head">
     <a href="javascript:window.history.back();" class="head-back"><span>返回</span></a>
-    <h3 class="head-tit"><span>收藏记录</span></h3>
+    <h3 class="head-tit"><span>抢购记录</span></h3>
 </div>
 <div class="fish-main">
     <div style="height:44px;"></div>
     <ul class="tabs">
-        <li class="tab"><a @click="typeFun(1)" href="javascript:" onClick="typeFun(1)">收藏中</a></li>
-        <li class="tab"><a @click="typeFun(2)" href="javascript:" onClick="typeFun(2)">已收藏</a></li>
+        <li class="tab"><a @click="typeFun(1)" href="javascript:" onClick="typeFun(1)">待完成</a></li>
+        <li class="tab"><a @click="typeFun(2)" href="javascript:" onClick="typeFun(2)">已完成</a></li>
         <li class="tab"><a @click="typeFun(3)" href="javascript:" onClick="typeFun(3)">取消/申诉</a></li>
     </ul>
     <div id="test1">
@@ -54,7 +54,7 @@
                 <li v-if="list1.length>0" v-for="vo in list1" @click="toDetail(vo.fid)">
                     <div class="list-top clearfix">
                         <div class="fl">编号：<span>{$vo[record_no]}</span></div>
-                        <div class="fr"><span class="green">收藏中</span></div>
+                        <div class="fr"><span class="green">待完成</span></div>
                     </div>
                     <div class="list-box">
                         <h3 class="text-ellipsis">
@@ -92,7 +92,7 @@
                 <li v-if="list2.length>0"  @click="toDetail(vo.fid)">
                     <div class="list-top clearfix">
                         <div class="fl">编号：<span>{$vo[record_no]}</span></div>
-                        <div class="fr"><span class="green">已收藏</span></div>
+                        <div class="fr"><span class="green">已完成</span></div>
                     </div>
                     <div class="list-box">
                         <h3 class="text-ellipsis">
@@ -105,7 +105,7 @@
                         <div class="list-item clearfix">
                             <div class="fl">冻结完成时间：<span>{$vo['dongjirtime']|date="Y-m-d H:i:s",###}</span></div>
                             <div class="fr">
-                                 <a href="javascript:;" class="btn" @click.stop="cancel(vo.fid)">已收藏</a>
+                                 <a href="javascript:;" class="btn" @click.stop="cancel(vo.fid)">已完成</a>
                             </div>
                         </div>
                     </div>

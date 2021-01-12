@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="__WAP__/layui-v2.4.5/css/layui.css" >
 <style>
 	body{
-    background: #270858;
+    background: #327585;
 	}
 	.sett_xiug{display:none;}
 	.button,#clipBtn{width: 130px;font-size: 16px;}
@@ -42,7 +42,7 @@
 			<div class="Balance">
 				<a href="{:U('Index/Bancerecord')}">
 					<strong><span  class="total_ls">{$uinfo['total_lingshi']+0|sprintf="%.2f",###}</span></strong>
-						<p>积分</p>
+						<p>购物券</p>
 				</a>
 			</div>
 			
@@ -59,13 +59,20 @@
 						<p>推广收益</p>
 				</a>
 			</div>
+			
+			<div class="Balance">
+				<a href="{:U('Index/geo_details')}">
+						<strong><span  class="userteam">{$uinfo['geo']+0|sprintf="%.2f",###}</span></strong>
+						<p>GEO</p>
+				</a>
+			</div>
 	</div>
 		
     <div class="setlistbox">
 		<ul class="user_categories">
 			<li><a href="{:U('Index/adoption')}">
                     <img src="__WIMG__/set01.png" alt="">
-                    <p>收藏记录</p>
+                    <p>抢购记录</p>
             </a></li>
             <li><a href="{:U('Index/transfer')}">
                     <img src="__WIMG__/set02.png" alt="">
@@ -78,7 +85,7 @@
             
         </ul>
         <ul class="user_categories">
-			<li><a href="{:U('User/Teamdets')}">
+			<li><a href="{:U('User/team_statistics')}">
                     <img src="__WIMG__/cen10-iocn.png" alt="">
                     <p>我的团队</p>
             </a></li>
@@ -112,11 +119,11 @@
 	<div class="fish-foot clearfix">
 		<a href="{:U('Index/index')}" class="col-4">
 			<i class="layui-icon layui-icon-star" style="font-size: 23px;display: block; color: #f727ef;"></i>
-			<span>星座空间</span>
+			<span>纽西之谜</span>
 		</a> 
 		<a href="{:U('Index/pond')}" class="col-4 ">
 			<i class="layui-icon layui-icon-chart" style="font-size: 23px;display: block; color: #f727ef;"></i>
-			<span>我的星座</span>
+			<span>已购产品</span>
 		</a> 
 		<a href="{:U('User/Personal')}" class="col-4 act">
 			<i class="layui-icon layui-icon-username" style="font-size: 23px;display: block; color: #f727ef;"></i>

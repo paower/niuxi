@@ -64,10 +64,11 @@
                                                     <th>ID</th>
                                                     <th>用户等级</th>
                                                     <th>直推人数</th>
+                                                    <th>团队人数</th>
                                                     <th>团队收益</th>
-                                                    <th>所需收益</th>
+                                                    <!-- <th>所需收益</th>
                                                     <th>所需积分</th>
-                                                    <th>是否需要实名</th>
+                                                    <th>是否需要实名</th> -->
                                                     <th style="max-width:20%" >操作</th>
                                                 </tr>
                                             </thead>
@@ -83,9 +84,12 @@
                                                                 {$data['push_num']}人 
                                                             </td>
                                                             <td>
-                                                                {$data['scroll_num']}%
+                                                                {$data['team_num']+0}人 
                                                             </td>
                                                             <td>
+                                                                {$data['scroll_num']}%
+                                                            </td>
+                                                            <!-- <td>
                                                                 {$data['active_num']}
                                                             </td>
                                                             <td>
@@ -97,7 +101,7 @@
                                                                 <else />
                                                                         <i class="fa fa-ban text-danger"></i>
                                                                 </eq>
-                                                            </td>
+                                                            </td> -->
                                                             <td>
 
 

@@ -77,117 +77,163 @@ function pidisme($uid){
   }
   return $save;
 }
+/**
+ * 收益分配
+ */
+function allot($uid,$price,$type){
+  //推广收益
+  $money = $price*1;
+  if($money>=0){
+    M('user')->where("userid = $uid")->setInc('total_tuiguang',$money);
+    $data['get_id'] = $uid;
+    $data['get_nums'] = $money;
+    $data['get_time'] = time();
+    $data['get_type'] = 18;
+    $data['now_nums'] =  M('user')->where("userid = $uid")->getField('total_tuiguang');
+    $addpid = M('tranmoney')->add($data);
+
+    M('user')->where("userid = $uid")->setInc('all_sy',$money);
+    //商城币
+    // $shop = $price*0.4;
+    // M('user')->where("userid = $uid")->setInc('geo',$shop);
+    // $info['uid'] = $uid;
+    // $info['type'] = $type;
+    // $info['num'] = $shop;
+    // $info['genre'] = 1;
+    // $info['time'] = time();
+    // $info['now_num'] = M('user')->where("userid = $uid")->getField('geo');
+    // $shopid = M('geo_details')->add($info);
+  }
+}
 
 /**
  * 推广收益
  */
-function tuiguang($uid,$record_price,$profit_value){
-  $userinfo = M('user')->where('userid='.$uid)->field('pid,gid,ggid')->find();
+function tuiguang($uid,$record_price){
+  $userinfo = M('user')->where('userid='.$uid)->field('pid,gid')->find();
 
-  $getmoney = $record_price*0.08*$profit_value;
-  $pidyue =  M('user')->where(array('userid'=>$userinfo['pid']))->field('total_tuiguang,is_real_name,vip_grade')->find();
-  if($pidyue['is_real_name']!=0){
-    M('user')->where(array('userid'=>$userinfo['pid']))->setInc('total_tuiguang',$getmoney);
-    $piddata['get_id'] = $userinfo['pid'];
-    $piddata['get_nums'] = $getmoney;
-    $piddata['get_time'] = time();
-    $piddata['get_type'] = 18;
-    $piddata['now_nums'] =  $pidyue['total_tuiguang']+$getmoney;
-    $addpid = M('tranmoney')->add($piddata);
+  $getmoney = $record_price*0.02;
+  $pid_son_num = M('user')->where(array('pid'=>$userinfo['pid'],'is_vip'=>2))->count();
+  if($pid_son_num>=5){
+    allot($userinfo['pid'],$getmoney,2);
   }
 
-  $getmoneys = $record_price*0.03*$profit_value;
-  $gidyue =  M('user')->where(array('userid'=>$userinfo['pid']))->field('total_tuiguang,is_real_name,vip_grade')->find();
-  if($gidyue['is_real_name']!=0){
-    M('user')->where(array('userid'=>$userinfo['gid']))->setInc('total_tuiguang',$getmoney);
-    $giddata['get_id'] = $userinfo['gid'];
-    $giddata['get_nums'] = $getmoneys;
-    $giddata['get_time'] = time();
-    $giddata['get_type'] = 18;
-    $giddata['now_nums'] =  $gidyue['total_tuiguang']+$getmoneys;
-    $addgid = M('tranmoney')->add($giddata);
+  $getmoney = $record_price*0.01;
+  $gid_son_num = M('user')->where(array('pid'=>$userinfo['gid'],'is_vip'=>2))->count();
+  if($gid_son_num>=5){
+    allot($userinfo['gid'],$getmoney,3);
   }
-    
-  $getmoneyss = $record_price*0.05*$profit_value;
-  $ggidyue =  M('user')->where(array('userid'=>$userinfo['pid']))->field('total_tuiguang,is_real_name,vip_grade')->find();
-  if($ggidyue['is_real_name']!=0){
-    M('user')->where(array('userid'=>$userinfo['ggid']))->setInc('total_tuiguang',$getmoney);
-    $ggiddata['get_id'] = $userinfo['ggid'];
-    $ggiddata['get_nums'] = $getmoneyss;
-    $ggiddata['get_time'] = time();
-    $ggiddata['get_type'] = 18;
-    $ggiddata['now_nums'] =  $ggidyue['total_tuiguang']+$getmoneyss;
-    $addggid = M('tranmoney')->add($ggiddata);
-  }
+
   return $userinfo;
 }
 
 /**
+ * 商城币
+ */
+function geo($uid,$price,$type){
+  M('user')->where(array('userid'=>$uid))->setInc('geo',$price*2/100);
+  $data['uid'] = $uid;
+  $data['type'] = $type;
+  $data['num'] = $price*2/100;
+  switch ($type) {
+    case '1':
+      $data['genre'] = 1;
+      break;
+  }
+  $data['time'] = time();
+  $data['now_num'] = M('user')->where("userid = $uid")->getField('geo');
+  M('geo_details')->add($data);
+}
+/**
+ * 团队人数
+ */
+function team_num($uid){
+  $num = M('user')->where("pid = $uid")->count();
+  $son_list = M('user')->where("pid = $uid")->select();
+  foreach ($son_list as $k => $v) {
+    $uid = $v['userid'];
+    $res = team_num($uid);
+    $num+=$res;
+  }
+  return $num;
+}
+/**
+ * 有效团队人数
+ */
+function team_vip_num($uid){
+  $num = M('user')->where(array('pid'=>$uid,'is_vip'=>2))->count();
+  $son_list = M('user')->where("pid = $uid")->select();
+  foreach ($son_list as $k => $v) {
+    $uid = $v['userid'];
+    $res = team_num($uid);
+    $num+=$res;
+  }
+  return $num;
+}
+/**
+ * 团队激活人数
+ */
+function team_jihuo_num($uid){
+  $num = M('user')->where(array('pid'=>$uid,'activate'=>1))->count();
+  $son_list = M('user')->where("pid = $uid")->select();
+  foreach ($son_list as $k => $v) {
+    $uid = $v['userid'];
+    $res = team_num($uid);
+    $num+=$res;
+  }
+  return $num;
+}
+/**
+ * 级别
+ */
+function get_level($uid){
+  $son = M('user')->where(array('pid'=>$uid,'is_vip'=>2))->count();
+  $team = team_num($uid);
+  $level = 0;
+  $list = M('user_level')->order('id asc')->select();
+  foreach ($list as $k => $v) {
+    if($son>=$v['push_num'] && $team>=$v['team_num']){
+      $level = $v['vip_grade'];
+    }
+  }
+  return $level;
+}
+/**
  * 团队收益
  */
-function steamsy($uid,$pay_nums,$profit_value){
-
-  $pidpath = M('user')->where(array('userid'=>$uid))->field('path')->find();
-  $pidpath = array_filter(explode('-',$pidpath['path']));
-  $user_level = M('user_level')->order('id desc')->select();
-  $manzu = 0;
-  foreach ($pidpath as $key => $row) {
-      $jl[$key] = $row[$key];
-  }
-  array_multisort($jl, SORT_ASC, $pidpath);
-  foreach ($pidpath as $k => $v) {
-    if($k==0 || $k==1 || $k==2){
-      continue; 
-    }
-    $pidyue = M('user')->where(array('userid'=>$v))->field('total_tuiguang,vip_grade')->find();
-    $pidnums = M('user')->where(array('pid'=>$v,'is_real_name'=>1))->count();//直推数
-    $where = "pay_id={$v} AND get_type=13 OR get_type=14";
-    $users = M('user')->where(array('pid'=>$v,'is_real_name'=>1))->select();
-    foreach($users as $kuser=>$vuser){
-      $map['pay_id'] = $vuser['userid'];
-      $map['get_type'] = array('in',array('13','14'));
-      $jifensum += M('tranmoney')->where($map)->sum('get_nums');//积分消耗
-
-      $profit = M('user')->where(array('userid'=>$vuser))->getField('total_tuiguang');//收益
-
-      foreach ($user_level as $ks => $vs) {
-        if($jifensum>=$vs['active_jf'] && $profit>=$vs['active_num']){
-          $manzu = $manzu+1;
-          if($manzu>=$vs['push_num']){
-            $getmoney = $vs['scroll_num']*$pay_nums/100*$profit_value;
-            M('user')->where(array('userid'=>$v))->setInc('total_tuiguang',$getmoney);
-            $piddata['get_id'] = $v;
-            $piddata['get_nums'] = $getmoney;
-            $piddata['get_time'] = time();
-            $piddata['get_type'] = 17;
-            $piddata['now_nums'] = $getmoney+$pidyue;
-            $addpid = M('tranmoney')->add($piddata);
-            break;
-          }
-        }
+function steamsy($uid,$pay_nums){
+  $my_level = get_level($uid);
+  for ($i=0; $i < 1; $i++) { 
+    $pid = M('user')->where("userid = $uid")->getField('pid');
+    if($pid){
+      $plevel = get_level($pid);
+      if($plevel>$my_level && $plevel>=1){
+        $bili = M('user_level')->where("vip_grade = $plevel")->getField('scroll_num');
+        $money = $pay_nums*$bili/100;
+        allot($pid,$money,3);
+        $i--;
       }
+      if($plevel==$my_level && $plevel >=2){
+        switch ($plevel) {
+          case '2':
+            $money = $pay_nums*0.01;
+            break;
+          case '3':
+            $money = $pay_nums*0.02;
+            break;
+          case '4':
+            $money = $pay_nums*0.04;
+            break;
+        }
+        allot($pid,$money,3);
+        $i--;
+      }
+      if($plevel<$my_level){
+        break;
+      }
+      $uid = $pid;
     }
-
-    // $wheres = "pay_id={$v} AND get_type=15 OR get_type=16";
-    // $shouyi = M('tranmoney')->where($wheres)->sum('get_nums');//收益
-    // //$vip_grade = M('user_level')->where(array('id'=>$userinfo['vip_grade']))->field('scroll_num,active_num,active_jf')->find();
-    // var_dump($pidnums.'/'.$jifensum.'/'.$shouyi);
-    // foreach ($user_level as $ks => $vs) {
-    //   if($pidnums>=$vs['push_num'] && $jifensum>=$vs['active_jf'] && $shouyi>=$vs['active_num'] && $vs['id']!=1 && $pidyue['vip_grade']>1){
-        
-    //     $getmoney = $vs['scroll_num']*$pay_nums/100*$profit_value;
-    //     M('user')->where(array('userid'=>$v))->setInc('total_tuiguang',$getmoney);
-    //     $piddata['get_id'] = $v;
-    //     $piddata['get_nums'] = $getmoney;
-    //     $piddata['get_time'] = time();
-    //     $piddata['get_type'] = 17;
-    //     $piddata['now_nums'] = $getmoney+$pidyue;
-    //     $addpid = M('tranmoney')->add($piddata);
-    //     break;
-    //   }
-    // }
   }
-  return $addpid;
 }
 /**
    * 上传图片方法

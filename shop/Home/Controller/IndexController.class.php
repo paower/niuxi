@@ -6,7 +6,12 @@ use Think\Controller;
 
 class IndexController extends CommonController
 {
-
+    public function geo_details(){
+        $uid = session('userid');
+        $list = M('geo_details')->where("uid = $uid")->order('time desc')->select();
+        $this->assign('list',$list);
+        $this->display();
+    }
   
 
     public function index()
@@ -65,15 +70,23 @@ class IndexController extends CommonController
         $this->assign('type',$type);
         //星座列表
         $list = M('scroll')->where(array('status'=>1))->select();
+        $yyue = M('yuyue')->where(array('uid'=>$userid,'status'=>1))->select();
 		foreach($list as $key => $value){
             $yuyue_start_time = strtotime($value['yuyue_start_time']);
             $yuyue_end_time = strtotime($value['yuyue_end_time']);
             $start_time = strtotime($value['start_time']);
             $end_time = strtotime($value['end_time']);
             $list[$key]['state'] = 3;
-            
+            $list[$key]['daojishi'] = $start_time-time();
+
+
             if(time() > $yuyue_start_time && time() < $yuyue_end_time){
                 $list[$key]['state'] = 1;
+            }
+            foreach ($yyue as $k => $v) {
+                if($value['id'] == $v['scroll_id']){
+                    $list[$key]['state'] = 4;
+                }
             }
             if(time() > $start_time && time() < $end_time){
                 $list[$key]['state'] = 2;
@@ -89,6 +102,7 @@ class IndexController extends CommonController
             if(empty($nums)){
                 $list[$key]['state'] = 3;
             }
+            
           
         }
 
@@ -277,6 +291,10 @@ class IndexController extends CommonController
     public function yyue(){
         if(IS_AJAX){
             $userid = session('userid');
+            $is_jihuo = M('user')->where("userid = $userid")->getField('activate');
+            if($is_jihuo == 0){
+                $this->ajaxReturn(array('Boolean' => false,'text' => '账号未激活','code'=>99));
+            }
             $scroll_id = I('id');
             $scrollinfo = M('scroll')->where(array('id' => $scroll_id))->find();
             
@@ -345,6 +363,10 @@ class IndexController extends CommonController
 	{
 		if(IS_AJAX){
 			$userid = session('userid');
+            $is_jihuo = M('user')->where("userid = $userid")->getField('activate');
+            if($is_jihuo == 0){
+                $this->ajaxReturn(array('Boolean' => false,'text' => '账号未激活','code'=>99));
+            }
 			$scroll_id = I('id');
             $scrollinfo = M('scroll')->where(array('id' => $scroll_id))->find();
             
@@ -1018,6 +1040,19 @@ private function get_banner()
         exit(json_encode($arr));
     }
 
+    public function check_top($uid,$get_id){
+        for ($i=0; $i < 1; $i++) { 
+            $pid = M('user')->where("userid = $get_id")->getField('pid');
+            if(empty($pid)){
+                return false;
+            }
+            if($pid == $uid){
+                return true;
+            }
+            $get_id = $pid;
+        }
+    }
+
     //转出
     public function Turnout()
     {
@@ -1035,6 +1070,10 @@ private function get_banner()
             }
             if ($issetU) {
                 $url = '/Index/Changeout/sid/' . $issetU['userid'];
+                $res = $this->check_top($userid,$issetU['userid']);
+                if(!$res){
+                    ajaxReturn('只能上级转给下级哦~', 0);die;
+                }
                 ajaxReturn($url, 1);
             } else {
                 ajaxReturn('并不存在该用户哦~', 0);

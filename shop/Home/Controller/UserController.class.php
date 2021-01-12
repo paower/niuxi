@@ -9,10 +9,97 @@ class UserController extends CommonController
         define("SECRET_KEY", C('secret_key'));//你的秘钥
 
     }
+
+    public function team_statistics(){
+        $uid = session('userid');
+        //累计推广收益
+        $where['get_id|pay_id'] = $uid;
+        $where['get_type'] = array('in', '16,18,17,24');
+        $list = M('tranmoney')->where($where)->select();
+        $ljsy = 0;
+        foreach ($list as $k => $v) {
+            $sy = $v['get_nums'];
+            $ljsy += $sy;
+        }
+        $this->assign('ljsy',$ljsy);
+        //有效直推人数
+        $son = M('user')->where(array('pid'=>$uid,'is_vip'=>2))->count();
+        $this->assign('son',$son);
+        //有效团队人数
+        $team_vip_num = team_vip_num($uid);
+        $this->assign('team_vip_num',$team_vip_num);
+        //直推激活人数
+        $son_jihuo = M('user')->where(array('pid'=>$uid,'activate'=>1))->count();
+        $this->assign('son_jihuo',$son_jihuo);
+        //有效二代和激活
+        $son = M('user')->where("pid = $uid")->select();
+        $son2 = 0;
+        $son2_jihuo =0;
+        foreach ($son as $k => $v) {
+            $id = $v['userid'];
+            $num = M('user')->where(array('pid'=>$id,'is_vip'=>2))->count();
+            $son2 += $num;
+            $num2 = M('user')->where(array('pid'=>$id,'activate'=>1))->count();
+            $son2_jihuo += $num2;
+        }
+        $this->assign('son2',$son2);
+        $this->assign('son2_jihuo',$son2_jihuo);
+        //有效二代和激活
+        $son = M('user')->where("pid = $uid")->select();
+        $list = [];
+        foreach ($son as $k => $v) {
+            $id = $v['userid'];
+            $son2 = M('user')->where("pid = $id")->select();
+            foreach ($son2 as $key => $value) {
+                $list[] = $value;
+            }
+        }
+        $son3 = 0;
+        $son3_jihuo = 0;
+        foreach ($list as $k => $v) {
+            $id = $v['userid'];
+            $num = M('user')->where(array('pid'=>$id,'is_vip'=>2))->count();
+            $son3 += $num;
+            $num2 = M('user')->where(array('pid'=>$id,'activate'=>1))->count();
+            $son3_jihuo += $num2;
+        }
+        $this->assign('son3',$son3);
+        $this->assign('son3_jihuo',$son3_jihuo);
+        //团队激活人数
+        $team_jihuo = team_jihuo_num($uid);
+        $this->assign('team_jihuo',$team_jihuo);
+        //今日团队抢单金额
+        $today = strtotime(date("Y-m-d"),time());
+        $team_uid = $this->child($uid);
+        $map['record_status'] = 4;
+        $map['out_uid'] = array('in',$team_uid);
+        $map['complete_time'] = array('egt',$today);
+        $list = M('record')->where($map)->select();
+        $money = 0;
+        foreach ($list as $k => $v) {
+            $money += $v['record_price'];
+        }
+        $this->assign('money',$money);
+        $this->display();
+    }
+
+    public function child($uid)
+    {
+        $uid_array[]=$uid;
+        $list=M('user')->where(['pid'=>$uid])->field('userid')->select();
+        foreach($list as $k=>$v)
+        {
+            $uid_array[]=$v['userid'];
+            $uid_array=array_merge($uid_array,$this->child($v['userid']));
+        }
+        $uid_array = array_unique($uid_array);
+        return $uid_array;
+    }
+
    public function Personal()
     {
         $uid = session('userid');
-        $uinfo = M('user')->where(array('userid' => $uid))->field('username,is_dailishang,userid,img_head,use_grade,vip_grade,total_lingshi,total_active,mobile,total_tuiguang')->find();
+        $uinfo = M('user')->where(array('userid' => $uid))->field('username,is_dailishang,userid,img_head,use_grade,vip_grade,total_lingshi,total_active,mobile,total_tuiguang,geo')->find();
 
         //获取用户直推活跃度
         $where['pid'] = $uid;
@@ -489,6 +576,18 @@ class UserController extends CommonController
                 $this->assign('uinfo',$uinfo);
             }
         }
+        //自己信息
+        $info = M('user')->where("userid = $uid")->find();
+        $this->assign('info',$info);
+        //查询我的团队人数
+        $team_num = team_num($uid);
+        $this->assign('team_num',$team_num);
+        //直推有效人数
+        $son = M('user')->where(array('pid'=>$uid,'is_vip'=>2))->count();
+        $this->assign('son',$son);
+        //团队有效人数
+        $team_vip_num = team_vip_num($uid);
+        $this->assign('team_vip_num',$team_vip_num);
         // $where['pid'] = $uid;
 		$where['pid|gid|ggid'] = $uid;
         // $where['vip_grade'] = array('egt',1);

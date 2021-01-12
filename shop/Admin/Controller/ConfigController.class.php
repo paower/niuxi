@@ -84,6 +84,7 @@ class ConfigController extends AdminController
         $jifens= D('config')->where("name='tzhuanrang_min'")->getField("value");
         $regjifens= D('config')->where("name='tzhuanrang_max'")->getField("value");
         $rens= D('config')->where("name='rens'")->getField("value");
+        $needjifen = D('config')->where("name='needjifen'")->getField("value");
 
 
         // 蓝钻会员
@@ -103,7 +104,7 @@ class ConfigController extends AdminController
         $min_balance['status'] = D('config')->where("name='min_balance'")->getField('status');
 
         $this->assign('b_drills',$b_drills)->assign('b_num',$b_num)->assign('g_drills',$g_drills)->assign('g_num',$g_num)->assign('false_user',$false_user)->assign('add_user',$add_user)->assign('min_balance',$min_balance);
-        $this->assign('jifen',$jifen)->assign('regjifen',$regjifen)->assign('jifens',$jifens)->assign('regjifens',$regjifens)->assign('rens',$rens)->display("base");
+        $this->assign('jifen',$jifen)->assign('regjifen',$regjifen)->assign('jifens',$jifens)->assign('regjifens',$regjifens)->assign('rens',$rens)->assign('needjifen',$needjifen)->display("base");
     }
 
 
@@ -336,10 +337,12 @@ class ConfigController extends AdminController
       $regjifen=I('post.zhuanrang_max');
       $jifens=I('post.tzhuanrang_min');
       $regjifens=I('post.tzhuanrang_max');
+      $needjifen=I('post.needjifen');
       D('Config')->where("name='zhuanrang_min'")->setField('value',$jifen);
       D('Config')->where("name='zhuanrang_max'")->setField('value',$regjifen);
       D('Config')->where("name='tzhuanrang_min'")->setField('value',$jifens);
       D('Config')->where("name='tzhuanrang_max'")->setField('value',$regjifens);
+      D('Config')->where("name='needjifen'")->setField('value',$needjifen);
 
         $this->success('保存成功！');
     }

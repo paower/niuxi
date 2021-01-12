@@ -13,8 +13,8 @@
 	
 <style>
     .set-list{padding-top:12px;}
-    .set-list li{border-bottom:1px solid #3b1080;}
-    .set-list li a{display:block;padding:12px;background:#2e0571;}
+    .set-list li{border-bottom:1px solid #a2a2a2;}
+    .set-list li a{display:block;padding:12px;}
     .set-list li a .fr span{color:#ccc;}
     .set-foot .btn{padding:12px;display:block;background:#4c0db3;text-align:center;margin:24px 12px;border-radius:5px;}
 	.nick_name{
@@ -77,6 +77,13 @@
                 <!-- <div class="fr"><i class="icon-right"></i></div> -->
             <!-- </a> -->
         <!-- </li> -->
+		<li>
+            <!-- <a href="javascript:void(0);" onclick="shop()" class="clearfix"> -->
+            <a href="{:U('Shop/Home/index')}" class="clearfix">
+                <div class="fl">线上商城</div>
+                <div class="fr"><i class="icon-right"></i></div>
+            </a>
+        </li>
         <li>
             <a href="{:U('User/Aboutus')}" class="clearfix">
                 <div class="fl">关于我们</div>
@@ -91,7 +98,14 @@
 
     </div>
     <!-- js -->
-	
+	<script src="__WJS__/jquery1.11.1.min.js"></script>
+<script type="text/javascript" src="__COM__/layer/layer.js"></script>
+<script type="text/javascript" src="__COM__/js/index.js"></script>
+<script>
+	function shop(){
+				layer.msg("线上商城未开放");
+			}
+</script>
 <script>
     var app = new Vue({
         el: '#app',

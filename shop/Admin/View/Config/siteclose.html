@@ -73,45 +73,45 @@
                             </div>
                         </form>
 
-                        <hr />
-                         <form action="{:U('Config/sitecloseSave')}" method="post" class="form-horizontal form form-builder form2">
-                                <div class="form-type-list">
+                        <!-- <hr /> -->
+                         <!-- <form action="{:U('Config/sitecloseSave')}" method="post" class="form-horizontal form form-builder form2"> -->
+                                <!-- <div class="form-type-list"> -->
 
-                                   <div class="form-group ">
-                                        <label class="left control-label">商城开关：</label>
-                                        <div class="right">
-                                            <div class="radio-inline cui-control cui-radio">
-                                                <label for="config[ADMIN_TABS]3">
-                                                    <input type="radio" id="config[ADMIN_TABS]3" class="radio" name="TOGGLE_MALL_SITE" value="0" <eq name="info['TOGGLE_MALL_SITE']" value='0' > checked="true"</eq> > 
-                                                    <span class="cui-control-indicator"></span>
-                                                    <span>关闭</span>
-                                               </label>
-                                            </div>
-                                            <div class="radio-inline cui-control cui-radio">
-                                                    <label for="config[ADMIN_TABS]2">
-                                                        <input type="radio" id="config[ADMIN_TABS]2" class="radio" name="TOGGLE_MALL_SITE" value="1" <eq name="info['TOGGLE_MALL_SITE']" value='1' > checked="true"</eq> > 
-                                                        <span class="cui-control-indicator"></span>
-                                                        <span>开启</span>
-                                                    </label>
-                                            </div>        
-                                        </div>
-                                    </div>
+                                   <!-- <div class="form-group "> -->
+                                        <!-- <label class="left control-label">商城开关：</label> -->
+                                        <!-- <div class="right"> -->
+                                            <!-- <div class="radio-inline cui-control cui-radio"> -->
+                                                <!-- <label for="config[ADMIN_TABS]3"> -->
+                                                    <!-- <input type="radio" id="config[ADMIN_TABS]3" class="radio" name="TOGGLE_MALL_SITE" value="0" <eq name="info['TOGGLE_MALL_SITE']" value='0' > checked="true"</eq> >  -->
+                                                    <!-- <span class="cui-control-indicator"></span> -->
+                                                    <!-- <span>关闭</span> -->
+                                               <!-- </label> -->
+                                            <!-- </div> -->
+                                            <!-- <div class="radio-inline cui-control cui-radio"> -->
+                                                    <!-- <label for="config[ADMIN_TABS]2"> -->
+                                                        <!-- <input type="radio" id="config[ADMIN_TABS]2" class="radio" name="TOGGLE_MALL_SITE" value="1" <eq name="info['TOGGLE_MALL_SITE']" value='1' > checked="true"</eq> >  -->
+                                                        <!-- <span class="cui-control-indicator"></span> -->
+                                                        <!-- <span>开启</span> -->
+                                                    <!-- </label> -->
+                                            <!-- </div>         -->
+                                        <!-- </div> -->
+                                    <!-- </div> -->
 
-                                <div class="form-group item_config[WEB_SITE_DESCRIPTION] ">
-                                    <label class="left control-label">关闭说明：</label>
-                                    <div class="right">
-                                        <textarea class="form-control textarea" rows="5" name="tip">{$info[2].tip}</textarea>
-                                        <span class="check-tips text-muted small">说明商城关闭原因</span>
-                                    </div>
-                                </div>
+                                <!-- <div class="form-group item_config[WEB_SITE_DESCRIPTION] "> -->
+                                    <!-- <label class="left control-label">关闭说明：</label> -->
+                                    <!-- <div class="right"> -->
+                                        <!-- <textarea class="form-control textarea" rows="5" name="tip">{$info[2].tip}</textarea> -->
+                                        <!-- <span class="check-tips text-muted small">说明商城关闭原因</span> -->
+                                    <!-- </div> -->
+                                <!-- </div> -->
 
 
-                                <div class="form-group"></div>
-                                <div class="form-group bottom_button_list">
-                                    <a class="btn btn-primary submit ajax-post" type="submit" target-form="form2">保存</a>
-                                </div>
-                            </div>
-                        </form>
+                                <!-- <div class="form-group"></div> -->
+                                <!-- <div class="form-group bottom_button_list"> -->
+                                    <!-- <a class="btn btn-primary submit ajax-post" type="submit" target-form="form2">保存</a> -->
+                                <!-- </div> -->
+                            <!-- </div> -->
+                        <!-- </form> -->
 
                          <hr />
                         <form action="{:U('Config/sitecloseSave')}" method="post" class="form-horizontal form form-builder form1">
@@ -149,6 +149,46 @@
                                 <div class="form-group"></div>
                                 <div class="form-group bottom_button_list">
                                     <a class="btn btn-primary submit ajax-post" type="submit" target-form="form1">保存</a>
+                                </div>
+                            </div>
+                        </form>
+
+                         <hr />
+                        <form action="{:U('Config/sitecloseSave')}" method="post" class="form-horizontal form form-builder form2">
+                                <div class="form-type-list">
+
+                                   <div class="form-group ">
+                                        <label class="left control-label">转让开关：</label>
+                                        <div class="right">
+                                            <div class="radio-inline cui-control cui-radio">
+                                                <label for="config[ADMIN_TABS]0">
+                                                    <input type="radio" id="config[ADMIN_TABS]0" class="radio" name="close_zr" value="0" <eq name="info['close_zr']" value='0' > checked="true"</eq> > 
+                                                    <span class="cui-control-indicator"></span>
+                                                    <span>关闭</span>
+                                               </label>
+                                            </div>
+                                            <div class="radio-inline cui-control cui-radio">
+                                                    <label for="config[ADMIN_TABS]1">
+                                                        <input type="radio" id="config[ADMIN_TABS]1" class="radio" name="close_zr" value="1" <eq name="info['close_zr']" value='1' > checked="true"</eq> > 
+                                                        <span class="cui-control-indicator"></span>
+                                                        <span>开启</span>
+                                                    </label>
+                                            </div>        
+                                        </div>
+                                    </div>
+
+                                <div class="form-group item_config[WEB_SITE_DESCRIPTION] ">
+                                    <label class="left control-label">关闭描述：</label>
+                                    <div class="right">
+                                        <textarea class="form-control textarea" rows="5" name="tip">{$info[3].tip}</textarea>
+                                        <span class="check-tips text-muted small">说明转让关闭原因</span>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group"></div>
+                                <div class="form-group bottom_button_list">
+                                    <a class="btn btn-primary submit ajax-post" type="submit" target-form="form2">保存</a>
                                 </div>
                             </div>
                         </form>

@@ -59,22 +59,24 @@
 
   <div class="methods">
     <h1>请选择支付方式</h1>
-    <p>
-    <i class="iconfont" style="color: #f04f37">&#xe60e;</i>
+    <!-- <p> -->
+    <!-- <i class="iconfont" style="color: #f04f37">&#xe60e;</i> -->
 
-    <label for="money">积分支付（余额：{$farmlink_jifen}元）</label>
-    <input id="money" type="radio" name="payway" value="1">
+    <!-- <label for="money">积分支付（余额：{$farmlink_jifen}元）</label> -->
+    <!-- <input id="money" type="radio" name="payway" value="1"> -->
+    <!-- </p> -->
+	<p>
+		<i class="iconfont" style="color: #f04f37">&#xe60e;</i>
+		<label for="money">GEO支付（余额：{$geo}）</label>
+		<input id="" type="radio" name="payway" value="2" checked="">
     </p>
-
-
-
   </div>
 
 
 
 
   <div class="lijizhifu">
-    <a href="{:U('Pay/pays',array('oid'=>$order[0]['order_id'],'type'=>4))}">立即支付</a>
+    <a href="{:U('Pay/pays',array('oid'=>$order[0]['order_id'],'type'=>4,'payway'=>2))}" id="go">立即支付</a>
   </div>
   <input type="hidden" id="order_id" value="" >
 
@@ -87,8 +89,10 @@
 <script type="text/javascript">
 
     /*选中消费积分支付不显示赠送积分*/
-    $("input[name='paytype']").change(function () {
-        var pay_type = $("input[name='paytype']:checked").val();
+    $("input[name='payway']").change(function () {
+        var pay_type = $("input[name='payway']:checked").val();
+        var url = '/Shop/Pay/pays/oid/'+{$order[0]['order_id']}+'/type/4/payway/'+pay_type+'.html';
+        $('#go').attr('href',url);
         if (pay_type == 4) {
             $('.paytypes').hide();
         } else {

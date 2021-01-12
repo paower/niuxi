@@ -223,12 +223,16 @@ class PayController extends CommonController
 		//查询农联金额
 		$farmlink_jifen = M("user")->where(array("userid" => $uid))->getField("total_lingshi");
 		$this->assign("farmlink_jifen", $farmlink_jifen);
+		//查询商城币余额
+		$geo = M("user")->where(array("userid" => $uid))->getField("geo");
+		$this->assign("geo", $geo);
 		$this->assign("order", $order);
 		$this->display();
 	}
 
 	public function pays()
 	{
+		$payway = I('payway');
 		$type = trim(I("type"));
 		$oid = trim(I("oid"));
 		$uid = session('userid');
@@ -264,13 +268,23 @@ class PayController extends CommonController
 		} else {
 			$payField = "shop_vpay";
 		}
-		$neednums = M('user')->where(array('userid' => $uid))->getField('total_lingshi');
+		if($payway == 1){
+			$neednums = M('user')->where(array('userid' => $uid))->getField('total_lingshi');
+		}elseif($payway == 2){
+			$neednums = M('user')->where(array('userid' => $uid))->getField('geo');
+		}
 		if ($neednums < $pay_money) {
-			error_alert('您的积分余额不足');
+			error_alert('您的余额不足');
 		} else {
 		    //减少余额
             M('user')->startTrans();
-			$res_dec = M('user')->where(array('uid' => $uid))->setDec('total_lingshi', $pay_money);
+            if($payway == 1){
+				$res_dec = M('user')->where(array('userid' => $uid))->setDec('total_lingshi', $pay_money);
+            }elseif($payway == 2){
+            	$res_dec = M('user')->where(array('userid' => $uid))->setDec('geo', $pay_money);
+            	//累计消耗
+            	M('user')->where(array('userid' => $uid))->setInc('pay_geo',$pay_money);
+            }
 			//查询当前积分
             // $jifen = M('user')->where(array('uid' => $uid))->getField('fengmi_num');
 			//增加金额80%的积分

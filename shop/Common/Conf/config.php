@@ -11,9 +11,9 @@ return array(
 
 
     // 'MODULE_DENY_LIST'   => array('Common','Admin'),
-    'MODULE_ALLOW_LIST'    =>    array('Home','adminxin','Shop','Zadmin'),
+    'MODULE_ALLOW_LIST'    =>    array('Home','admin','Shop','Zadmin'),
     'DEFAULT_MODULE'       =>    'Home',
-    'URL_MODULE_MAP'    =>    array('adminxin'=>'admin'),  //模块映射
+    'URL_MODULE_MAP'    =>    array('admin'=>'admin'),  //模块映射
     
     'URL_MODEL'=>2, //去掉index.php   
     //全局配置

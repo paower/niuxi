@@ -9,7 +9,7 @@
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0}
 fieldset,img{border:0}
 body{
-	background:#270858 ;
+	background:#327585 ;
 	width:100%;
 	height:100%;
 	background-repeat: no-repeat;
@@ -33,11 +33,11 @@ caption,th{text-align:left}
 sup,sub{font-size:100%;vertical-align:baseline}
 blockquote,q{quotes:none}
 a{color:#fff !important;}
-::-webkit-input-placeholder{color:#666}
-:-moz-placeholder{color:#666}
-::-moz-placeholder{color:#666}
-:-ms-input-placeholder{color:#666}
-::input-placeholder{color:#666}
+::-webkit-input-placeholder{color:#fff}
+:-moz-placeholder{color:#fff}
+::-moz-placeholder{color:#fff}
+:-ms-input-placeholder{color:#fff}
+::input-placeholder{color:#fff}
 :link,:visited,ins{text-decoration:none}
 :focus{outline:0;-moz-outline:0}
 .fl{float:left}
@@ -69,7 +69,7 @@ a{color:#fff !important;}
 /* main */
 .fish-main{margin-top:45px;}
 .fish-head{
-	background: #451298;
+	background: #327585;
 	height:44px;line-height:44px;position:fixed;text-align:center;width:100%;top:0;z-index:123}
 .fish-head .head-tit{font-size:16px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;line-height:45px;}
 .fish-head>a{position:absolute;top:0;display:block;padding:0 12px;}
@@ -89,7 +89,7 @@ a{color:#fff !important;}
     box-sizing: border-box;
     width: 100%;
     list-style: none;
-    background-image: linear-gradient(180deg, #7f10c7 20%,#49218a 80%);
+    background:#327585;
     -moz-box-shadow: 0 0 5px 0 rgba(0,0,0,.1);
     box-shadow: 0 0 5px 0 rgba(0,0,0,.1);
 
@@ -119,7 +119,7 @@ a{color:#fff !important;}
 .loading{position:fixed;z-index:5000;width:7.6em;min-height:7.6em;top:180px;left:50%;margin-left:-3.8em;text-align:center;border-radius:5px;color:#FFFFFF;/* background:url('../images/icon-loading.gif') no-repeat center center; */background-size:50%}
 
 /* tabs */
-.tabs{display:-webkit-flex;display:-ms-flexbox;display:flex;position:relative;overflow-x:hidden;overflow-y:hidden;height:44px;width:100%;background-color:#2e0571;margin:0 auto;white-space:nowrap;-webkit-box-shadow:0px 1px 8px 0px rgba(139,139,139,0.1);-moz-box-shadow:0px 1px 8px 0px rgba(139,139,139,0.1);box-shadow:0px 1px 8px 0px rgba(139,139,139,0.1);}
+.tabs{display:-webkit-flex;display:-ms-flexbox;display:flex;position:relative;overflow-x:hidden;overflow-y:hidden;height:44px;width:100%;background-color:#327585;border-bottom:1px solid #a2a2a2;margin:0 auto;white-space:nowrap;-webkit-box-shadow:0px 1px 8px 0px rgba(139,139,139,0.1);-moz-box-shadow:0px 1px 8px 0px rgba(139,139,139,0.1);box-shadow:0px 1px 8px 0px rgba(139,139,139,0.1);}
 .tabs .tab{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;display:inline-block;text-align:center;line-height:44px;height:44px;padding:0;margin:0;text-transform:uppercase;}
 .tabs .tab a{color:#ccc;display:inline-block;height:100%;font-size:14px;text-overflow:ellipsis;overflow:hidden;transition:color .28s ease;}
 .tabs .tab a.active{color:#b202ff;}
@@ -136,7 +136,7 @@ a{color:#fff !important;}
 	/* margin-left: -60px; */
 	margin-top: 55px;
 }
-.logo-box .logo-img{height:120px;line-height:120px;width:120px;border-radius:20px;/*background-color:#fff;*/overflow:hidden;margin:auto;font-weight:bold;}
+.logo-box .logo-img{height:120px;line-height:120px;width:160px;border-radius:20px;/*background-color:#fff;*/overflow:hidden;margin:auto;font-weight:bold;}
 .logo-box .logo-img img{display:block;width:100%;margin:auto;}
 .logo-box .logo-text{font-size:18px;}
 .don-form{

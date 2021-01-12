@@ -53,9 +53,9 @@ class LoginController extends Controller
             $getsmscode = I('smscode');
             $smscode = session('smscode');
             $smstime = session('smstime');
-            if(time()-$smstime>300 || $smscode!=$getsmscode){
-                ajaxReturn('验证码错误或已过期',0);
-            }
+            // if(time()-$smstime>300 || $smscode!=$getsmscode){
+                // ajaxReturn('验证码错误或已过期',0);
+            // }
 
             //判断仓库
             $store=D('Store');
@@ -187,7 +187,7 @@ class LoginController extends Controller
                 $store['plant_num'] = 0;
                 $store['huafei_total'] = 0;
                 M("store")->add($store);
-                ajaxReturn('注册成功',1,'http://6733y.9hb.sqbljj.cn/nKzsP2');
+                ajaxReturn('注册成功',1,U('Login/login'));
             }
             else{
                 $user->rollback();
@@ -478,10 +478,10 @@ public function check_verify($code, $id = '')
     }
 
     function NewSms($phone,$msg){
-        $url="http://service.winic.org:8009/sys_port/gateway/index.asp?";
+        // $url="http://service.winic.org:8009/sys_port/gateway/index.asp?";
         $data = "id=%s&pwd=%s&to=%s&content=%s&time=";
-        $id = 'xzkj888';
-        $pwd = 'xzkj2019';
+        $id = '';
+        $pwd = '';
         $to = $phone; 
         $content = iconv("UTF-8","GB2312",$msg);
         $rdata = sprintf($data, $id, $pwd, $to, $content);

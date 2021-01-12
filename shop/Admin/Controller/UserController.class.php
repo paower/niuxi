@@ -494,8 +494,10 @@ class UserController extends AdminController
             }elseif($opetype == 2){
                 $sqlname='total_active';
             }elseif($opetype == 3){
-				$sqlname='total_tuiguang';
-			}
+      				$sqlname='total_tuiguang';
+      			}elseif($opetype == 4){
+              $sqlname='geo';
+            }
            M()->startTrans();
 
            $type = (int)I('type');
@@ -525,7 +527,7 @@ class UserController extends AdminController
         } else {
 
             // 获取账号信息
-            $info = D('User')->field('userid,username,account,total_lingshi,total_active,total_tuiguang')->find($id);
+            $info = D('User')->field('userid,username,account,total_lingshi,total_active,total_tuiguang,geo')->find($id);
             $this->assign('info',$info);
             $this->display();
         }
@@ -632,7 +634,11 @@ class UserController extends AdminController
                 $this->error('状态错误，请刷新重试');
             }
             if($push_num === ''){
-                $this->error('直推人数不能为空');
+                $this->error('直推有效人数不能为空');
+            }
+
+            if($team_num === ''){
+                $this->error('团队人数不能为空');
             }
 
             // if($tran_fee === ''){
@@ -667,6 +673,7 @@ class UserController extends AdminController
             $data['service_charge'] = $service_charge;
             $data['scroll_id'] = $scroll_id;
             $data['scroll_num'] = I('scroll_num');
+            $data['team_num'] = I('team_num');
             $data['active_num'] = $active_num;
             $data['active_jf'] = $active_jf;
             $data['level_id'] = $level_id;
