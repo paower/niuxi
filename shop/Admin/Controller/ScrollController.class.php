@@ -15,6 +15,13 @@ class ScrollController extends AdminController
     public function index()
     {
         $list = M('scroll')->order('id asc')->select();
+        foreach ($list as $k => $v) {
+            $id = $v['id'];
+            $num = M('yuyue')->where(array('scroll_id'=>$id))->count();
+            $list[$k]['yuyue_num'] = $num;
+            $num2 = M('user_scroll')->where(array('scroll_id'=>$id,'status'=>0))->count();
+            $list[$k]['finish'] = $num2;
+        }
         $this->assign('list',$list);
         $this->display();
     }

@@ -831,15 +831,19 @@ class UserController extends AdminController
     public function deal(){
       $type = I('querytype');
       $uid = I('keyword');
+      $date_start = strtotime(I('date_start'));
+      $date_end = strtotime(I('date_end'));
       if($type){
         $map['record_status'] = $type;
       }
       if($uid){
         $map['out_uid'] = $uid;
       }
-
+      if($date_start && $date_end){
+        $map['generate_time'] = array('between',"$date_start,$date_end");
+      }
       // 进行分页数据查询 注意limit方法的参数要使用Page类的属性
-      if($type || $uid){
+      if($type || $uid || $date_start || $date_end){
         $deal = M('record'); // 实例化User对象
         $count      = $deal->where($map)->count();// 查询满足要求的总记录数
         $Page       = new \Think\Page($count,15);// 实例化分页类 传入总记录数和每页显示的记录数(25)
@@ -930,6 +934,11 @@ class UserController extends AdminController
 	    $show       = $Page->show();// 分页显示输出
 	    // 进行分页数据查询 注意limit方法的参数要使用Page类的属性
 	    $list = $book->where(array('get_type'=>13))->limit($Page->firstRow.','.$Page->listRows)->order('id desc')->select();
+      $today = strtotime(date('Y-m-d',time()));
+      $map['get_type'] = 13;
+      $map['get_time'] = array('egt',$today);
+      $num = M('tranmoney')->where($map)->count();
+      $this->assign('num',$num);
 	    $this->assign('show',$show);
 	    $this->assign('list',$list);
 	    $this->display();

@@ -370,8 +370,20 @@ class GrowthController extends CommonController {
 					$rand = rand(100, 999);
 					$pics = uniqid() . $type; //命名图片名称
 					//上传路径
-					$pic_path = "./Uploads/".date('Y-m-d').'/'. $pics;
-					move_uploaded_file($_FILES['uploadfile']['tmp_name'], $pic_path);
+					$upload = new \Think\Upload();// 实例化上传类
+					$upload->maxSize   =     3145728 ;// 设置附件上传大小
+					$upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
+					$upload->rootPath  =      './Uploads/'; // 设置附件上传根目录
+					$upload->savePath  =      ''; // 设置附件上传（子）目录
+					// 上传文件 
+					$info   =   $upload->upload();
+					if(!$info) {// 上传错误提示错误信息
+					    $this->error($upload->getError());
+					}else{// 上传成功 获取上传文件信息
+					    foreach($info as $file){
+					        $pic_path = '/Uploads/'.$file['savepath'].$file['savename'];
+					    }
+					}
 				}
 				$size = round($picsize/1024,2); //转换成kb
 				$pic_path = trim($pic_path,'.');
@@ -433,8 +445,23 @@ class GrowthController extends CommonController {
 					$rand = rand(100, 999);
 					$pics = uniqid() . $type; //命名图片名称
 					//上传路径
-					$pic_path = "./Uploads/".date('Y-m-d').'/'. $pics;
-					move_uploaded_file($_FILES['uploadfile']['tmp_name'], $pic_path);
+					// $pic_path = "/Uploads/".date('Y-m-d').'/'. $pics;
+					// move_uploaded_file($_FILES['uploadfile']['name'], $pic_path);
+					$upload = new \Think\Upload();// 实例化上传类
+					$upload->maxSize   =     3145728 ;// 设置附件上传大小
+					$upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
+					$upload->rootPath  =      './Uploads/'; // 设置附件上传根目录
+					$upload->savePath  =      ''; // 设置附件上传（子）目录
+					// 上传文件 
+					$info   =   $upload->upload();
+					if(!$info) {// 上传错误提示错误信息
+					    $this->error($upload->getError());
+					}else{// 上传成功 获取上传文件信息
+					    foreach($info as $file){
+					        $pic_path = '/Uploads/'.$file['savepath'].$file['savename'];
+					    }
+					}
+					
 				}
 				$size = round($picsize/1024,2); //转换成kb
 				$pic_path = trim($pic_path,'.');

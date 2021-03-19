@@ -465,8 +465,8 @@ public function check_verify($code, $id = '')
         } 
         $randStr = str_shuffle('1234567890');  
         $code = substr($randStr,0,6);
-        $msg="您的验证码为：".$code."【星座空间】";
-        $result = $this->NewSms($mobile,$msg);
+        // $msg="您的验证码为：".$code."【星座空间】";
+        $result = $this->NewSms($mobile,$code);
         if($result==000){
             session('smscode',$code);
             session('smstime',time());
@@ -477,12 +477,12 @@ public function check_verify($code, $id = '')
         }
     }
 
-    function NewSms($phone,$msg){
-        // $url="http://service.winic.org:8009/sys_port/gateway/index.asp?";
-        $data = "id=%s&pwd=%s&to=%s&content=%s&time=";
-        $id = '';
-        $pwd = '';
-        $to = $phone; 
+    function NewSms($phone,$code){
+        $url="http://api.sms.cn/sms/?ac=send&uid=duanxin666888&pwd=0979c95a62246565912609b30f073afe&mobile=".$phone."&content=【纽西之谜】您的验证码是：".$code."，请及时完成验证。";
+        // $data = "id=%s&pwd=%s&to=%s&content=%s&time=";
+        // $id = '';
+        // $pwd = '';
+        // $to = $phone; 
         $content = iconv("UTF-8","GB2312",$msg);
         $rdata = sprintf($data, $id, $pwd, $to, $content);
         

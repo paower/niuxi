@@ -1,0 +1,1627 @@
+[ 2021-01-26T11:26:52+08:00 ] 127.0.0.1 /logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2021-01-26T11:26:56+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0498s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0059s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( activate = 0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0039s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE ( name='needjifen' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_record` [ RunTime:0.0518s ]
+SQL: SELECT * FROM `ysk_record` WHERE `in_uid` = 8803 AND `is_lin` = 0 AND `record_status` = 4  [ RunTime:0.0068s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_max' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_min' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8803' OR `out_uid` = '8803' ) AND `record_status` = 6 AND `pipeitime` <= 1611624415  [ RunTime:0.0000s ]
+SQL: UPDATE `ysk_record` SET `record_status`='2',`pipeitime`=NULL,`feed_consume`=NULL,`profit_value`=NULL,`profit_day`=NULL,`scroll_id`=NULL,`in_uid`=NULL WHERE `record_id` = 276 [ RunTime:0.0273s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8803' OR `out_uid` = '8803' ) AND `record_status` = 7 AND `getmoney_time` <= 1611624415  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_yuyue` [ RunTime:0.0303s ]
+SQL: SELECT * FROM `ysk_yuyue` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE `record_status` = 2 AND `is_chaoshi_lin` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_user_scroll` [ RunTime:0.0107s ]
+SQL: SELECT `id`,`uid`,`scroll_id` FROM `ysk_user_scroll` WHERE `overtime` <= 1611631615  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_level` [ RunTime:0.0205s ]
+SQL: SELECT * FROM `ysk_user_level` ORDER BY id asc  [ RunTime:0.0078s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_deal` [ RunTime:0.0537s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 1 AND `expiration_time` <= 1611631616  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 2 AND `expiration_time` <= 1611631616  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_deal` WHERE ( `sell_id` = '8803' OR `pay_id` = '8803' ) AND `status` = 1 ORDER BY id asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_deal` WHERE ( `sell_id` = '8803' OR `pay_id` = '8803' ) AND `status` = 2 ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_banner` [ RunTime:0.0283s ]
+SQL: SELECT * FROM `ysk_banner` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_news` [ RunTime:0.0332s ]
+SQL: SELECT * FROM `ysk_news` WHERE `type` = 1 ORDER BY id desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_scroll` [ RunTime:0.0225s ]
+SQL: SELECT * FROM `ysk_scroll` WHERE `status` = 1  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `ysk_yuyue` WHERE `uid` = 8803 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '300' AND `record_price` <= '800'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '801' AND `record_price` <= '2000'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '1201' AND `record_price` <= '2000'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '2001' AND `record_price` <= '2500'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '2501' AND `record_price` <= '3500'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: uinfo E:\xin12\shop\Home\Controller\IndexController.class.php 第 131 行.
+NOTIC: [8] Undefined variable: moneyinfo E:\xin12\shop\Home\Controller\IndexController.class.php 第 132 行.
+NOTIC: [8] Undefined variable: can_get E:\xin12\shop\Home\Controller\IndexController.class.php 第 133 行.
+NOTIC: [8] Undefined variable: is_setnums E:\xin12\shop\Home\Controller\IndexController.class.php 第 134 行.
+NOTIC: [8] Undefined variable: pic_array E:\xin12\shop\Home\Controller\IndexController.class.php 第 135 行.
+NOTIC: [8] Undefined variable: fUser E:\xin12\shop\Home\Controller\IndexController.class.php 第 136 行.
+SQL: SELECT * FROM `ysk_banner` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT `img_head`,`userid`,`releas_time`,`is_reward`,`today_releas`,`quanxian`,`vip_grade`,`total_lingshi`,`total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_store` [ RunTime:0.0049s ]
+SQL: SELECT `cangku_num`,`fengmi_num` FROM `ysk_store` WHERE `uid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_user_scroll` [ RunTime:0.0049s ]
+SQL: SELECT s.single_num FROM ysk_user_scroll us INNER JOIN ysk_scroll s ON us.scroll_id=s.id  WHERE us.uid = '8803' AND us.status = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_clock` [ RunTime:0.0313s ]
+SQL: SELECT `lasttime`,`get_num` FROM `ysk_user_clock` WHERE `uid` = 8803 ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user_scroll` WHERE `uid` = 8803 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'false_user' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'add_user' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_config` WHERE `name` = 'min_balance' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: can_get E:\xin12\shop\Home\Controller\IndexController.class.php 第 283 行.
+NOTIC: [8] Undefined variable: is_setnums E:\xin12\shop\Home\Controller\IndexController.class.php 第 284 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032226s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032226s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2021-01-26T11:26:57+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2021-01-26T11:30:37+08:00 ] 127.0.0.1 /User/Personal.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001954s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0059s ]
+SQL: SELECT `username`,`is_dailishang`,`userid`,`img_head`,`use_grade`,`vip_grade`,`total_lingshi`,`total_active`,`mobile`,`total_tuiguang`,`geo` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(total_active) AS tp_sum FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` >= 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037109s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038086s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2021-01-26T11:30:38+08:00 ] 127.0.0.1 /Public/home/wap/jsa/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+ERR: 无法加载控制器:Public
+
+[ 2021-01-26T11:30:41+08:00 ] 127.0.0.1 /Index/Bancerecord.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0059s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0059s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( activate = 0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0039s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE ( name='needjifen' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_record` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_record` WHERE `in_uid` = 8803 AND `is_lin` = 0 AND `record_status` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_max' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_min' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8803' OR `out_uid` = '8803' ) AND `record_status` = 6 AND `pipeitime` <= 1611624641  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8803' OR `out_uid` = '8803' ) AND `record_status` = 7 AND `getmoney_time` <= 1611624641  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_yuyue` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_yuyue` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE `record_status` = 2 AND `is_chaoshi_lin` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_scroll` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`uid`,`scroll_id` FROM `ysk_user_scroll` WHERE `overtime` <= 1611631841  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_user_level` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_user_level` ORDER BY id asc  [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_deal` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 1 AND `expiration_time` <= 1611631841  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 2 AND `expiration_time` <= 1611631841  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_tranmoney` [ RunTime:0.0352s ]
+SQL: SELECT `is_real_name` FROM `ysk_user` WHERE ( userid=8803 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_tranmoney` WHERE ( `pay_id` = '8803' OR `get_id` = '8803' ) AND `get_type` IN ('13','14','19','0','20','21','25','26') LIMIT 1   [ RunTime:0.0225s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+SQL: SELECT * FROM `ysk_tranmoney` WHERE ( `pay_id` = '8803' OR `get_id` = '8803' ) AND `get_type` IN ('13','14','19','0','20','21','25','26') ORDER BY id desc LIMIT 0,50   [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2021-01-26T11:33:00+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0068s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0088s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0088s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( activate = 0 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0059s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE ( name='needjifen' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_record` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `ysk_record` WHERE `in_uid` = 8803 AND `is_lin` = 0 AND `record_status` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_max' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_min' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8803' OR `out_uid` = '8803' ) AND `record_status` = 6 AND `pipeitime` <= 1611624779  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8803' OR `out_uid` = '8803' ) AND `record_status` = 7 AND `getmoney_time` <= 1611624779  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_yuyue` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `ysk_yuyue` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE `record_status` = 2 AND `is_chaoshi_lin` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_user_scroll` [ RunTime:0.0049s ]
+SQL: SELECT `id`,`uid`,`scroll_id` FROM `ysk_user_scroll` WHERE `overtime` <= 1611631979  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_level` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `ysk_user_level` ORDER BY id asc  [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_deal` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 1 AND `expiration_time` <= 1611631980  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 2 AND `expiration_time` <= 1611631980  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_deal` WHERE ( `sell_id` = '8803' OR `pay_id` = '8803' ) AND `status` = 1 ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_deal` WHERE ( `sell_id` = '8803' OR `pay_id` = '8803' ) AND `status` = 2 ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_banner` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `ysk_banner` ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_news` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `ysk_news` WHERE `type` = 1 ORDER BY id desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_scroll` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `ysk_scroll` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_yuyue` WHERE `uid` = 8803 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '300' AND `record_price` <= '800'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '801' AND `record_price` <= '2000'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '1201' AND `record_price` <= '2000'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '2001' AND `record_price` <= '2500'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '2501' AND `record_price` <= '3500'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: uinfo E:\xin12\shop\Home\Controller\IndexController.class.php 第 131 行.
+NOTIC: [8] Undefined variable: moneyinfo E:\xin12\shop\Home\Controller\IndexController.class.php 第 132 行.
+NOTIC: [8] Undefined variable: can_get E:\xin12\shop\Home\Controller\IndexController.class.php 第 133 行.
+NOTIC: [8] Undefined variable: is_setnums E:\xin12\shop\Home\Controller\IndexController.class.php 第 134 行.
+NOTIC: [8] Undefined variable: pic_array E:\xin12\shop\Home\Controller\IndexController.class.php 第 135 行.
+NOTIC: [8] Undefined variable: fUser E:\xin12\shop\Home\Controller\IndexController.class.php 第 136 行.
+SQL: SELECT * FROM `ysk_banner` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT `img_head`,`userid`,`releas_time`,`is_reward`,`today_releas`,`quanxian`,`vip_grade`,`total_lingshi`,`total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_store` [ RunTime:0.0059s ]
+SQL: SELECT `cangku_num`,`fengmi_num` FROM `ysk_store` WHERE `uid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_scroll` [ RunTime:0.0059s ]
+SQL: SELECT s.single_num FROM ysk_user_scroll us INNER JOIN ysk_scroll s ON us.scroll_id=s.id  WHERE us.uid = '8803' AND us.status = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_clock` [ RunTime:0.0068s ]
+SQL: SELECT `lasttime`,`get_num` FROM `ysk_user_clock` WHERE `uid` = 8803 ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user_scroll` WHERE `uid` = 8803 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'false_user' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'add_user' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_config` WHERE `name` = 'min_balance' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: can_get E:\xin12\shop\Home\Controller\IndexController.class.php 第 283 行.
+NOTIC: [8] Undefined variable: is_setnums E:\xin12\shop\Home\Controller\IndexController.class.php 第 284 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009766s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2021-01-26T11:33:01+08:00 ] 127.0.0.1 /User/Personal.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0098s ]
+SQL: SELECT `username`,`is_dailishang`,`userid`,`img_head`,`use_grade`,`vip_grade`,`total_lingshi`,`total_active`,`mobile`,`total_tuiguang`,`geo` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(total_active) AS tp_sum FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` >= 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2021-01-26T11:33:03+08:00 ] 127.0.0.1 /Index/Bancerecord.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0049s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0059s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( activate = 0 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0049s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE ( name='needjifen' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_record` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_record` WHERE `in_uid` = 8803 AND `is_lin` = 0 AND `record_status` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_max' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_min' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8803' OR `out_uid` = '8803' ) AND `record_status` = 6 AND `pipeitime` <= 1611624783  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8803' OR `out_uid` = '8803' ) AND `record_status` = 7 AND `getmoney_time` <= 1611624783  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_yuyue` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_yuyue` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE `record_status` = 2 AND `is_chaoshi_lin` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_scroll` [ RunTime:0.0049s ]
+SQL: SELECT `id`,`uid`,`scroll_id` FROM `ysk_user_scroll` WHERE `overtime` <= 1611631983  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_level` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `ysk_user_level` ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_deal` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 1 AND `expiration_time` <= 1611631983  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 2 AND `expiration_time` <= 1611631983  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_tranmoney` [ RunTime:0.0039s ]
+SQL: SELECT `is_real_name` FROM `ysk_user` WHERE ( userid=8803 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_tranmoney` WHERE ( `pay_id` = '8803' OR `get_id` = '8803' ) AND `get_type` IN ('13','14','19','0','20','21','25','26') LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+SQL: SELECT * FROM `ysk_tranmoney` WHERE ( `pay_id` = '8803' OR `get_id` = '8803' ) AND `get_type` IN ('13','14','19','0','20','21','25','26') ORDER BY id desc LIMIT 0,50   [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011719s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011719s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2021-01-26T11:33:07+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0078s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0098s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 8806 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( activate = 0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0049s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE ( name='needjifen' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_record` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `ysk_record` WHERE `in_uid` = 8806 AND `is_lin` = 0 AND `record_status` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_max' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_min' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8806' OR `out_uid` = '8806' ) AND `record_status` = 6 AND `pipeitime` <= 1611624787  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8806' OR `out_uid` = '8806' ) AND `record_status` = 7 AND `getmoney_time` <= 1611624787  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_yuyue` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_yuyue` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE `record_status` = 2 AND `is_chaoshi_lin` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_user_scroll` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`uid`,`scroll_id` FROM `ysk_user_scroll` WHERE `overtime` <= 1611631987  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_user_level` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `ysk_user_level` ORDER BY id asc  [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8806 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8806 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8806 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8806 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8806 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8806 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8806 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8806 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8806 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8806 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8806 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8806 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_deal` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 1 AND `expiration_time` <= 1611631987  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 2 AND `expiration_time` <= 1611631987  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_deal` WHERE ( `sell_id` = '8806' OR `pay_id` = '8806' ) AND `status` = 1 ORDER BY id asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_deal` WHERE ( `sell_id` = '8806' OR `pay_id` = '8806' ) AND `status` = 2 ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_banner` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `ysk_banner` ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_news` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `ysk_news` WHERE `type` = 1 ORDER BY id desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_scroll` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `ysk_scroll` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_yuyue` WHERE `uid` = 8806 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '300' AND `record_price` <= '800'  ) AND `record_status` = 2 AND `out_uid` <> '8806'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '801' AND `record_price` <= '2000'  ) AND `record_status` = 2 AND `out_uid` <> '8806'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '1201' AND `record_price` <= '2000'  ) AND `record_status` = 2 AND `out_uid` <> '8806'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '2001' AND `record_price` <= '2500'  ) AND `record_status` = 2 AND `out_uid` <> '8806'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '2501' AND `record_price` <= '3500'  ) AND `record_status` = 2 AND `out_uid` <> '8806'  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: uinfo E:\xin12\shop\Home\Controller\IndexController.class.php 第 131 行.
+NOTIC: [8] Undefined variable: moneyinfo E:\xin12\shop\Home\Controller\IndexController.class.php 第 132 行.
+NOTIC: [8] Undefined variable: can_get E:\xin12\shop\Home\Controller\IndexController.class.php 第 133 行.
+NOTIC: [8] Undefined variable: is_setnums E:\xin12\shop\Home\Controller\IndexController.class.php 第 134 行.
+NOTIC: [8] Undefined variable: pic_array E:\xin12\shop\Home\Controller\IndexController.class.php 第 135 行.
+NOTIC: [8] Undefined variable: fUser E:\xin12\shop\Home\Controller\IndexController.class.php 第 136 行.
+SQL: SELECT * FROM `ysk_banner` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT `img_head`,`userid`,`releas_time`,`is_reward`,`today_releas`,`quanxian`,`vip_grade`,`total_lingshi`,`total_active` FROM `ysk_user` WHERE `userid` = 8806 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_store` [ RunTime:0.0049s ]
+SQL: SELECT `cangku_num`,`fengmi_num` FROM `ysk_store` WHERE `uid` = 8806 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_scroll` [ RunTime:0.0049s ]
+SQL: SELECT s.single_num FROM ysk_user_scroll us INNER JOIN ysk_scroll s ON us.scroll_id=s.id  WHERE us.uid = '8806' AND us.status = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_clock` [ RunTime:0.0088s ]
+SQL: SELECT `lasttime`,`get_num` FROM `ysk_user_clock` WHERE `uid` = 8806 ORDER BY id desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user_scroll` WHERE `uid` = 8806 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'false_user' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'add_user' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_config` WHERE `name` = 'min_balance' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: can_get E:\xin12\shop\Home\Controller\IndexController.class.php 第 283 行.
+NOTIC: [8] Undefined variable: is_setnums E:\xin12\shop\Home\Controller\IndexController.class.php 第 284 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009765s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009765s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2021-01-26T11:33:09+08:00 ] 127.0.0.1 /User/Personal.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0059s ]
+SQL: SELECT `username`,`is_dailishang`,`userid`,`img_head`,`use_grade`,`vip_grade`,`total_lingshi`,`total_active`,`mobile`,`total_tuiguang`,`geo` FROM `ysk_user` WHERE `userid` = 8806 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT SUM(total_active) AS tp_sum FROM `ysk_user` WHERE `pid` = 8806 AND `vip_grade` >= 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8806 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2021-01-26T11:33:10+08:00 ] 127.0.0.1 /Index/Bancerecord.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001954s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0049s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0059s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 8806 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( activate = 0 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0049s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE ( name='needjifen' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_record` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_record` WHERE `in_uid` = 8806 AND `is_lin` = 0 AND `record_status` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_max' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_min' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8806' OR `out_uid` = '8806' ) AND `record_status` = 6 AND `pipeitime` <= 1611624790  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8806' OR `out_uid` = '8806' ) AND `record_status` = 7 AND `getmoney_time` <= 1611624790  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_yuyue` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `ysk_yuyue` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE `record_status` = 2 AND `is_chaoshi_lin` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_scroll` [ RunTime:0.0049s ]
+SQL: SELECT `id`,`uid`,`scroll_id` FROM `ysk_user_scroll` WHERE `overtime` <= 1611631990  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_level` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `ysk_user_level` ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8806 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8806 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8806 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8806 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8806 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8806 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8806 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8806 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8806 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8806 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8806 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8806 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_deal` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 1 AND `expiration_time` <= 1611631990  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 2 AND `expiration_time` <= 1611631990  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_tranmoney` [ RunTime:0.0049s ]
+SQL: SELECT `is_real_name` FROM `ysk_user` WHERE ( userid=8806 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_tranmoney` WHERE ( `pay_id` = '8806' OR `get_id` = '8806' ) AND `get_type` IN ('13','14','19','0','20','21','25','26') LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+SQL: SELECT * FROM `ysk_tranmoney` WHERE ( `pay_id` = '8806' OR `get_id` = '8806' ) AND `get_type` IN ('13','14','19','0','20','21','25','26') ORDER BY id desc LIMIT 0,50   [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005859s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005859s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2021-01-26T11:33:14+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001954s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0059s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0088s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( activate = 0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0098s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE ( name='needjifen' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_record` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `ysk_record` WHERE `in_uid` = 8804 AND `is_lin` = 0 AND `record_status` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_max' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_min' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8804' OR `out_uid` = '8804' ) AND `record_status` = 6 AND `pipeitime` <= 1611624793  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8804' OR `out_uid` = '8804' ) AND `record_status` = 7 AND `getmoney_time` <= 1611624793  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_yuyue` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_yuyue` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE `record_status` = 2 AND `is_chaoshi_lin` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_scroll` [ RunTime:0.0049s ]
+SQL: SELECT `id`,`uid`,`scroll_id` FROM `ysk_user_scroll` WHERE `overtime` <= 1611631993  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_level` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `ysk_user_level` ORDER BY id asc  [ RunTime:0.0020s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8804 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8804 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8804 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8804 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_deal` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 1 AND `expiration_time` <= 1611631993  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 2 AND `expiration_time` <= 1611631993  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_deal` WHERE ( `sell_id` = '8804' OR `pay_id` = '8804' ) AND `status` = 1 ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_deal` WHERE ( `sell_id` = '8804' OR `pay_id` = '8804' ) AND `status` = 2 ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_banner` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `ysk_banner` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_news` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `ysk_news` WHERE `type` = 1 ORDER BY id desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_scroll` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `ysk_scroll` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_yuyue` WHERE `uid` = 8804 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '300' AND `record_price` <= '800'  ) AND `record_status` = 2 AND `out_uid` <> '8804'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '801' AND `record_price` <= '2000'  ) AND `record_status` = 2 AND `out_uid` <> '8804'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '1201' AND `record_price` <= '2000'  ) AND `record_status` = 2 AND `out_uid` <> '8804'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '2001' AND `record_price` <= '2500'  ) AND `record_status` = 2 AND `out_uid` <> '8804'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '2501' AND `record_price` <= '3500'  ) AND `record_status` = 2 AND `out_uid` <> '8804'  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: uinfo E:\xin12\shop\Home\Controller\IndexController.class.php 第 131 行.
+NOTIC: [8] Undefined variable: moneyinfo E:\xin12\shop\Home\Controller\IndexController.class.php 第 132 行.
+NOTIC: [8] Undefined variable: can_get E:\xin12\shop\Home\Controller\IndexController.class.php 第 133 行.
+NOTIC: [8] Undefined variable: is_setnums E:\xin12\shop\Home\Controller\IndexController.class.php 第 134 行.
+NOTIC: [8] Undefined variable: pic_array E:\xin12\shop\Home\Controller\IndexController.class.php 第 135 行.
+NOTIC: [8] Undefined variable: fUser E:\xin12\shop\Home\Controller\IndexController.class.php 第 136 行.
+SQL: SELECT * FROM `ysk_banner` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT `img_head`,`userid`,`releas_time`,`is_reward`,`today_releas`,`quanxian`,`vip_grade`,`total_lingshi`,`total_active` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_store` [ RunTime:0.0049s ]
+SQL: SELECT `cangku_num`,`fengmi_num` FROM `ysk_store` WHERE `uid` = 8804 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_scroll` [ RunTime:0.0049s ]
+SQL: SELECT s.single_num FROM ysk_user_scroll us INNER JOIN ysk_scroll s ON us.scroll_id=s.id  WHERE us.uid = '8804' AND us.status = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_user_clock` [ RunTime:0.0049s ]
+SQL: SELECT `lasttime`,`get_num` FROM `ysk_user_clock` WHERE `uid` = 8804 ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user_scroll` WHERE `uid` = 8804 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'false_user' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'add_user' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_config` WHERE `name` = 'min_balance' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: can_get E:\xin12\shop\Home\Controller\IndexController.class.php 第 283 行.
+NOTIC: [8] Undefined variable: is_setnums E:\xin12\shop\Home\Controller\IndexController.class.php 第 284 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2021-01-26T11:33:14+08:00 ] 127.0.0.1 /User/Personal.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0273s ]
+SQL: SELECT `username`,`is_dailishang`,`userid`,`img_head`,`use_grade`,`vip_grade`,`total_lingshi`,`total_active`,`mobile`,`total_tuiguang`,`geo` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(total_active) AS tp_sum FROM `ysk_user` WHERE `pid` = 8804 AND `vip_grade` >= 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8804 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2021-01-26T11:33:15+08:00 ] 127.0.0.1 /Index/Bancerecord.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001954s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0049s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0049s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( activate = 0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0049s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE ( name='needjifen' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_record` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_record` WHERE `in_uid` = 8804 AND `is_lin` = 0 AND `record_status` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_max' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_min' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8804' OR `out_uid` = '8804' ) AND `record_status` = 6 AND `pipeitime` <= 1611624795  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8804' OR `out_uid` = '8804' ) AND `record_status` = 7 AND `getmoney_time` <= 1611624795  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_yuyue` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `ysk_yuyue` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE `record_status` = 2 AND `is_chaoshi_lin` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_scroll` [ RunTime:0.0049s ]
+SQL: SELECT `id`,`uid`,`scroll_id` FROM `ysk_user_scroll` WHERE `overtime` <= 1611631995  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_user_level` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `ysk_user_level` ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8804 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8804 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8804 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8804 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_deal` [ RunTime:0.0166s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 1 AND `expiration_time` <= 1611631995  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 2 AND `expiration_time` <= 1611631995  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_tranmoney` [ RunTime:0.0039s ]
+SQL: SELECT `is_real_name` FROM `ysk_user` WHERE ( userid=8804 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_tranmoney` WHERE ( `pay_id` = '8804' OR `get_id` = '8804' ) AND `get_type` IN ('13','14','19','0','20','21','25','26') LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+SQL: SELECT * FROM `ysk_tranmoney` WHERE ( `pay_id` = '8804' OR `get_id` = '8804' ) AND `get_type` IN ('13','14','19','0','20','21','25','26') ORDER BY id desc LIMIT 0,50   [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2021-01-26T11:33:19+08:00 ] 127.0.0.1 /Index/Bancerecord.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0068s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0059s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( activate = 0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0049s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE ( name='needjifen' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_record` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_record` WHERE `in_uid` = 8804 AND `is_lin` = 0 AND `record_status` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_max' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_min' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8804' OR `out_uid` = '8804' ) AND `record_status` = 6 AND `pipeitime` <= 1611624799  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8804' OR `out_uid` = '8804' ) AND `record_status` = 7 AND `getmoney_time` <= 1611624799  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_yuyue` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_yuyue` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE `record_status` = 2 AND `is_chaoshi_lin` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_scroll` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`uid`,`scroll_id` FROM `ysk_user_scroll` WHERE `overtime` <= 1611631999  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_level` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_user_level` ORDER BY id asc  [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8804 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8804 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8804 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8804 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_deal` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 1 AND `expiration_time` <= 1611631999  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 2 AND `expiration_time` <= 1611631999  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_tranmoney` [ RunTime:0.0049s ]
+SQL: SELECT `is_real_name` FROM `ysk_user` WHERE ( userid=8804 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_tranmoney` WHERE ( `pay_id` = '8804' OR `get_id` = '8804' ) AND `get_type` IN ('13','14','19','0','20','21','25','26') LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+SQL: SELECT * FROM `ysk_tranmoney` WHERE ( `pay_id` = '8804' OR `get_id` = '8804' ) AND `get_type` IN ('13','14','19','0','20','21','25','26') ORDER BY id desc LIMIT 0,50   [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2021-01-26T17:26:54+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0059s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0049s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( activate = 0 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0039s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE ( name='needjifen' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_record` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `ysk_record` WHERE `in_uid` = 8804 AND `is_lin` = 0 AND `record_status` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_max' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_min' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8804' OR `out_uid` = '8804' ) AND `record_status` = 6 AND `pipeitime` <= 1611646014  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8804' OR `out_uid` = '8804' ) AND `record_status` = 7 AND `getmoney_time` <= 1611646014  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_yuyue` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `ysk_yuyue` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE `record_status` = 2 AND `is_chaoshi_lin` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_scroll` [ RunTime:0.0049s ]
+SQL: SELECT `id`,`uid`,`scroll_id` FROM `ysk_user_scroll` WHERE `overtime` <= 1611653214  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_level` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `ysk_user_level` ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8804 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8804 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8804 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8804 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_deal` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 1 AND `expiration_time` <= 1611653214  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 2 AND `expiration_time` <= 1611653214  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_deal` WHERE ( `sell_id` = '8804' OR `pay_id` = '8804' ) AND `status` = 1 ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_deal` WHERE ( `sell_id` = '8804' OR `pay_id` = '8804' ) AND `status` = 2 ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_banner` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `ysk_banner` ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_news` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `ysk_news` WHERE `type` = 1 ORDER BY id desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_scroll` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `ysk_scroll` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_yuyue` WHERE `uid` = 8804 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '300' AND `record_price` <= '800'  ) AND `record_status` = 2 AND `out_uid` <> '8804'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '801' AND `record_price` <= '2000'  ) AND `record_status` = 2 AND `out_uid` <> '8804'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '1201' AND `record_price` <= '2000'  ) AND `record_status` = 2 AND `out_uid` <> '8804'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '2001' AND `record_price` <= '2500'  ) AND `record_status` = 2 AND `out_uid` <> '8804'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '2501' AND `record_price` <= '3500'  ) AND `record_status` = 2 AND `out_uid` <> '8804'  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: uinfo E:\xin12\shop\Home\Controller\IndexController.class.php 第 131 行.
+NOTIC: [8] Undefined variable: moneyinfo E:\xin12\shop\Home\Controller\IndexController.class.php 第 132 行.
+NOTIC: [8] Undefined variable: can_get E:\xin12\shop\Home\Controller\IndexController.class.php 第 133 行.
+NOTIC: [8] Undefined variable: is_setnums E:\xin12\shop\Home\Controller\IndexController.class.php 第 134 行.
+NOTIC: [8] Undefined variable: pic_array E:\xin12\shop\Home\Controller\IndexController.class.php 第 135 行.
+NOTIC: [8] Undefined variable: fUser E:\xin12\shop\Home\Controller\IndexController.class.php 第 136 行.
+SQL: SELECT * FROM `ysk_banner` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT `img_head`,`userid`,`releas_time`,`is_reward`,`today_releas`,`quanxian`,`vip_grade`,`total_lingshi`,`total_active` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_store` [ RunTime:0.0078s ]
+SQL: SELECT `cangku_num`,`fengmi_num` FROM `ysk_store` WHERE `uid` = 8804 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_scroll` [ RunTime:0.0068s ]
+SQL: SELECT s.single_num FROM ysk_user_scroll us INNER JOIN ysk_scroll s ON us.scroll_id=s.id  WHERE us.uid = '8804' AND us.status = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_clock` [ RunTime:0.0078s ]
+SQL: SELECT `lasttime`,`get_num` FROM `ysk_user_clock` WHERE `uid` = 8804 ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user_scroll` WHERE `uid` = 8804 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'false_user' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'add_user' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_config` WHERE `name` = 'min_balance' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: can_get E:\xin12\shop\Home\Controller\IndexController.class.php 第 283 行.
+NOTIC: [8] Undefined variable: is_setnums E:\xin12\shop\Home\Controller\IndexController.class.php 第 284 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2021-01-26T17:26:59+08:00 ] 127.0.0.1 /User/Personal.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0049s ]
+SQL: SELECT `username`,`is_dailishang`,`userid`,`img_head`,`use_grade`,`vip_grade`,`total_lingshi`,`total_active`,`mobile`,`total_tuiguang`,`geo` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(total_active) AS tp_sum FROM `ysk_user` WHERE `pid` = 8804 AND `vip_grade` >= 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8804 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2021-01-26T17:26:59+08:00 ] 127.0.0.1 /Public/home/wap/jsa/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+ERR: 无法加载控制器:Public
+
+[ 2021-01-26T17:27:00+08:00 ] 127.0.0.1 /User/setting.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0068s ]
+SQL: SELECT `mobile` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `username` FROM `ysk_user` WHERE `userid` = 8804 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067382s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067382s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2021-01-26T17:27:01+08:00 ] 127.0.0.1 /User/Loginout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+
+[ 2021-01-26T17:27:01+08:00 ] 127.0.0.1 /Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0049s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016602s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016602s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2021-01-26T17:27:04+08:00 ] 127.0.0.1 /Login/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023437s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023437s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2021-01-26T17:27:04+08:00 ] 127.0.0.1 /Home/Login/verify_c.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2021-01-26T17:27:08+08:00 ] 127.0.0.1 /Login/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005859s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005859s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2021-01-26T17:27:08+08:00 ] 127.0.0.1 /Home/Login/verify_c.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2021-01-26T17:27:09+08:00 ] 127.0.0.1 /Login/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2021-01-26T17:27:09+08:00 ] 127.0.0.1 /Home/Login/verify_c.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2021-01-26T17:32:45+08:00 ] 127.0.0.1 /Login/check_verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+
+[ 2021-01-26T17:32:51+08:00 ] 127.0.0.1 /Login/sendCode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined variable: msg E:\xin12\shop\Home\Controller\LoginController.class.php 第 486 行.
+
+[ 2021-01-26T17:35:54+08:00 ] 127.0.0.1 /Login/sendCode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001954s ]
+
+[ 2021-01-26T17:40:25+08:00 ] 127.0.0.1 /Login/sendCode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+NOTIC: [8] Undefined variable: msg E:\xin12\shop\Home\Controller\LoginController.class.php 第 486 行.
+NOTIC: [8] Undefined variable: data E:\xin12\shop\Home\Controller\LoginController.class.php 第 487 行.
+NOTIC: [8] Undefined variable: id E:\xin12\shop\Home\Controller\LoginController.class.php 第 487 行.
+NOTIC: [8] Undefined variable: pwd E:\xin12\shop\Home\Controller\LoginController.class.php 第 487 行.
+NOTIC: [8] Undefined variable: to E:\xin12\shop\Home\Controller\LoginController.class.php 第 487 行.
+
+[ 2021-01-26T17:41:33+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0068s ]
+SQL: SELECT `value`,`tip` FROM `ysk_config` WHERE `name` = 'TOGGLE_WEB_SITE' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0059s ]
+SQL: SELECT `status`,`session_id` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_user` WHERE ( activate = 0 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_config` [ RunTime:0.0049s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE ( name='needjifen' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_record` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `ysk_record` WHERE `in_uid` = 8803 AND `is_lin` = 0 AND `record_status` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_max' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'zhuanrang_min' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8803' OR `out_uid` = '8803' ) AND `record_status` = 6 AND `pipeitime` <= 1611646893  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `in_uid` = '8803' OR `out_uid` = '8803' ) AND `record_status` = 7 AND `getmoney_time` <= 1611646893  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ysk_yuyue` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `ysk_yuyue` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE `record_status` = 2 AND `is_chaoshi_lin` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_scroll` [ RunTime:0.0049s ]
+SQL: SELECT `id`,`uid`,`scroll_id` FROM `ysk_user_scroll` WHERE `overtime` <= 1611654093  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_level` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `ysk_user_level` ORDER BY id asc  [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user_level` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `vip_grade` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_deal` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 1 AND `expiration_time` <= 1611654093  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_deal` WHERE `status` = 2 AND `expiration_time` <= 1611654093  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_deal` WHERE ( `sell_id` = '8803' OR `pay_id` = '8803' ) AND `status` = 1 ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_deal` WHERE ( `sell_id` = '8803' OR `pay_id` = '8803' ) AND `status` = 2 ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_banner` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `ysk_banner` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_news` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `ysk_news` WHERE `type` = 1 ORDER BY id desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_scroll` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `ysk_scroll` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_yuyue` WHERE `uid` = 8803 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '300' AND `record_price` <= '800'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '801' AND `record_price` <= '2000'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '1201' AND `record_price` <= '2000'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '2001' AND `record_price` <= '2500'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ysk_record` WHERE ( `record_price` >= '2501' AND `record_price` <= '3500'  ) AND `record_status` = 2 AND `out_uid` <> '8803'  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: uinfo E:\xin12\shop\Home\Controller\IndexController.class.php 第 131 行.
+NOTIC: [8] Undefined variable: moneyinfo E:\xin12\shop\Home\Controller\IndexController.class.php 第 132 行.
+NOTIC: [8] Undefined variable: can_get E:\xin12\shop\Home\Controller\IndexController.class.php 第 133 行.
+NOTIC: [8] Undefined variable: is_setnums E:\xin12\shop\Home\Controller\IndexController.class.php 第 134 行.
+NOTIC: [8] Undefined variable: pic_array E:\xin12\shop\Home\Controller\IndexController.class.php 第 135 行.
+NOTIC: [8] Undefined variable: fUser E:\xin12\shop\Home\Controller\IndexController.class.php 第 136 行.
+SQL: SELECT * FROM `ysk_banner` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT `img_head`,`userid`,`releas_time`,`is_reward`,`today_releas`,`quanxian`,`vip_grade`,`total_lingshi`,`total_active` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_store` [ RunTime:0.0049s ]
+SQL: SELECT `cangku_num`,`fengmi_num` FROM `ysk_store` WHERE `uid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_scroll` [ RunTime:0.0039s ]
+SQL: SELECT s.single_num FROM ysk_user_scroll us INNER JOIN ysk_scroll s ON us.scroll_id=s.id  WHERE us.uid = '8803' AND us.status = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ysk_user_clock` [ RunTime:0.0059s ]
+SQL: SELECT `lasttime`,`get_num` FROM `ysk_user_clock` WHERE `uid` = 8803 ORDER BY id desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user_scroll` WHERE `uid` = 8803 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'false_user' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `value` FROM `ysk_config` WHERE `name` = 'add_user' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ysk_config` WHERE `name` = 'min_balance' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: can_get E:\xin12\shop\Home\Controller\IndexController.class.php 第 283 行.
+NOTIC: [8] Undefined variable: is_setnums E:\xin12\shop\Home\Controller\IndexController.class.php 第 284 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2021-01-26T17:41:35+08:00 ] 127.0.0.1 /User/Personal.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0059s ]
+SQL: SELECT `username`,`is_dailishang`,`userid`,`img_head`,`use_grade`,`vip_grade`,`total_lingshi`,`total_active`,`mobile`,`total_tuiguang`,`geo` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT SUM(total_active) AS tp_sum FROM `ysk_user` WHERE `pid` = 8803 AND `vip_grade` >= 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ysk_user` WHERE `pid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2021-01-26T17:41:36+08:00 ] 127.0.0.1 /Public/home/wap/jsa/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+ERR: 无法加载控制器:Public
+
+[ 2021-01-26T17:41:37+08:00 ] 127.0.0.1 /User/setting.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `ysk_user` [ RunTime:0.0059s ]
+SQL: SELECT `mobile` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `username` FROM `ysk_user` WHERE `userid` = 8803 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2021-01-26T17:41:40+08:00 ] 127.0.0.1 /User/Setpwd/type/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.110351s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.110351s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2021-01-26T17:41:41+08:00 ] 127.0.0.1 /login/getpsw.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040039s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040039s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2021-01-26T17:41:56+08:00 ] 127.0.0.1 /Login/sendCode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined variable: msg E:\xin12\shop\Home\Controller\LoginController.class.php 第 486 行.
+NOTIC: [8] Undefined variable: data E:\xin12\shop\Home\Controller\LoginController.class.php 第 487 行.
+NOTIC: [8] Undefined variable: id E:\xin12\shop\Home\Controller\LoginController.class.php 第 487 行.
+NOTIC: [8] Undefined variable: pwd E:\xin12\shop\Home\Controller\LoginController.class.php 第 487 行.
+NOTIC: [8] Undefined variable: to E:\xin12\shop\Home\Controller\LoginController.class.php 第 487 行.
+
+[ 2021-01-26T17:42:16+08:00 ] 127.0.0.1 /User/Setpwd/type/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2021-01-26T17:42:17+08:00 ] 127.0.0.1 /login/getpswpay.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+NOTIC: [8] Undefined index: m E:\xin12\ThinkPHP\Common\functions.php 第 977 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026368s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026368s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2021-01-26T17:42:23+08:00 ] 127.0.0.1 /Login/sendCode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2021-01-26T17:42:35+08:00 ] 127.0.0.1 /Login/sendCode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+
+[ 2021-01-26T17:42:55+08:00 ] 127.0.0.1 /Login/sendCode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2021-01-26T17:44:44+08:00 ] 127.0.0.1 /Login/sendCode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: Run Common\Behavior\CheckLangBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+NOTIC: [8] Undefined variable: msg E:\xin12\shop\Home\Controller\LoginController.class.php 第 486 行.
+NOTIC: [8] Undefined variable: data E:\xin12\shop\Home\Controller\LoginController.class.php 第 487 行.
+NOTIC: [8] Undefined variable: id E:\xin12\shop\Home\Controller\LoginController.class.php 第 487 行.
+NOTIC: [8] Undefined variable: pwd E:\xin12\shop\Home\Controller\LoginController.class.php 第 487 行.
+NOTIC: [8] Undefined variable: to E:\xin12\shop\Home\Controller\LoginController.class.php 第 487 行.
+

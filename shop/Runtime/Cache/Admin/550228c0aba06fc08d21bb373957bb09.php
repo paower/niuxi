@@ -166,6 +166,7 @@
                             }
                         </style>
 
+                        <div>今日预约数量:<?php echo ($num); ?></div>
                         <!-- 数据列表 -->
                         <div class="builder-container">
                             <div class="row">

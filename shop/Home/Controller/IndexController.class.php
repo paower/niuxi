@@ -300,9 +300,10 @@ class IndexController extends CommonController
             
             $yuyue_start_time = strtotime($scrollinfo['yuyue_start_time']);
             $yuyue_end_time = strtotime($scrollinfo['yuyue_end_time']);
+            $today = strtotime(date('Y-m-d'));
             //是否存在预约单
             $have = M('yuyue')->where(array('uid'=>$userid,'scroll_id'=>$scroll_id))->count();
-            $haves = M('record')->where(array('in_uid'=>$uid,'scroll_id'=>$scroll_id))->count();
+            $haves = M('record')->where(array('in_uid'=>$uid,'scroll_id'=>$scroll_id,'generate_time'=>array('egt',$today)))->count();
             if($have+1>$scrollinfo['max_size'] || $haves+1>$scrollinfo['max_size']){
                 $this->ajaxReturn(array('Boolean' => false,'text' => '次数已达上限'));
             }
@@ -426,7 +427,7 @@ class IndexController extends CommonController
                 
 			}else{
                 //是否存在预约单
-                $have = M('record')->where(array('in_uid'=>$userid,'scroll_id'=>$scroll_id))->count();
+                $have = M('record')->where(array('in_uid'=>$userid,'scroll_id'=>$scroll_id,'generate_time'=>array('egt',$today)))->count();
                 if($have+1>$scrollinfo['max_size']){
                     $this->ajaxReturn(array('Boolean' => false,'text' => '次数已达上限'));
                 }

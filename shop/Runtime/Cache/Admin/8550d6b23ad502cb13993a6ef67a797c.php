@@ -194,6 +194,8 @@
 													<th>抢购消耗购物券</th>
 													<th>智能合约收益</th>
 													<th>收藏消耗购物券</th>
+													<th>已完成数</th>
+													<th>预约数</th>
 													<th>状态</th>
 													<th style="max-width:20%">操作</th>
 												</tr>
@@ -223,7 +225,8 @@
 														<td>
 															<?php echo ($data['feed_consume']); ?>
 														</td>
-
+														<td><?php echo ($data['yuyue_num']); ?></td>
+														<td><?php echo ($data['finish']); ?></td>
 														<td>
 															<?php if(($data['status']) == "1"): ?><i class="fa fa-check text-success"></i>
 																<?php else: ?>

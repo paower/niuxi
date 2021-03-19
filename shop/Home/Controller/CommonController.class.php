@@ -189,31 +189,28 @@ class CommonController extends Controller {
         //为过期的星座设置为过期
         $time = time();
        //十二点
-        $today = strtotime(date("Y-m-d"),time());
-        $yuyue = M('yuyue')->where(array('time'=>array('elt',$today),'status'=>1))->select();
+        $yuyue = M('yuyue')->where(array('status'=>1))->select();
         if($yuyue){
             foreach($yuyue as $yuyuekey=>$yuyuevalue){
-                //余额
-                $yues = M('user')->where(array('userid'=>$yuyuevalue['uid']))->getField('total_lingshi');
-                //返回金额
-                $lingshi = $yuyuevalue['book_consume'];
-                $fanhui = M('user')->where(array('userid'=>$yuyuevalue['uid']))->setInc('total_lingshi',$lingshi);
-                //增加记录
-                $tuihuitran['get_id'] = $yuyuevalue['uid'];
-                $tuihuitran['get_nums'] = $yuyuevalue['book_consume'];
-                $tuihuitran['get_time'] = time();
-                $tuihuitran['get_type'] = 25;
-                $tuihuitran['now_nums'] = $yues+$yuyuevalue['book_consume'];
-                $addtuihui = M('tranmoney')->add($tuihuitran);
+                $now = time();
+                $end_time = M('scroll')->where(array('id'=>$yuyuevalue['scroll_id']))->getField('end_time');
+                $end_time = strtotime($end_time);
+                if($now>=$end_time){
+                    //余额
+                    $yues = M('user')->where(array('userid'=>$yuyuevalue['uid']))->getField('total_lingshi');
+                    //返回金额
+                    $lingshi = $yuyuevalue['book_consume'];
+                    $fanhui = M('user')->where(array('userid'=>$yuyuevalue['uid']))->setInc('total_lingshi',$lingshi);
+                    //增加记录
+                    $tuihuitran['get_id'] = $yuyuevalue['uid'];
+                    $tuihuitran['get_nums'] = $yuyuevalue['book_consume'];
+                    $tuihuitran['get_time'] = time();
+                    $tuihuitran['get_type'] = 25;
+                    $tuihuitran['now_nums'] = $yues+$yuyuevalue['book_consume'];
+                    $addtuihui = M('tranmoney')->add($tuihuitran);
 
-                // $tuihuitrans['get_id'] = $yuyuevalue['uid'];
-                // $tuihuitrans['get_nums'] = $yuyuevalue['feed_consume'];
-                // $tuihuitrans['get_time'] = time();
-                // $tuihuitrans['get_type'] = 26;
-                // $tuihuitrans['now_nums'] = $yues+$yuyuevalue['feed_consume']+$yuyuevalue['book_consume'];
-                // $addtuihuis = M('tranmoney')->add($tuihuitrans);
-
-                M('yuyue')->where('id='.$yuyuevalue['id'])->delete();
+                    M('yuyue')->where('id='.$yuyuevalue['id'])->delete();
+                }
             }
         }
 
